@@ -3,10 +3,6 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router , Link, Route} from 'react-router-dom';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.png'; 
-import Blog from './Blog';
-import Example from './Example';
-import BlogArticle from './BlogArticle';
-import BlogArticlePost from './BlogArticlePost';
 
 export default class  Navbar extends Component {
     render (){
@@ -29,10 +25,7 @@ export default class  Navbar extends Component {
               <li className="nav-item">
                   <Link to="/blog" className="nav-link">Blog</Link>
               </li>
-              <li className="nav-item">
-                  <Link to="/blog/postArticle" className="nav-link">Post Article</Link>
-              </li>
-            
+              
               <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
