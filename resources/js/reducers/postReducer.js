@@ -1,12 +1,13 @@
 
-import { FETCH_POSTS, NEW_POST } from '../actions/types';
+import { FETCH_POSTS, NEW_POST, EDIT_POST, CLEAR_NEW_POST, DELETE_POST } from '../actions/types';
 
-const initialSate = {
+const initialState = {
     items: [],
-    item: {}
+    item: {},
+    selectedItem :{}
 };
 
-export default function(state =initialSate, action){
+export default function(state =initialState, action){
     switch(action.type){
         case FETCH_POSTS :
             return {
@@ -14,11 +15,29 @@ export default function(state =initialSate, action){
                 items: action.payload
             }
          case NEW_POST :
-             console.log('okok '+action.payload)
             return {
                 ...state,
                 item: action.payload
             };
+        case DELETE_POST :
+            console.log(action.payload)
+            return{
+                ...state,
+                items : state.items.filter(article => article.id !== action.payload)
+            }
+        case EDIT_POST :
+            console.log(action.payload)
+            return{
+                ...state,
+                items :  state.items.map(function(item) { return item.id == action.payload.id ? action.payload : item; })
+            }
+            case CLEAR_NEW_POST :
+                return {
+                    ...state,
+                    item: action.payload
+                };
+         
+           
         default:
             return state;
     }

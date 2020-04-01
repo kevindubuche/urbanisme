@@ -23,18 +23,24 @@ export default class  Navbar extends Component {
                   <Link to="/" className="nav-link">Accueil</Link>
               </li>
               <li className="nav-item">
-                  <Link to="/blog" className="nav-link">Blog</Link>
+                  <Link to="/articles" className="nav-link">Articles</Link>
+              </li>
+              <li className="nav-item">
+                  <Link to="/apropos" className="nav-link">A Propos</Link>
+              </li>
+              <li className="nav-item">
+                  <Link to="/contact" className="nav-link">Contact</Link>
               </li>
               
               <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+                Log in
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="/">Action</a>
-                <a className="dropdown-item" href="/">Another action</a>
+                <Link to="/" className="nav-link" href="/">Log in</Link>    
+                <Link to="/blog" className="nav-link ">Gestion des articles</Link>
                 <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="/">Something else here</a>
+                <Link to="/" className="nav-link" href="/">Log out</Link> 
               </div>
             </li>
             <li className="nav-item">

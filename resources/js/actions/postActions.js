@@ -1,4 +1,4 @@
-import { FETCH_POSTS, NEW_POST, API_POST } from './types';
+import { FETCH_POSTS, NEW_POST, DELETE_POST, CLEAR_NEW_POST, EDIT_POST, API_POST } from './types';
 import axios from 'axios';
 
 //cette fonction recupere touts les articles du database et update l'etat du store
@@ -14,8 +14,11 @@ export const fetchPosts = () => dispatch => {
 
         }
 //cette fonction ajoute un nouveau article au database et update l'etat du store
-export const createPost = postData => dispatch => { 
-    axios.post(API_POST, postData).then(response =>{
+export const createOrEditPost = postData => dispatch => { 
+    //on verifie s'il s'agit d'un SAVe ou d'un EDIT si l'ID existe
+    if(!postData.id){
+        console.log(postData)
+        axios.post(API_POST, postData).then(response =>{
         dispatch({
             type : NEW_POST,
             payload : response.data
@@ -24,4 +27,43 @@ export const createPost = postData => dispatch => {
         .catch(error => {
             console.log(error);
         })
+    }
+    else{
+        console.log('se yon edit')
+        axios.put(API_POST+'/'+postData.id, postData).then(response =>{
+            console.log(response.data)
+            dispatch({
+                type : EDIT_POST,
+                payload : response.data
+            })
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+    
+}
+
+//cette fonction delete un article du database et update l'etat du store
+export const onDelete = id => dispatch => { 
+    axios.delete(API_POST+'/'+id).then(response =>{
+        console.log(response.data)
+        dispatch({
+            type : DELETE_POST,
+            payload : id
+        })
+        })
+        .catch(error => {
+            console.log(error);
+        })
+}
+
+export const clearNewPost = () => dispatch => { 
+    
+        dispatch({
+            type : CLEAR_NEW_POST,
+            payload : {}
+        })
+    
+      
 }
