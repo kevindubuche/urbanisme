@@ -19,3 +19,8 @@ Route::get('/', function () {
 });
 //ROUTE POU KA RELOAD A CHAK FWA.... JUST REDIRIJE TOUT ROUTE YO VERS APP REACT LA
 Route::get('/{path?}', function($path = null){ return View::make('welcome'); })->where('path', '.*');
+
+// Route::get('/clear-cache', function() {
+//     $exitCode = Artisan::call('config:cache');
+//     return 'DONE'; //Return anything
+// });

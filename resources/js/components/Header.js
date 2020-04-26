@@ -10,7 +10,7 @@ export default class Header extends Component{
       <AppBar position="static">
           <Toolbar>
           <Typography variant="h5" color="inherit" style={{flex : 1}}>
-                Manage Blog
+               Administrator
            </Typography>
           <CreateDialog  />
           </Toolbar>

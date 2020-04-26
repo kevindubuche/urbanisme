@@ -49,7 +49,7 @@ export default function FullScreenDialog(props) {
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
         Lire article
       </Button>
-      <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
+      <Dialog  open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar className={classes.appBar}>
           <Toolbar>
             <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
@@ -70,6 +70,8 @@ export default function FullScreenDialog(props) {
           <Divider />
           <ListItem >
             <DialogContent >
+              <h1>{props.article.title}</h1><br />
+            <img src={"/articles_images/"+props.article.image} width={300} height={300} />
                 <Fragment>
                     <div className="content" dangerouslySetInnerHTML={{__html:props.article.body} }></div>   
                 </Fragment>   

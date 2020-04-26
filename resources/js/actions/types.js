@@ -13,6 +13,20 @@
     export const CLEAR_NEW_COMMENT = 'CLEAR_NEW_COMMENT';
     export const DELETE_COMMENT = 'DELETE_COMMENT';
 
+//.................................................
+
+// the actions name for the authentication
+    export const SIGNUP_SUCCESS = 'SIGNUP_SUCCESS';
+    export const SIGNUP_ERROR = 'SIGNUP_ERROR';
+    export const SHORT_PASSWORD = 'SHORT_PASSWORD';
+    export const UNKNOWN_ERROR = 'UNKNOWN_ERROR';
+    export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+    export const LOGIN_ERROR = 'LOGIN_ERROR';
+
+//.................................................
+
 //the urls
     export const API_POST = '/api/blog';
     export const API_COMMENT = '/api/comment';
+    export const API_REGISTER = '/api/user/register';
+    export const API_LOGIN = '/api/user/login';

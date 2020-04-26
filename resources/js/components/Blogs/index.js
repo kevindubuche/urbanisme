@@ -10,9 +10,9 @@ import IconButton from '@material-ui/core/IconButton';
 import Delete from '@material-ui/icons/Delete';
 import Edit from '@material-ui/icons/Edit';
 
-import ImageUpload from '../ImageUpload';
+// import ImageUpload from '../ImageUpload';
 import Header from '../Header';
-import Footer from '../Footer';
+
 
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
@@ -35,6 +35,7 @@ import { clearNewPost } from '../../actions/postActions';
 import AllComments from '../Articles/AllComments';
 
 import Form from './Form';
+
 function Alert(props) {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
   }
@@ -89,6 +90,7 @@ onSelectArticle = id =>{
         localArticle : this.props.posts.find(article => article.id === id),
         editMode : false
     })
+    // console.log('qqqqqqqqq: '+this.props.file_directory+"/"+this.state.localArticle.image)
 }
 
   handleCloseAlert = () => {
@@ -147,7 +149,7 @@ onSelectArticle = id =>{
                    overflowY:'auto'}
         }
          return(
-            <div className="container">
+            <div >
             <Header />
            
             <Grid container>
@@ -220,6 +222,10 @@ onSelectArticle = id =>{
                                 
                            
                          </Typography>
+                         {/* {this.props.postsfile_directory+"/"+this.state.localArticle.image} */}
+                         {this.state.localArticle.id ?
+                         <img src={"/articles_images/"+this.state.localArticle.image} width={200} height={200} />
+                         : '' }
                          {this.state.localArticle.id ?
                          <AllComments idArticle={this.state.localArticle.id} canDelete={true}/>
                          : '' }
@@ -231,8 +237,8 @@ onSelectArticle = id =>{
                 </Grid>
             </Grid>
           
-            <ImageUpload />
-            <Footer />
+            {/* <ImageUpload /> */}
+           
 
             {/* cette partie concerne l'alerte de success
              */}
@@ -277,11 +283,13 @@ Blogs.propTypes = {
     posts : PropTypes.array.isRequired,
     newPost : PropTypes.object,
     onDelete : PropTypes.func.isRequired,
-    clearNewPost : PropTypes.func.isRequired
+    clearNewPost : PropTypes.func.isRequired,
+
 }
 const mapStateToProps =(state) => ({
         posts : state.posts.items,
         newPost : state.posts.item,
+      
 });
 
 export default connect(mapStateToProps,{ fetchPosts, clearNewPost, onDelete })(Blogs)

@@ -43,7 +43,7 @@ class AllArticles extends Component {
     render(){
         return (
            this.state.isLoading ? <CircularProgress />:  
-            <div className="container">
+            <div>
                 <Grid item xm= {12} sm={12} md={12} >
                
                             <Paper >
@@ -53,6 +53,7 @@ class AllArticles extends Component {
                                   <h6 > Auteur : {article.author} </h6>
                                   <h6> Publie le : {article.created_at} </h6>
                                   <h6> Source : {article.source} </h6>
+                                  <img src={"/articles_images/"+article.image} width={200} height={200} />
                                     <Fragment>
                                         <div className="content" dangerouslySetInnerHTML={{__html:article.body} }></div>   
                                     </Fragment> 

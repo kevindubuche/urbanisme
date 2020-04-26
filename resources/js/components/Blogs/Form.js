@@ -25,9 +25,12 @@ const styles = theme =>({
                    body:'',
                    author : '',
                    source : '',
+                   image :'',
                    created_at: '',
-                   updated_at : ''
-               }
+                   updated_at : '',
+                //    token : localStorage.getItem('user')
+               },
+               imagePreviewUrl:''
            }
    }
    componentDidMount(){
@@ -37,9 +40,12 @@ const styles = theme =>({
             body:'',
             author : '',
             source : '',
+            image: '',
             created_at: '',
-            updated_at : ''
-     }
+            updated_at : '',
+            // token : localStorage.getItem('user')
+     },
+     imagePreviewUrl:''
     })
 
    }
@@ -79,17 +85,39 @@ const styles = theme =>({
 //     })
 // }
 
+//this converts a blob type image to base64 encoded string
+getBase64 = (file,callback) => {
+    const reader = new FileReader();
+    reader.addEventListener('load',()=>callback(reader.result));
+    reader.readAsDataURL(file);
+
+    //po preview image la
+    reader.onloadend = () => {
+    this.setState({
+        imagePreviewUrl: reader.result
+      });
+    }
+}
+fileTransform = (e) =>{
+    this.getBase64(e.target.files[0], (base64String)=>{
+        this.state.localArticle.image =base64String;
+        console.log(this.state.localArticle)
+    })
+}
+
     render(){
+        let {imagePreviewUrl} = this.state;
+        let $imagePreview = null;
+    
         return(
-            <form onSubmit={this.handleSubmit.bind(this)}>
-                
+            <form onSubmit={this.handleSubmit}>
             <TextField
                 label="Title"
                 onChange={this.handleChange('title')}
                 value={this.state.localArticle.title}
                 margin="normal"
-                required={true}
                 className={this.props.classes.FormControl}
+                required
                 /> 
                 {/* <br />
                  <TextField
@@ -107,8 +135,8 @@ const styles = theme =>({
                 onChange={this.handleChange('author')}
                 value={this.state.localArticle.author}
                 margin="normal"
-                required={true}
                 className={this.props.classes.FormControl}
+                required
                 /> 
                 <br />
                     <TextField
@@ -116,9 +144,17 @@ const styles = theme =>({
                 onChange={this.handleChange('source')}
                 value={this.state.localArticle.source}
                 margin="normal"
-                required={true}
                 className={this.props.classes.FormControl}
+                required
                 /> 
+                <br />
+                <h6>Image</h6>
+                <input type="file" id="image" onChange={this.fileTransform} />
+                <br /> 
+                {  imagePreviewUrl ?
+                    $imagePreview = (<img src={imagePreviewUrl} width='200px' height='200px'/>) 
+                    : $imagePreview = (<div className="previewText">Please select an Image for Preview</div>)
+                } 
                 <br />
                   
                 <CKEditor
@@ -154,16 +190,18 @@ const styles = theme =>({
                     } }
                     
                 />
+               
                 <br />
              
                 <Button
                     variant="contained" 
                     color="primary" 
                     type="submit"
-                    onClick={this.handleSubmit}>
+                    >
                    {this.props.article ? 'Edit' : 'Enregistrer'}
                     
                 </Button>
+                
                   
             </form>
         )

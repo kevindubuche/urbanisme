@@ -13,9 +13,18 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+Route::group([
+    'prefix'=>'user',
+    'namespace'=>'User',
+],
+function(){
+    Route::post('register', 'AuthController@register');
+    Route::post('login', 'AuthController@login');
+}
+);
 
 Route::resource('blog','Api\ArticleController');
 Route::resource('comment','Api\CommentController');

@@ -8,7 +8,7 @@
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
 
-        <title>URBANISME</title>
+        <title>URBATER</title>
 
         <!-- Fonts -->
         {{-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> --}}

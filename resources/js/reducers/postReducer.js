@@ -12,7 +12,7 @@ export default function(state =initialState, action){
         case FETCH_POSTS :
             return {
                 ...state,
-                items: action.payload
+                items: action.payload.data
             }
          case NEW_POST :
             return {
