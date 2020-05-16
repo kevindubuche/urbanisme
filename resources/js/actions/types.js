@@ -30,3 +30,13 @@
     export const API_COMMENT = '/api/comment';
     export const API_REGISTER = '/api/user/register';
     export const API_LOGIN = '/api/user/login';
+    export const API_ANNONCE = '/api/annonce';
+
+// the actions name for the annonces
+export const FETCH_ANNONCES = 'FETCH_ANNONCES';
+export const NEW_ANNONCE = 'NEW_ANNONCE';
+export const DELETE_ANNONCE = 'DELETE_ANNONCE';
+export const EDIT_ANNONCE = 'EDIT_ANNONCE';
+export const CLEAR_NEW_ANNONCE = 'CLEAR_NEW_ANNONCE';
+
+//.................................................

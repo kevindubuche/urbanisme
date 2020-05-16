@@ -11,7 +11,7 @@ import Delete from '@material-ui/icons/Delete';
 import Edit from '@material-ui/icons/Edit';
 
 // import ImageUpload from '../ImageUpload';
-import Header from '../Header';
+import NavAdm from '../NavAdm';
 
 
 import Snackbar from '@material-ui/core/Snackbar';
@@ -59,7 +59,8 @@ class  Blogs extends Component {
                author : '',
                source : '',
                created_at: '',
-               updated_at : ''
+               updated_at : '',
+               image:''
                
            }
        }
@@ -150,7 +151,7 @@ onSelectArticle = id =>{
         }
          return(
             <div >
-            <Header />
+            <NavAdm />
            
             <Grid container>
                 <Grid item xm= {12} sm={12} md={4} >  <Paper style={styles.Paper} >

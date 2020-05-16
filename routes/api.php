@@ -28,4 +28,5 @@ function(){
 
 Route::resource('blog','Api\ArticleController');
 Route::resource('comment','Api\CommentController');
+Route::resource('annonce', 'Api\AnnonceController');
 // Route::get('blog/{id}','Api\BlogController@show');

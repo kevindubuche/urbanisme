@@ -2,11 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import SearchIcon from '@material-ui/icons/Search';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
 import Navbar from './Navbar';
 import Search from './Search';
 import MovingText from './MovingText';
@@ -17,17 +12,11 @@ import SwitchLanguage from './SwitchLanguage';
 const useStyles = makeStyles((theme) => ({
   toolbar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
-  },
-  toolbarTitle: {
-    flex: 1,
-  },
-  toolbarSecondary: {
-    justifyContent: 'space-between',
-    overflowX: 'auto',
-  },
-  toolbarLink: {
-    padding: theme.spacing(1),
-    flexShrink: 0,
+    marginLeft:'30px',
+    display:'flex',
+    justifyContent:'space-between',
+    flexWrap:'wrap'
+ 
   },
 }));
 
@@ -36,29 +25,17 @@ export default function Header(props) {
   const { sections, title } = props;
 
   return (
-    <React.Fragment>
-      <Toolbar className={classes.toolbar}>
-      <img src={logo}  width="180" height="120" alt="logo"></img> 
-        <Button size="small">URBATER</Button>
-        <Typography
-          component="h2"
-          variant="h5"
-          color="inherit"
-          align="center"
-          noWrap
-          className={classes.toolbarTitle}
-        >
-          {title}
-        </Typography>
-        <MovingText />
-          <Search />
-        <SwitchLanguage />
-      
-      </Toolbar>
-      
-           <Navbar />
-          
-    </React.Fragment>
+              <React.Fragment> 
+                <MovingText />  <SwitchLanguage  />
+                  <Toolbar className={classes.toolbar}> 
+                  <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap', alignItems: 'center'}}>
+                    <img src={logo}  width="170" height="170" alt="logo"></img> 
+                    <h5>URBATER</h5>
+                  </div>
+                    <Search />
+                  </Toolbar>
+                    <Navbar />
+              </React.Fragment>
   );
 }
 

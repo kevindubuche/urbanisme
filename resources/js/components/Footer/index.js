@@ -4,6 +4,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import Chip from '@material-ui/core/Chip';
+import PermIdentityIcon from '@material-ui/icons/PermIdentity';
+import HomeIcon from '@material-ui/icons/Home';
+import PhoneIcon from '@material-ui/icons/Phone';
+import MailIcon from '@material-ui/icons/Mail';
+import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 
 import Partenaires from './Partenaires';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -11,6 +17,8 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Box from '@material-ui/core/Box';
 import inb from './inb.png';
+import logo from './logo.jpg';
+import {Link as OtherLink} from 'react-router-dom';
 
 function Copyright() {
   return (
@@ -30,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     // marginTop: theme.spacing(8),
     padding: theme.spacing(6, 0),
+   
   },
 }));
 
@@ -40,7 +49,7 @@ export default function Footer(props) {
   return (
     <footer className={classes.footer}>
         <Partenaires />
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" style={{display:'flex', flexWrap:'wrap', flexDirection:'column'}}>
     
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
         
@@ -49,14 +58,38 @@ export default function Footer(props) {
                 <Link color="inherit" href="https://www.google.com/"> <FacebookIcon /></Link> 
                 <Link color="inherit" href="https://www.google.com/">  <TwitterIcon/></Link> 
                 <Link color="inherit" href="https://www.google.com/">  <InstagramIcon/></Link> 
-        </div>
-        <Box display="flex" flexDirection="row-reverse" p={1} m={1} bgcolor="background.paper">
+                <br /><br />
+     
+       <OtherLink to='/contact' >
+         <Typography color='textSecondary'>
+           <HomeIcon />
+       Adresse : #34,Delmas 33, Haiti WE
+         </Typography>
+        </OtherLink>
        
-        <Box p={1} >
-        <img src={inb} width={"60px"} height={"60px"} style={{marginRight:50}} />
-        </Box>
-        </Box>
-        <Copyright />
+         <OtherLink to='/contact'  >
+         <Typography color='textSecondary'>
+       <MailIcon />
+       Email : hurbanisme@mail.com
+       </Typography>
+        </OtherLink> 
+       <OtherLink to='/contact'  >
+       <Typography color='textSecondary'>
+       <PhoneIcon />
+       Phone : +509 38403623
+       </Typography>
+        </OtherLink>
+    
+        </div>
+     
+        
+        <img src={logo} width={"60px"} height={"60px"}  style={{marginRight:50, alignSelf:'flex-end'}}/>
+        
+       
+        <div style={{justifyContent:'center', alignItems:'flex-end'}}>
+          <Copyright /> 
+        </div>
+        
       </Container>
     </footer>
   );

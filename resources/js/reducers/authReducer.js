@@ -26,7 +26,7 @@ export default function(state =initialState, action){
         case LOGIN_SUCCESS :
             return {
                 ...state,
-                authResponse: 'Cridentials ar ok'
+                authResponse: 'Redirection en cours...'
             }
         case LOGIN_ERROR :
             // console.log(action.payload);

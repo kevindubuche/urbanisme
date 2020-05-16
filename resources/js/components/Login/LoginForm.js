@@ -13,7 +13,6 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import { green, orange } from '@material-ui/core/colors';
 
 
 
@@ -33,15 +32,7 @@ function Copyright() {
     </Typography>
   );
 }
-const theme = createMuiTheme(
-  {
-  palette: {
-    secondary: {
-      main: orange[500],
-    },
-  },
-}
-);
+const theme = createMuiTheme();
 
 const styles = theme => ({
   root: {
@@ -102,10 +93,11 @@ handleSubmit = (e) =>{
 
 }
 UNSAFE_componentWillReceiveProps=(nextProps)=>{
-    if(nextProps.authResponse =='Cridentials ar ok'){
+    if(nextProps.authResponse =='Redirection en cours...'){
 
             // this.props.handleClose()
-          this.props.history.push('/blog'); 
+          // this.props.history.push('/blog'); 
+          this.props.history.push('/admin'); 
        
        
     }

@@ -12,8 +12,6 @@ import Divider from '@material-ui/core/Divider';
 
 import Annonces from './Annonces';
 import Activites from './Activites';
-import Carousel from './Carousel';
-import Card from './Card';
 
 import './accueil.css';
 import Box from '@material-ui/core/Box';
@@ -27,7 +25,7 @@ export default class Accueil extends Component {
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
             image: 'https://source.unsplash.com/random',
             imgText: 'main image description',
-            linkText: 'Continue reading…',
+            linkText: 'En savoir plus...',
           };
         return (
             <div >
@@ -39,7 +37,7 @@ export default class Accueil extends Component {
                                   <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> 
                                 <Box display="flex" justifyContent="center"  >
                                     <Box p={1} >
-                                        <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> Annonces </Typography>
+                                        <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> ANNONCES </Typography>
                                     </Box>
                                 </Box>
                                </Typography>
@@ -54,7 +52,7 @@ export default class Accueil extends Component {
                               <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> 
                                 <Box display="flex" justifyContent="center"  >
                                     <Box p={1} >
-                                        <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> Activites </Typography>
+                                        <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> ACTIVITES </Typography>
                                     </Box>
                                 </Box>
                                </Typography>
@@ -66,24 +64,7 @@ export default class Accueil extends Component {
                           </Grid>
                </Grid>
 
-               <Grid container spacing={3} style={{marginTop:'100px'}}>
-                      
-                      <Grid item xs={12} sm={4}>
-                          <Paper> 
-                     <Card />
-                          </Paper>
-                      </Grid>
-                      <Grid item xs={12} sm={4}>
-                      <Paper> 
-                    <Carousel/>
-                     </Paper>
-                      </Grid>
-                      <Grid item xs={12} sm={4}>
-                      <Paper> 
-                      <Card />
-                     </Paper>
-                      </Grid>
-           </Grid>
+       
               
             </div>
         );

@@ -7,13 +7,14 @@
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-
+ <link rel="icon" href="{!! asset('images/logo.png') !!}" />
         <title>URBATER</title>
-
+       
         <!-- Fonts -->
         {{-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> --}}
         <link href="/css/app.css" rel="stylesheet" type="text/css">
-      
+        
+
     </head>
     <body>
       <div id="root"></div>

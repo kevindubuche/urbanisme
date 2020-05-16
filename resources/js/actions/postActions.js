@@ -41,6 +41,7 @@ export const createOrEditPost = postData => dispatch => {
     else{
         console.log('se yon edit')
         console.log('token :' +postData.token)
+        console.log('men data a: '+postData.image)
         axios.put(API_POST+'/'+postData.id, postData).then(response =>{
             console.log(response.data)
             dispatch({

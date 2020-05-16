@@ -153,8 +153,11 @@ class ArticleController extends Controller
         $user = auth('users')->authenticate($user_token); 
 
        $getFile = $article->image;
+       $profile_picture = $request->image;
+       if($request->image != $article->image)//si on a change l'image
+       {
         $getFile=="default-avatar.png"? :File::delete(public_path().'/articles_images/'.$getFile);
-         $profile_picture = $request->image;
+         
         $file_name = "";
         if($profile_picture==null){
             $file_name= "default-avatar.png";
@@ -181,17 +184,21 @@ class ArticleController extends Controller
                 ],500);
             }
         }
+        }
         $article->fill($request->except(['token','image']));
-        $article->image=$file_name;
+        $article->image= ($request->image == $article->image) ? $request->image  : $file_name ;
         $article->save();
 
         if($profile_picture ==null){
 
         }
         else {
-         
+            if($request->image != $article->image)//si on a change l'image
+            {
             file_put_contents(public_path().'/articles_images/'.$file_name,$fileBin);
         }
+    }
+
 
         
         return response()->json([

@@ -3,15 +3,14 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router,  Route, Switch} from 'react-router-dom';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-import Mission from './components/Mission';
-import Contact from './components/Contact';
-import Articles from './components/Articles';
-import Recherche from './components/recherche';
-import Blogs from './components/Blogs';
-import HomeDesign from './components/Home//HomeDesign';
-import LoginForm from './components/Login/LoginForm';
-import {PrivateRoute} from './components/PrivateRoute';
-import Header from './components/Header';
+// import Contact from './components/Contact';
+// import Articles from './components/Articles';
+// import Recherche from './components/recherche';
+// import Blogs from './components/Blogs';
+// import HomeDesign from './components/Home//HomeDesign';
+// import LoginForm from './components/Login/LoginForm';
+// import {PrivateRoute} from './components/PrivateRoute';
+// import Header from './components/Header';
 
 import Blog from './components/New/Blog';
 

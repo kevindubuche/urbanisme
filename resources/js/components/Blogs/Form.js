@@ -148,12 +148,17 @@ fileTransform = (e) =>{
                 required
                 /> 
                 <br />
-                <h6>Image</h6>
+                <h6>Imageee {this.state.localArticle.source}</h6>
                 <input type="file" id="image" onChange={this.fileTransform} />
                 <br /> 
+                {/* {this.state.localArticle.id ?
+                         <img src={"/articles_images/"+this.state.localArticle.image} width={200} height={200} />
+                         : '' } */}
+
                 {  imagePreviewUrl ?
                     $imagePreview = (<img src={imagePreviewUrl} width='200px' height='200px'/>) 
-                    : $imagePreview = (<div className="previewText">Please select an Image for Preview</div>)
+                    :  <img src={"/articles_images/"+this.state.localArticle.image} width={200} height={200} />
+                         
                 } 
                 <br />
                   

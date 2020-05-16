@@ -6,7 +6,7 @@ import Link from '@material-ui/core/Link';
 export default class MovingText extends Component {
     render(){
         return (
-            <div >
+            <div style={{marginRight:'50px', marginLeft:'50px'}} >
                            
                            <marquee behavior="scroll" direction="left">
                          <Link color="inherit" href="/">Les inscriptions sont ouvertes.. </Link> 
