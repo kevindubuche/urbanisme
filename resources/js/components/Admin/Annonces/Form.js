@@ -10,6 +10,8 @@ import { createOrEditAnnonce } from '../../../actions/annonceActions';
 
 import { withStyles } from '@material-ui/styles';
 
+import ReactCrop from 'react-image-crop';
+import 'react-image-crop/dist/ReactCrop.css';
 
 const styles = theme =>({
     FormControl :{
@@ -30,7 +32,14 @@ const styles = theme =>({
                    updated_at : '',
                 //    token : localStorage.getItem('user')
                },
-               imagePreviewUrl:''
+               imagePreviewUrl:'',
+               crop: {
+                unit: 'px', // default, can be 'px' or '%'
+                x: 130,
+                y: 50,
+                width: 200,
+                height: 200
+              }
            }
    }
    componentDidMount(){
@@ -57,13 +66,10 @@ const styles = theme =>({
 
    }
 
-   
    handleSubmit= e =>{
     // TODO : validate
-
     e.preventDefault();
     this.props.createOrEditAnnonce(this.state.localArticle);
-    
     //si c'est SAVE on ferme le modal & si EDIT on affiche succes
     !this.state.localArticle.id ? this.props.closeModal() :this.props.openAlert();
    
@@ -78,15 +84,6 @@ const styles = theme =>({
         }
     })
 }
-// handleCKChange = data => {
-//     this.setState({
-//         ...this.state.localArticle,
-//           body : data.getData()
-        
-//     })
-// }
-
-//this converts a blob type image to base64 encoded string
 getBase64 = (file,callback) => {
     const reader = new FileReader();
     reader.addEventListener('load',()=>callback(reader.result));
@@ -105,7 +102,9 @@ fileTransform = (e) =>{
         console.log(this.state.localArticle)
     })
 }
-
+setCrop = crop => {
+    this.setState({ crop });
+  };
     render(){
         let {imagePreviewUrl} = this.state;
         let $imagePreview = null;
@@ -120,16 +119,6 @@ fileTransform = (e) =>{
                 className={this.props.classes.FormControl}
                 required
                 /> 
-                {/* <br />
-                 <TextField
-                label="Article"
-                multiline
-                rows="4"
-                onChange={this.handleChange('body')}
-                value={this.state.localArticle.body}
-                margin="normal"
-                className={this.props.classes.FormControl}
-                /> */}
                 <br />
                     <TextField
                 label="Auteur"
@@ -160,13 +149,15 @@ fileTransform = (e) =>{
                 className={this.props.classes.FormControl}
                 required
                 /> 
-            <h6>Image</h6>
+              <h6>Image</h6>
                 <input type="file" id="image" onChange={this.fileTransform} />
                 <br /> 
                 {  imagePreviewUrl ?
                     $imagePreview = (<img src={imagePreviewUrl} width='200px' height='200px'/>) 
                     :  <img src={"/annonces_images/"+this.state.localArticle.image} width={200} height={200} /> 
                 } 
+
+            <ReactCrop src={imagePreviewUrl} crop={this.state.crop} onChange={newCrop => setCrop(newCrop)} />
                 <br />
                   
                 <CKEditor
@@ -219,7 +210,6 @@ fileTransform = (e) =>{
         )
     }
 }
-
 Form.propTypes = {
     createOrEditAnnonce : PropTypes.func.isRequired
 }

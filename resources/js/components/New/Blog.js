@@ -85,7 +85,7 @@ render(){
                          <Route path="/" exact component={ Accueil } />
                          {/* ANNONCES */}
                          <Route path="/annonces" exact component={Annonces} />
-                         <Route path="/annonce" exact component={Annonce} />
+                         <Route path="/annonce/:id" exact component={Annonce} />
                          {/* MISSION */}
                          <Route path="/mission/presentation" exact component={Presentation} />
                          <Route path="/mission/objectifs" exact component={Objectifs} />
@@ -124,10 +124,10 @@ render(){
                         
                          {/* <Route path="/espaceEtudiant" exact component={EspaceEtudiant} /> */}
                          {/* POUM METE PRIVATE ROUTE APRES */}
-                         <Route path="/admin" exact component={Admin} />
+                         <PrivateRoute path="/admin" exact component={Admin} />
 
                         <Route path="/login" exact component={ LoginForm } />
-                        <PrivateRoute path="/blog" exact component={ Blogs } />
+                        {/* <PrivateRoute path="/blog" exact component={ Blogs } /> */}
                        
                         <Route path="/contact" exact component={ Contact } />
                         <Route path="/articles" exact component={ Articles } />

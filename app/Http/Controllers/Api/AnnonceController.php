@@ -112,8 +112,12 @@ class AnnonceController extends Controller
      */
     public function show($id)
     {
-        $annonce = Annonce::where('id',$id)->get();
-        return response()->json($annonce);
+        $annonce = Annonce::where('id',$id)->get()->first();
+        
+        return response()->json([
+            "success"=>true,
+            "message"=>$annonce
+        ], 200);
     }
 
     /**

@@ -1,4 +1,4 @@
-import { FETCH_ANNONCES, NEW_ANNONCE, DELETE_ANNONCE, CLEAR_NEW_ANNONCE, EDIT_ANNONCE, API_ANNONCE } from './types';
+import { FETCH_ANNONCES, FETCH_ANNONCE, NEW_ANNONCE, DELETE_ANNONCE, CLEAR_NEW_ANNONCE, EDIT_ANNONCE, API_ANNONCE } from './types';
 import axios from 'axios';
 
 //cette fonction recupere touts les articles du database et update l'etat du store
@@ -13,6 +13,21 @@ export const fetchAnnonces = () => dispatch => {
         });     
 
         }
+
+ //cette fonction recupere une annonce du database et update l'etat du store
+export const fetchAnnonce = (id) => dispatch => {
+    console.log(API_ANNONCE+"/"+id); 
+    axios.get(API_ANNONCE+"/"+id)
+     .then(post => {dispatch({
+         type : FETCH_ANNONCE,
+         payload : post.data.message
+     })
+    })
+     .catch(error => {
+        console.log(error);
+    });     
+
+    }
 
 //cette fonction ajoute un nouveau article au database et update l'etat du store
 export const createOrEditAnnonce = postData => dispatch => { 

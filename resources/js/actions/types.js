@@ -34,6 +34,7 @@
 
 // the actions name for the annonces
 export const FETCH_ANNONCES = 'FETCH_ANNONCES';
+export const FETCH_ANNONCE = 'FETCH_ANNONCE';
 export const NEW_ANNONCE = 'NEW_ANNONCE';
 export const DELETE_ANNONCE = 'DELETE_ANNONCE';
 export const EDIT_ANNONCE = 'EDIT_ANNONCE';

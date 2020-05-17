@@ -1,5 +1,5 @@
 
-import { FETCH_ANNONCES, NEW_ANNONCE, EDIT_ANNONCE, CLEAR_NEW_ANNONCE, DELETE_ANNONCE } from '../actions/types';
+import { FETCH_ANNONCES, FETCH_ANNONCE,  NEW_ANNONCE, EDIT_ANNONCE, CLEAR_NEW_ANNONCE, DELETE_ANNONCE } from '../actions/types';
 
 const initialState = {
     items: [],
@@ -13,6 +13,11 @@ export default function(state =initialState, action){
             return {
                 ...state,
                 items: action.payload.data
+            }
+        case FETCH_ANNONCE :
+            return {
+                ...state,
+                item: action.payload
             }
          case NEW_ANNONCE :
             return {

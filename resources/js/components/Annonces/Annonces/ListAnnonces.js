@@ -121,7 +121,7 @@ export default function ListAnnonces(props) {
                       {annonce.author}
                   </Typography>
                   
-                 <Link to="/annonce">
+                 <Link to={"/annonce/"+annonce.id}>
                  <Typography variant="subtitle2" gutterBottom >
                  {annonce.title} 
                    </Typography>
