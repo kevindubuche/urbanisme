@@ -14,8 +14,6 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
-
-
 import { connect } from 'react-redux';
 import { login } from '../../actions/authActions';
 

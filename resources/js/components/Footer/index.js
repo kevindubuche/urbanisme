@@ -4,20 +4,15 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
-import Chip from '@material-ui/core/Chip';
-import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import HomeIcon from '@material-ui/icons/Home';
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
-import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 
 import Partenaires from './Partenaires';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import Box from '@material-ui/core/Box';
-import inb from './inb.png';
-import logo from './logo.jpg';
+import logo from '../../images/logo.png';
 import {Link as OtherLink} from 'react-router-dom';
 
 function Copyright() {
@@ -45,7 +40,6 @@ const useStyles = makeStyles((theme) => ({
 export default function Footer(props) {
   const classes = useStyles();
   const { description, title } = props;
-
   return (
     <footer className={classes.footer}>
         <Partenaires />

@@ -9,9 +9,8 @@ import {connect} from 'react-redux';
 import { createOrEditAnnonce } from '../../../actions/annonceActions';
 
 import { withStyles } from '@material-ui/styles';
+import CropImage from './CropImage';
 
-import ReactCrop from 'react-image-crop';
-import 'react-image-crop/dist/ReactCrop.css';
 
 const styles = theme =>({
     FormControl :{
@@ -33,13 +32,11 @@ const styles = theme =>({
                 //    token : localStorage.getItem('user')
                },
                imagePreviewUrl:'',
-               crop: {
-                unit: 'px', // default, can be 'px' or '%'
-                x: 130,
-                y: 50,
-                width: 200,
-                height: 200
-              }
+               ///////////
+               userProfilePic:'',
+              editor:null,
+              scaleValue:1.5,
+            
            }
    }
    componentDidMount(){
@@ -59,7 +56,8 @@ const styles = theme =>({
     })
 
    }
-   UNSAFE_componentWillReceiveProps({article}){
+   UNSAFE_componentWillReceiveProps({article}){//nou pa use redux la donc nap veye changement de article selectionner
+       console.log('ou resevwa props')
        this.setState({
            localArticle : article
        })
@@ -69,6 +67,7 @@ const styles = theme =>({
    handleSubmit= e =>{
     // TODO : validate
     e.preventDefault();
+    this.onCrop();
     this.props.createOrEditAnnonce(this.state.localArticle);
     //si c'est SAVE on ferme le modal & si EDIT on affiche succes
     !this.state.localArticle.id ? this.props.closeModal() :this.props.openAlert();
@@ -102,9 +101,45 @@ fileTransform = (e) =>{
         console.log(this.state.localArticle)
     })
 }
-setCrop = crop => {
-    this.setState({ crop });
-  };
+setEditorRef = editor => this.setState({editor});
+
+profileImageChange = (fileChangeEvent) =>{
+    const file = fileChangeEvent.target.files[0];
+    const {type} = file;
+  
+      if(type.endsWith('jpg') || type.endsWith('jpeg') || type.endsWith('png')){
+        this.setState({selectedImage : file})
+        //////////
+        // this.fileTransform(fileChangeEvent);
+        //  this.onCrop()
+        this.setState({
+            imagePreviewUrl: file
+          });
+        this.onCrop();
+    }
+
+    
+}
+
+onCrop =(e) =>{
+    const {editor} = this.state;
+    if(editor != null){
+        console.log('okkkkkkk')
+        const url = editor.getImageScaledToCanvas().toDataURL();
+        this.setState({userProfilePic : url});
+        console.log('men li : '+url);
+        //nou fin crop li now nap transform li en base64
+        // this.state.localArticle.image =base64String;
+        this.state.localArticle.image =url;
+      
+    }
+}
+
+onScaleChange = (scaleValueEvent) =>{
+    const scaleValue = parseFloat(scaleValueEvent.target.value);
+    this.setState({ scaleValue});
+    console.log('wap chanje size')
+}
     render(){
         let {imagePreviewUrl} = this.state;
         let $imagePreview = null;
@@ -150,16 +185,55 @@ setCrop = crop => {
                 required
                 /> 
               <h6>Image</h6>
-                <input type="file" id="image" onChange={this.fileTransform} />
+                {/* <input type="file" id="image" onChange={this.fileTransform} /> */}
+                <input
+                    type="file"
+                    accept="image/png, image/jpeg, image/jpg"
+                    onChange={this.profileImageChange} 
+                    // onClick={this.profileImageChange} 
+                    />
+
                 <br /> 
-                {  imagePreviewUrl ?
-                    $imagePreview = (<img src={imagePreviewUrl} width='200px' height='200px'/>) 
-                    :  <img src={"/annonces_images/"+this.state.localArticle.image} width={200} height={200} /> 
+                {  imagePreviewUrl ?//nap verifier si se new or edit
+                   
+                    //  (<img src={imagePreviewUrl} width='200px' height='200px'/>)
+                    <CropImage
+                     imageSrc={imagePreviewUrl}
+                     setEditorRef={this.setEditorRef}
+                      onCrop={this.onCrop}
+                     scaleValue={this.state.scaleValue}
+                     onScaleChange={this.onScaleChange}
+                    //  onImageChange={console.log('anmweeeeey')}
+                    //  onChange={console.log('onchange')}
+                     /> 
+                    :  this.props.article ?
+                    //  <img src={"/annonces_images/"+this.state.localArticle.image} width={200} height={200} /> 
+                    <CropImage
+                    imageSrc={"/annonces_images/"+this.state.localArticle.image}
+                    setEditorRef={this.setEditorRef}
+                     onCrop={this.onCrop}
+                    scaleValue={this.state.scaleValue}
+                    onScaleChange={this.onScaleChange}
+                    // onImageChange={console.log('anmweeeeey')}
+                    // onChange={console.log('onchange')}
+                    />
+                        : <div></div>
                 } 
 
-            <ReactCrop src={imagePreviewUrl} crop={this.state.crop} onChange={newCrop => setCrop(newCrop)} />
+           {/* <input
+            type="file"
+             accept="image/png, image/jpeg, image/jpg"
+              onChange={this.profileImageChange} /> */}
+                <br /><br />
+                {/* <CropImage
+                imageSrc={this.state.selectedImage}
+                setEditorRef={this.setEditorRef}
+                 onCrop={this.onCrop}
+                scaleValue={this.state.scaleValue}
+                onScaleChange={this.onScaleChange}
+                /> */}
                 <br />
-                  
+
                 <CKEditor
                     editor={ ClassicEditor }
                     data={this.state.localArticle.body}

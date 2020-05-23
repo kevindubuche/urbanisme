@@ -6,7 +6,7 @@ import ImageWelcome from './ImageWelcome';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
-
+import {Link} from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
@@ -37,7 +37,9 @@ export default class Accueil extends Component {
                                   <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> 
                                 <Box display="flex" justifyContent="center"  >
                                     <Box p={1} >
-                                        <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> ANNONCES </Typography>
+                                      <Link style={{color:"black"}} to="annonces">
+                                           <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> ANNONCES </Typography>
+                                     </Link> 
                                     </Box>
                                 </Box>
                                </Typography>

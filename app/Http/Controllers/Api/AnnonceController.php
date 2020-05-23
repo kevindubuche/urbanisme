@@ -9,6 +9,7 @@ use File;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+use Exception;
 class AnnonceController extends Controller
 {
     /**
@@ -18,7 +19,7 @@ class AnnonceController extends Controller
      */
     public function index()
     {
-        $annonce = Annonce::all();
+        $annonce = Annonce::orderBy('created_at', 'DESC')->get();
         return response()->json([
             "success"=>true,
             "data"=>$annonce
@@ -78,12 +79,25 @@ class AnnonceController extends Controller
             else{
                 return response()->json([
                     "success"=>false,
-                    "messsage"=>"Only jpg, png, jpeg files are accepted for setting the image"
+                    "message"=>"Only jpg, png, jpeg files are accepted for setting the image"
                 ],500);
             }
-
+        }
             $user_token = $request->token;
-            $user = auth('users')->authenticate($user_token);
+     
+                $user = auth('users')->authenticate($user_token);
+       
+                 if(!$user){
+                      return response()->json([
+                    "success"=>false,
+                    "message"=>"Vous n'avez pas l'autorisation. Votrre session est peut etre expiree. Connectez-vous SVP."
+                ],401);
+                 }
+               
+            
+            
+
+           
 
             $annonce = new Annonce();
             $annonce->fill($request->except(["token","image"]));
@@ -101,7 +115,7 @@ class AnnonceController extends Controller
                 "message"=>$annonce
             ], 200);
 
-        }
+        
     }
 
     /**

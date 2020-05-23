@@ -1,13 +1,6 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import clsx from 'clsx';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelActions from '@material-ui/core/ExpansionPanelActions';
 import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Chip from '@material-ui/core/Chip';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 
@@ -16,40 +9,9 @@ import ListProfs from './ListProfs';
 
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '100%',
-  },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-  },
-  secondaryHeading: {
-    fontSize: theme.typography.pxToRem(15),
-    color: theme.palette.text.secondary,
-  },
-  icon: {
-    verticalAlign: 'bottom',
-    height: 20,
-    width: 20,
-  },
-  details: {
-    alignItems: 'center',
-  },
-  column: {
-    flexBasis: '33.33%',
-  },
-  helper: {
-    borderLeft: `2px solid ${theme.palette.divider}`,
-    padding: theme.spacing(1, 2),
-  },
-  link: {
-    color: theme.palette.primary.main,
-    textDecoration: 'none',
-    '&:hover': {
-      textDecoration: 'underline',
-    },
-  },
-}));
+
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import useStyles from '../../Style/GeneralJSX';
 
 export default function Fondation() {
   
@@ -62,7 +24,7 @@ export default function Fondation() {
         padding :'3%',
     }
 }
-
+const image = <AccountCircleIcon style={{height:'200px',width:'200px' , padding:'15px', color:"gray"}}/>
   return (
     <div className={classes.root} id="fondation">
       <Divider />
@@ -93,7 +55,8 @@ export default function Fondation() {
          <Divider /><Divider /><Divider />
           <Grid container spacing={1}>
             <Grid item xs={12} sm={3}>
-                <img style={{height:'200px',width:'200px' , padding:'15px'}} src={require('../images/prof.jpg')} /><br />
+              
+               {image}
            </Grid>
             <Grid item xs={12} sm={3}>
             <Paper>
@@ -102,7 +65,8 @@ export default function Fondation() {
             </Grid>
 
             <Grid item xs={12} sm={3}>
-                <img style={{height:'200px',width:'200px' , padding:'15px'}} src={require('../images/prof.jpg')} /><br />
+                {/* <img style={{height:'200px',width:'200px' , padding:'15px'}} src={require('../images/prof.jpg')} /><br /> */}
+                {image}
            </Grid>
             <Grid item xs={12} sm={3}>
             <Paper>
@@ -113,7 +77,7 @@ export default function Fondation() {
 
          <Grid container spacing={1}>
             <Grid item xs={12} sm={3}>
-                <img style={{height:'200px',width:'200px' , padding:'15px'}} src={require('../images/prof.jpg')} /><br />
+            {image}
            </Grid>
             <Grid item xs={12} sm={3}>
             <Paper>
@@ -122,7 +86,7 @@ export default function Fondation() {
             </Grid>
             
             <Grid item xs={12} sm={3}>
-                <img style={{height:'200px',width:'200px' , padding:'15px'}} src={require('../images/prof.jpg')} /><br />
+            {image}
            </Grid>
             <Grid item xs={12} sm={3}>
             <Paper>

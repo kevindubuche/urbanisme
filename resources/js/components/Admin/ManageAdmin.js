@@ -14,7 +14,7 @@ import Divider from '@material-ui/core/Divider';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
-import RegisterForm from './RegisterForm';
+// import RegisterForm from './Register/RegisterForm';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
@@ -83,7 +83,7 @@ export default function ManageKonbit() {
         </ExpansionPanelDetails>
         <Divider />
         
-            <RegisterForm />
+            {/* <RegisterForm /> */}
          
       </ExpansionPanel>
     </div>

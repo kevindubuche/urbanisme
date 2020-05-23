@@ -103,9 +103,7 @@ export default function ListAnnonces(props) {
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
   const rows = [
-    createData(  
-  
-  ),
+   
     ].sort((a, b) => (a.calories < b.calories ? -1 : 1));
     props.annonces.map(( annonce, index) => rows.push(
       createData(

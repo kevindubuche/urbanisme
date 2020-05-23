@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Navbar from './Navbar';
 import Search from './Search';
 import MovingText from './MovingText';
-import logo from './logo.png';
+import logo from '../../images/logo.png';
 import SwitchLanguage from './SwitchLanguage';
 
 

@@ -1,56 +1,80 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
+import React, {Component} from 'react';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import NativeSelect from '@material-ui/core/NativeSelect';
+import { withStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types'; 
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
+import {connect} from 'react-redux';
+import { changeLanguage } from '../../actions/langueActions';
+
+const theme = createMuiTheme();
+const styles = theme => ({
   formControl: {
     margin: theme.spacing(1),
     minWidth: 50,
     width:50,
     height:20,
-    // marginTop:-10,
     float:'right'
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
   },
-}));
+});
 
-export default function NativeSelects() {
-  const classes = useStyles();
-  const [state, setState] = React.useState({
-    age: '',
-    name: 'hai',
-  });
+class SwichLanguage extends Component {
+  constructor(props){
+    super(props);
+    this.state= {
+               langue : '1',//1 FRANCAIS active et 2 CREOLE active
+       }
+}
+handleChange  = (e) =>{
+  e.preventDefault();
+  this.setState({
+    [e.target.id] : e.target.value
+  })
+  this.props.changeLanguage(e.target.value);
+  console.log('langue  :'+e.target.value);
+}
+UNSAFE_componentWillReceiveProps(nextProps){
+  if(nextProps.langue){
+ console.log('langue changed successfully !'); 
+}
+}
 
-  const handleChange = (event) => {
-    const name = event.target.name;
-    setState({
-      ...state,
-      [name]: event.target.value,
-    });
-  };
-
+render(){
+  const {classes} = this.props;
   return (
-    <div>
+<ThemeProvider theme={theme}>
     
       <FormControl className={classes.formControl}>
         <NativeSelect
-          defaultValue={10}
+          value={this.state.langue}
           inputProps={{
-            name: 'name',
-            id: 'uncontrolled-native',
+            name: 'langue',
+            id: 'langue',
           }}
+          onChange={this.handleChange}
         >
-          <option value={10}>FR</option>
-          <option value={20}>CR</option>
+          <option value={1}>FR</option>
+          <option value={2}>CR</option>
         </NativeSelect>
       </FormControl>
     
-    </div>
+    </ThemeProvider>
   );
 }
+}
+SwichLanguage.propTypes = {
+  changeLanguage : PropTypes.func.isRequired,
+  langue: PropTypes.string,
+}
+const mapStateToProps =(state) => ({
+
+  langue : state.langue.item,
+
+});
+
+export default connect(mapStateToProps, { changeLanguage })(withStyles (styles) (SwichLanguage) )

@@ -20,9 +20,17 @@ class UneAnnonce extends Component {
         this.props.fetchAnnonce(this.props.match.params.id);
         // console.log(this.props.match.params.id);
     }
-    componentDidMount(){
-        console.log(this.props);
+
+    //sim nan page UneAnnonce la deja e m klike sou annonces kap deroule anle a, url la chanje but pa gen render
+    //so nou veye chanjman nan url la pou refetch data yo
+    UNSAFE_componentWillReceiveProps(nextProps){
+        if(nextProps.match.params.id !=this.props.match.params.id ){
+            this.props.fetchAnnonce(nextProps.match.params.id);
+        }
+           
+      
     }
+   
     render(){
         return (
             <div>

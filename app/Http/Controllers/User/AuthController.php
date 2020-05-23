@@ -77,4 +77,14 @@ class AuthController extends Controller
             'token'=>$jwt_token,
         ]);
     }
+
+    public function logout(){
+        Auth::guard('users')->logout();
+    
+    return response()->json([
+        'success'=>true,
+        'message'=>'logout',
+    ],200);
+
+    }
 }

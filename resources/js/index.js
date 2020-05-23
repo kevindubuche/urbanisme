@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import Routes from './Routes';
 import { Provider } from 'react-redux';
 
 import store from './store';
-import Blog from './components/New/Blog';
+import Main from './components/Main';//se la Route yo ye
 
- ReactDOM.render(<Provider store={store}> <Blog /> </Provider>, document.getElementById('root'));
+ ReactDOM.render(<Provider store={store}> <Main /> </Provider>, document.getElementById('root'));
 

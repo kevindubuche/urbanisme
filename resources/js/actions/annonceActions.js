@@ -16,7 +16,8 @@ export const fetchAnnonces = () => dispatch => {
 
  //cette fonction recupere une annonce du database et update l'etat du store
 export const fetchAnnonce = (id) => dispatch => {
-    console.log(API_ANNONCE+"/"+id); 
+    console.log('fetcheAnnonce is called');
+    // console.log(API_ANNONCE+"/"+id); 
     axios.get(API_ANNONCE+"/"+id)
      .then(post => {dispatch({
          type : FETCH_ANNONCE,
@@ -43,7 +44,15 @@ export const createOrEditAnnonce = postData => dispatch => {
         })
         })
         .catch(error => {
-            console.log(error);
+            if(error.response){
+                console.log(error.response.data);
+                console.log(error.response.status);
+                console.log(error.response.header);
+            }
+            if(error.response.status==401){
+                console.log('ou pa gen authorisasion mon frere');
+            }
+            
         })
     }
     else{

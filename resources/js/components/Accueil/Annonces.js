@@ -26,7 +26,7 @@ import { fetchAnnonces } from '../../actions/annonceActions';
             <div >
                   <Grid container spacing={0}>
                   <Fragment >
-                  {this.props.annonces.map(( annonce, index) => 
+                  {this.props.annonces.slice(0, 5).map(( annonce, index) => 
                    <Fragment key={index} >
                          <Grid item xs={12} sm={3}>
                                    <img src={"/annonces_images/"+annonce.image} width={"80%"} height={"80%"}  />
@@ -37,7 +37,7 @@ import { fetchAnnonces } from '../../actions/annonceActions';
                                                 {annonce.created_at}
                                         </Typography>
                                         
-                                        <Link to="/annonce"> 
+                                        <Link to={"/annonce/"+annonce.id}> 
                                         <Typography variant="subtitle2" gutterBottom>
                                         {annonce.title}
                                          </Typography>
@@ -55,7 +55,7 @@ import { fetchAnnonces } from '../../actions/annonceActions';
                          
 
                                 {/* A DELETE */}
-                           
+{/*                            
                                <br /> <br /> <br /> <br />
                                <Grid item xs={12} sm={3}>
                                    <img src={an} width={"80%"} height={"80%"}  />
@@ -78,7 +78,7 @@ import { fetchAnnonces } from '../../actions/annonceActions';
                                     </Paper>
                                 </Grid>
 
-                               <br /> <br /> <br /> <br />
+                               <br /> <br /> <br /> <br /> */}
                                {/* FIN A DELETE */}
                                <Link to='/annonces'>Voir plus</Link>
                             </Fragment>   

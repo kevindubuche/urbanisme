@@ -38,6 +38,12 @@ export const FETCH_ANNONCE = 'FETCH_ANNONCE';
 export const NEW_ANNONCE = 'NEW_ANNONCE';
 export const DELETE_ANNONCE = 'DELETE_ANNONCE';
 export const EDIT_ANNONCE = 'EDIT_ANNONCE';
-export const CLEAR_NEW_ANNONCE = 'CLEAR_NEW_ANNONCE';
+export const CLEAR_NEW_ANNONCE = 'CLEAR_NEW_ANNONCE';LANGUE_FRANCAISE
+
+//.................................................
+
+// the actions name for the annonces
+export const LANGUE_FRANCAISE = 'LANGUE_FRANCAISE';
+export const LANGUE_CREOLE = 'LANGUE_CREOLE';
 
 //.................................................

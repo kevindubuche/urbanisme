@@ -89,3 +89,7 @@ let token = localStorage.getItem('user');
         });
 }
 
+export const logout = ()=>{
+    localStorage.removeItem('user');
+    history.push("/login"); 
+}

@@ -1,18 +1,32 @@
-import React, { Component} from 'react';
+import React, { Component, Fragment} from 'react';
 import ReactDOM from 'react-dom';
 
-import Link from '@material-ui/core/Link';
+import {Link, withRouter} from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { fetchAnnonces } from '../../actions/annonceActions';
 
-export default class MovingText extends Component {
+ class MovingText extends Component {
+    constructor(props){
+        super(props);
+    }
+
+    UNSAFE_componentWillMount(){
+        this.props.fetchAnnonces();
+     }
     render(){
         return (
             <div style={{marginRight:'50px', marginLeft:'50px'}} >
                            
                            <marquee behavior="scroll" direction="left">
-                         <Link color="inherit" href="/">Les inscriptions sont ouvertes.. </Link> 
-                         <Link color="inherit" href="/blog">|  Mesures concernant le COVID-19..</Link> 
-                         <Link color="inherit" href="/">| Vaccin contre le Covid 19.. </Link> 
-                         <Link color="inherit" href="/blog">|  FDS inscription 2021</Link> 
+                               {this.props.annonces.slice(0,5).map((annonce, index)=>
+                               <Fragment key={index}>
+                                     <Link
+                                      style={{color:"gray"}}
+                                       to={"/annonce/"+annonce.id}>{annonce.title} | </Link> 
+                               </Fragment>
+                                   
+                               )}
                        </marquee>
             </div>
         );
@@ -20,5 +34,15 @@ export default class MovingText extends Component {
     
 }
 
-
+MovingText.propTypes = {
+    fetchAnnonces : PropTypes.func.isRequired,
+    annonces : PropTypes.array.isRequired,
+    newAnnonce : PropTypes.object, 
+}
+const mapStateToProps =(state) => ({
+        annonces : state.annonces.items,
+        newAnnonce : state.annonces.item,
+      
+});
+export default connect(mapStateToProps,{ fetchAnnonces })( withRouter(MovingText))
 

@@ -23,9 +23,9 @@ Route::group([
 function(){
     Route::post('register', 'AuthController@register');
     Route::post('login', 'AuthController@login');
+    Route::get('logout', 'AuthController@logout');
 }
 );
-
 Route::resource('blog','Api\ArticleController');
 Route::resource('comment','Api\CommentController');
 Route::resource('annonce', 'Api\AnnonceController');
