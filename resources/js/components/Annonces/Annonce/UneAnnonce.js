@@ -40,7 +40,7 @@ class UneAnnonce extends Component {
                   </Grid>
                      <Grid item xs={12} sm={9}>
                      <Paper>
-                             <Typography variant="caption" display="block" gutterBottom >
+                             <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
                              {this.props.annonce.created_at} <br />
                                  {this.props.annonce.author}
                          </Typography>

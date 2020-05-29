@@ -19,7 +19,30 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import useStyles from '../../Style/GeneralJSX';
 
+import ares from './logoPartenaires/ares.png';
+import bid from './logoPartenaires/bid.png';
+import bonfed from './logoPartenaires/bonfed.jpg';
+import ciat from './logoPartenaires/ciat.png';
+import culture from './logoPartenaires/culture.png';
+import dinepa from './logoPartenaires/dinepa.png';
+import fds from './logoPartenaires/fds.png';
+import mairiedelmas from './logoPartenaires/mairiedelmas.jpg';
+import mairiekafou from './logoPartenaires/mairiekafou.jpg';
+import mairiepop from './logoPartenaires/mairiepop.jpg';
+import mairiepv from './logoPartenaires/mairiepv.jpg';
+import mde from './logoPartenaires/mde.jpg';
+import mict from './logoPartenaires/mict.jpg';
+import mtptc from './logoPartenaires/mtptc.png';
+import omrh from './logoPartenaires/omrh.jpg';
+import ueh from './logoPartenaires/ueh.png';
+
+
+import data from './Partenaires.json';
+import {useSelector} from 'react-redux';
 export default function Partenaires() {
+  const store = useSelector(store => store);
+  const TEXT = store.langue.item == '1' ?data.francais : data.creole;
+
   const classes = useStyles();
   const style ={
     image: {
@@ -35,13 +58,9 @@ export default function Partenaires() {
      
       <Divider />
       <div >
-        <ExpansionPanelSummary
-          // expandIcon={<ExpandMoreIcon />}
-          // aria-controls="panel1c-content"
-          // id="panel1c-header"
-        >
+        <ExpansionPanelSummary  >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T E R</Typography>
+            <Typography className={classes.heading}>U R B A T e R</Typography>
           </div>
         
         </ExpansionPanelSummary>
@@ -54,44 +73,88 @@ export default function Partenaires() {
                  </Paper>
             </Grid>
             <Grid item xs={12} sm={6}>
-            <Typography variant="h4" className="card-body">
-              PARTENAIRES
+            <Typography variant="h4" className={classes.title}>
+             {TEXT.title}
              
             </Typography>
-                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
-             
+                <div className={classes.body}> {TEXT.body}</div>
             </Grid>
             
          </Grid>
       </div>
       <br />
         <Divider />
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={4}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={3}>
                 <Paper>
-              <Link href="https://www.google.com" ><img src={logo}  width={100} height={100} style={{borderRadius:50}}/></Link> 
+              <Link href="https://www.google.com" ><img src={ares}  width={150} height={100} /></Link> 
                 <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
                  <Divider />
-                 <Link href="https://www.google.com" ><img src={logo}  width={100} height={100} style={{borderRadius:50}}/></Link> 
+                 <Link href="https://www.google.com" ><img src={bid}  width={100} height={100} /></Link> 
                 <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
                
                 </Paper>
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={3}>
                 <Paper>
-                <Link href="https://www.google.com" ><img src={logo}  width={100} height={100} style={{borderRadius:50}}/></Link> 
+                <Link href="https://www.google.com" ><img src={bonfed}  width={100} height={100} /></Link> 
                 <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
                  <Divider />
-                 <Link href="https://www.google.com" ><img src={logo}  width={100} height={100} style={{borderRadius:50}}/></Link> 
+                 <Link href="https://www.google.com" ><img src={ciat}  width={100} height={100} /></Link> 
                 <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
                  </Paper>
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={3}>
                 <Paper>
-                <Link href="https://www.google.com" ><img src={logo}  width={100} height={100} style={{borderRadius:50}}/></Link> 
+                <Link href="https://www.google.com" ><img src={culture}  width={100} height={100} /></Link> 
                 <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
                  <Divider />
-                 <Link href="https://www.google.com" ><img src={logo}  width={100} height={100} style={{borderRadius:50}}/></Link> 
+                 <Link href="https://www.google.com" ><img src={dinepa}  width={100} height={100} /></Link> 
+                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
+                 </Paper>
+            </Grid>
+            <Grid item xs={12} sm={3}>
+                <Paper>
+                <Link href="https://www.google.com" ><img src={fds}  width={120} height={80}/></Link> 
+                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
+                 <Divider />
+                 <Link href="https://www.google.com" ><img src={mairiedelmas}  width={100} height={100} /></Link> 
+                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
+                 </Paper>
+            </Grid>
+            <Grid item xs={12} sm={3}>
+                <Paper>
+                <Link href="https://www.google.com" ><img src={mairiekafou}  width={100} height={100} /></Link> 
+                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
+                 <Divider />
+                 <Link href="https://www.google.com" ><img src={mairiepop}  width={100} height={100} /></Link> 
+                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
+                 </Paper>
+            </Grid>
+            <Grid item xs={12} sm={3}>
+                <Paper>
+                <Link href="https://www.google.com" ><img src={mairiepv}  width={100} height={100} /></Link> 
+                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
+                 <Divider />
+                 <Link href="https://www.google.com" ><img src={mde}  width={100} height={100} /></Link> 
+                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
+                 </Paper>
+            </Grid>
+            <Grid item xs={12} sm={3}>
+                <Paper>
+                <Link href="https://www.google.com" ><img src={mict}  width={100} height={100} /></Link> 
+                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
+                 <Divider />
+                 <Link href="https://www.google.com" ><img src={mtptc}  width={100} height={100} /></Link> 
+                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
+                 </Paper>
+            </Grid>
+            <Grid item xs={12} sm={3}>
+                <Paper>
+                <Link href="https://www.google.com" ><img src={omrh}  width={100} height={100} /></Link> 
+                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
+                 <Divider />
+                 <Link href="https://www.google.com" ><img src={ueh}  width={120} height={80} /></Link> 
                 <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
                  </Paper>
             </Grid>

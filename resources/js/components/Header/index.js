@@ -30,7 +30,7 @@ export default function Header(props) {
                   <Toolbar className={classes.toolbar}> 
                   <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap', alignItems: 'center'}}>
                     <img src={logo}  width="170" height="170" alt="logo"></img> 
-                    <h5>URBATER</h5>
+                    <h5>URBATeR</h5>
                   </div>
                     <Search />
                   </Toolbar>

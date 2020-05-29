@@ -11,7 +11,7 @@ import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 
 
-import TabAnnonces from './TabAnnonces';
+import TabResultats from './TabResultats';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import useStyles from '../../Style/GeneralJSX';
@@ -31,13 +31,9 @@ export default function Direction() {
     <div className={classes.root} id="direction">
       <Divider />
       <div >
-        <ExpansionPanelSummary
-          // expandIcon={<ExpandMoreIcon />}
-          // aria-controls="panel1c-content"
-          // id="panel1c-header"
-        >
+        <ExpansionPanelSummary >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T E R</Typography>
+            <Typography className={classes.heading}>U R B A T e R</Typography>
           </div>
         
         </ExpansionPanelSummary>
@@ -45,7 +41,7 @@ export default function Direction() {
         <Divider />
           <Grid container spacing={3}>
             <Grid item xs={12} sm={12}>
-                   <TabAnnonces />
+                   <TabResultats />
             </Grid>
             
          </Grid>

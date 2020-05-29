@@ -76,7 +76,7 @@ export default function FullWidthTabs() {
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Les Konbit" {...a11yProps(0)} />
+          <Tab label="Konbit" {...a11yProps(0)} />
           <Tab label={data.title} {...a11yProps(1)} />
         </Tabs>
       </AppBar>

@@ -1,0 +1,23 @@
+{
+    "francais":{
+         "titleRemerciment":"REMERCIMENTS",
+         "bodyRemerciment":"Au terme de ce programme, les étudiants obtiennent le diplôme de « MASTER EN URBANISME ET AMENAGEMENT DES TERRITOIRES ». Ce programme prépare les étudiants à travailler dans n’importe quel type d’organisation en tant que :  /n   •Urbaniste /n• Aménageur /n  •Consultant"    
+    , "titleContact":"CONTACT",
+    "titleLeaveMsg":"Laisser un message",
+    "placeholderNom":"Nom et Prenom",
+    "placeholderMail":"Email",
+    "placeholderMsg":"Message",
+    "boutton":"Envoyer"
+ },
+    "creole":{
+        "titleRemerciment":"REMESIMAN",
+        "bodyRemerciment":"Sa se yon bel istwa an kreyol men mpa gen anpil bagay poum di ladan l.Sa se yon bel istwa an kreyol men mpa gen anpil bagay poum di ladan l.Sa se yon bel istwa an kreyol men mpa gen anpil bagay poum di ladan l.Sa se yon bel istwa an kreyol men mpa gen anpil bagay poum di ladan l.Sa se yon bel istwa an kreyol men mpa gen anpil bagay poum di ladan l.Sa se yon bel istwa an kreyol men mpa gen anpil bagay poum di ladan l.Sa se yon bel istwa an kreyol men mpa gen anpil bagay poum di ladan l. "
+        , "titleContact":"KONTAK",
+        "titleLeaveMsg":"Kite yon mesaj",
+        "placeholderNom":"Siyati ak non",
+        "placeholderMail":"Imel",
+        "placeholderMsg":"Mesaj",
+        "boutton":"Voye"
+     }
+   
+}

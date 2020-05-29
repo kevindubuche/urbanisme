@@ -23,7 +23,6 @@ import {useSelector} from 'react-redux';
 
 export default function Presentation() {
   const store = useSelector(store => store);
-  console.log(store.langue);
   const TEXT = store.langue.item == '1' ?data.francais : data.creole;
   const classes = useStyles();
   const style ={
@@ -41,7 +40,7 @@ export default function Presentation() {
       <div >
         <ExpansionPanelSummary >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T E R</Typography>
+            <Typography className={classes.heading}>U R B A T e R</Typography>
           </div>
         
         </ExpansionPanelSummary>
@@ -54,11 +53,11 @@ export default function Presentation() {
                  </Paper>
             </Grid>
             <Grid item xs={12} sm={6}>
-            <Typography variant="h4" className="card-body">
-              {TEXT.titre}
+            <Typography variant="h4"  className={classes.title}>
+              {TEXT.title}
              
             </Typography>
-                <div className="card-body">{TEXT.body}</div>
+                <div  className={classes.body} >{TEXT.body}</div>
              
             </Grid>
             

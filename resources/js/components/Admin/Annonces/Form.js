@@ -27,6 +27,7 @@ const styles = theme =>({
                    author : '',
                    source : '',
                    image :'',
+                   keyWords:'',
                    created_at: '',
                    updated_at : '',
                 //    token : localStorage.getItem('user')
@@ -48,6 +49,7 @@ const styles = theme =>({
             source : '',
             resume :'',
             image: '',
+            keyWords:'',
             created_at: '',
             updated_at : '',
             // token : localStorage.getItem('user')
@@ -183,6 +185,16 @@ onScaleChange = (scaleValueEvent) =>{
                 rows="4"
                 className={this.props.classes.FormControl}
                 required
+                /> 
+                <br />
+                <TextField
+                label="KeyWords"
+                onChange={this.handleChange('keyWords')}
+                value={this.state.localArticle.keyWords}
+                margin="normal"
+                multiline
+                rows="4"
+                className={this.props.classes.FormControl}
                 /> 
               <h6>Image</h6>
                 {/* <input type="file" id="image" onChange={this.fileTransform} /> */}

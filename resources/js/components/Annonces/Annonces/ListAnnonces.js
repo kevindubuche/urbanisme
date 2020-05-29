@@ -114,13 +114,13 @@ export default function ListAnnonces(props) {
            </Grid>
               <Grid item xs={12} sm={9}>
               <Paper>
-                      <Typography variant="caption" display="block" gutterBottom >
+                      <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}}>
                       {annonce.created_at}<br />
                       {annonce.author}
                   </Typography>
                   
                  <Link to={"/annonce/"+annonce.id}>
-                 <Typography variant="subtitle2" gutterBottom >
+                 <Typography variant="subtitle2" gutterBottom style={{ fontWeight:"bold"}} >
                  {annonce.title} 
                    </Typography>
                  </Link>

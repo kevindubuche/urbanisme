@@ -29,16 +29,12 @@ export default function Presentation() {
 }
 
   return (
-    <div className={classes.root} id="presentation">
+    <div className={classes.root} >
       <Divider />
       <div >
-        <ExpansionPanelSummary
-          // expandIcon={<ExpandMoreIcon />}
-          // aria-controls="panel1c-content"
-          // id="panel1c-header"
-        >
+        <ExpansionPanelSummary  >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T E R</Typography>
+            <Typography className={classes.heading}>U R B A T e R</Typography>
           </div>
         
         </ExpansionPanelSummary>

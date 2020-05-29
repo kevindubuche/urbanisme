@@ -9,8 +9,13 @@ import TabKonbit from './TabKonbit';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import useStyles from '../../Style/GeneralJSX';
+import data from './Konbit.json';
+import {useSelector} from 'react-redux';
 
-export default function Direction() {
+export default function Konbit() {
+  const store = useSelector(store=>store);
+  const TEXT = store.langue.item == '1' ?data.francais : data.creole;
+
   const classes = useStyles();
   const style ={
     image: {
@@ -37,6 +42,26 @@ export default function Direction() {
         <Divider />
           <Grid container spacing={3}>
             <Grid item xs={12} sm={12}>
+            <Grid container spacing={3}>
+            <Grid item xs={12} sm={6}>
+                <Typography variant="h6" gutterBottom>
+               {TEXT.title}
+              </Typography>
+                <Typography variant="body2" gutterBottom>
+                {TEXT.definition}
+              </Typography>
+           </Grid>
+
+           <Grid item xs={12} sm={6}>
+                <Typography variant="h6" gutterBottom>
+                {TEXT.title}
+              </Typography>
+                <Typography variant="body2" gutterBottom>
+              {TEXT.raison}
+              </Typography>
+           </Grid>
+          </Grid>
+          <Divider />
                    <TabKonbit />
             </Grid>
             

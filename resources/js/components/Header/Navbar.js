@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router , Link, Route} from 'react-router-dom';
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import LockOpenIcon from '@material-ui/icons/LockOpen';
 import HomeIcon from '@material-ui/icons/Home';
 import GroupOutlinedIcon from '@material-ui/icons/GroupOutlined';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
@@ -26,7 +25,7 @@ import data from './Navbar.json';
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent" >
        
-          <ul className="navbar-nav w-100 nav-justified">
+          <ul className="navbar-nav w-100 nav-justified" style={{marginRight:25}}>
          
             <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                    <Link to="/" style={{color:"gray"}}><HomeIcon /></Link>
@@ -91,7 +90,7 @@ import data from './Navbar.json';
                    </div>
               </li>
               <li className="nav-item">
-                  <Link to="/articles" className="nav-link dropdown-item">
+                  <Link to="/publications" className="nav-link dropdown-item">
                   {TEXT.publications.Publications}</Link>
               </li>
               <li className="nav-item dropdown">
@@ -127,7 +126,7 @@ import data from './Navbar.json';
                   <div className="dropdown-divider"></div>
                   <Link to="/espaceEtudiant/collation" className="nav-link dropdown-item" href="/">{TEXT.espace.Collation}</Link>
                   <div className="dropdown-divider"></div>
-                  <Link to="/espaceEtudiant/moodle" className="nav-link dropdown-item" href="/">{TEXT.espace.Acces}</Link>
+                  <Link to="/espaceEtudiant/plateforme" className="nav-link dropdown-item" href="/">{TEXT.espace.Acces}</Link>
                  </div>
               </li>
               
@@ -138,11 +137,11 @@ import data from './Navbar.json';
                   </div>
               </li>
                  
-              <li className="nav-item">
+              {/* <li className="nav-item">
               <div data-toggle="collapse" data-target=".navbar-collapse.show">
-               <Link to="/login" className="nav-link  ">Login<LockOpenIcon /></Link>
+               <Link to="/login" className="nav-link  ">Login</Link>
                </div>
-              </li>
+              </li> */}
 
           </ul>
          

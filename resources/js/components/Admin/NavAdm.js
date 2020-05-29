@@ -18,7 +18,9 @@ export default class NavAddm extends Component{
                Administrateur
            </Typography>
         
-          
+           <Link to="/admin/lexique">
+                <Button>Lexique</Button>
+              </Link>
               <Link to="/admin/conferences">
                 <Button>Conferences</Button>
               </Link>

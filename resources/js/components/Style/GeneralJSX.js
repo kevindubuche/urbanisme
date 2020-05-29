@@ -33,6 +33,14 @@ const useStyles = makeStyles((theme) => ({
         textDecoration: 'underline',
       },
     },
+    title: {
+     fontFamily:"Open Sans",
+      paddingBottom:20,
+    },
+    body: {
+     fontFamily:"Arial Regular",
+    //  textAlign: "center"
+    },
   }));
 
   export default useStyles;

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 use App\Http\Models\Annonce;
+use App\Http\Models\Article;
 use DB;
 use Validator;
 use File;
@@ -23,6 +24,40 @@ class AnnonceController extends Controller
         return response()->json([
             "success"=>true,
             "data"=>$annonce
+        ],200);
+    }
+
+        public function search(Request $request)
+    {
+        $array1=[];
+        $array2=[];
+        $result=collect();
+        //nap pran only id a pou genere ink la ak titre la, maybe resume a
+       $annonces = Annonce::select('id','title','resume','created_at')
+       ->where('keyWords','LIKE','%'.$request->keyWords.'%')
+       ->get();
+       $articles = Article::select('id','title','resume','created_at')
+       ->where('keyWords','LIKE','%'.$request->keyWords.'%')
+       ->get();
+       
+       $array1 =$annonces->map(function($item, $key) { 
+           $item->link="/annonce/".$item->id;
+           return $item;
+       });
+    //    array_push($result,$array1);
+       $array2 =$articles->map(function($item, $key) { 
+        $item->link="/article/".$item->id;
+        return $item;
+    });
+    foreach($array1 as $ar1)
+         $result->push($ar1);
+    foreach($array2 as $ar2)
+         $result->push($ar2);
+    // $result= $array1->push($array2);
+    // array_push($result,$array2);
+        return response()->json([
+            "success"=>true,
+            "data"=>$result
         ],200);
     }
 

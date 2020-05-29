@@ -15,62 +15,76 @@ import Activites from './Activites';
 
 import './accueil.css';
 import Box from '@material-ui/core/Box';
-
-export default class Accueil extends Component {
-    
-    render(){
+import {useSelector} from 'react-redux';
+import data from './Accueil.json';
+export default function Accueil (props) {
+    const store = useSelector(store => store);
+    console.log(store.langue);
+    const TEXT = store.langue.item == '1' ?data.francais : data.creole;
+  
+  
         const mainFeaturedPost = {
-            title: 'URBATER un joli titre ici stp',
-            description:
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-            image: 'https://source.unsplash.com/random',
+          image: 'https://source.unsplash.com/random',
             imgText: 'main image description',
-            linkText: 'En savoir plus...',
+           
           };
         return (
             <div >
                 <ImageWelcome post={mainFeaturedPost} />
                 <Grid container spacing={3}>
-                      
-                          <Grid item xs={12} sm={6}>
-                              <Paper> 
-                                  <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> 
-                                <Box display="flex" justifyContent="center"  >
+                    <Grid item xs={12} sm={6}>
+                        <Paper> 
+                            <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> 
+                                <Box display="flex" justifyContent="center"  style={{ backgroundColor:"#414342"}}>
                                     <Box p={1} >
-                                      <Link style={{color:"black"}} to="annonces">
-                                           <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> ANNONCES </Typography>
-                                     </Link> 
+                                        <Link to="annonces">
+                                            <Typography
+                                            variant="h6"
+                                            display="block"
+                                            gutterBottom className='annoncesTitle'
+                                            style={{color:"white",
+                                            backgroundColor:"#414342", 
+                                            fontFamily:"Open Sans"}}>
+                                            {TEXT.annonces} 
+                                        </Typography>
+                                        </Link> 
                                     </Box>
                                 </Box>
-                               </Typography>
-                                  <Divider />
-                                  <Divider />
-                              <Annonces />
-                              </Paper>
-                          </Grid>
-                          <Grid item xs={12} sm={6}>
-                          <Paper> 
-                             
-                              <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> 
-                                <Box display="flex" justifyContent="center"  >
-                                    <Box p={1} >
-                                        <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> ACTIVITES </Typography>
-                                    </Box>
-                                </Box>
-                               </Typography>
-                                  
-                                  <Divider />
-                                  <Divider />
-                              <Activites />
-                              </Paper>
-                          </Grid>
-               </Grid>
+                            </Typography>
+                            <Divider /><Divider />
+                             <Annonces />
+                        </Paper>
+                    </Grid>
 
-       
-              
+                    <Grid item xs={12} sm={6}>
+                      <Paper> 
+                            <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> 
+                                <Box display="flex" justifyContent="center"  style={{ backgroundColor:"#414342"}}>
+                                    <Box p={1} >
+                                        <Link to="annonces">
+                                            <Typography 
+                                                variant="h6"
+                                                display="block"
+                                                gutterBottom 
+                                                className='annoncesTitle'
+                                                style={{color:"white", 
+                                                backgroundColor:"#414342",
+                                                    fontFamily:"Open Sans"}}
+                                                > 
+                                                {TEXT.activites}
+                                            </Typography>
+                                        </Link> 
+                                    </Box>
+                                </Box>
+                            </Typography>
+                            <Divider />  <Divider />
+                            
+                            <Activites />
+                        </Paper>
+                    </Grid>
+               </Grid>
             </div>
         );
-    }
     
 }
 

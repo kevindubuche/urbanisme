@@ -1,0 +1,15 @@
+{
+    "francais":{
+         "title":"URBATeR un joli titre ici stp",
+         "subtitle":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          ,"annonces":"ANNONCES",
+          "activites":"ACTIVITES"
+     },
+    "creole":{
+        "title":"URBATeR yon bel tit stp",
+        "subtitle":"Sa se yon bel istwa an kreyol men mpa gen anpil bagay poum di ladan l.Sa se yon bel istwa an kreyol men mpa gen anpil bagay poum di ladan l. "
+        ,"annonces":"ANONS",
+        "activites":"AKTIVITE"
+     }
+   
+}

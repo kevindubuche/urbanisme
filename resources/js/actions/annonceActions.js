@@ -1,4 +1,4 @@
-import { FETCH_ANNONCES, FETCH_ANNONCE, NEW_ANNONCE, DELETE_ANNONCE, CLEAR_NEW_ANNONCE, EDIT_ANNONCE, API_ANNONCE } from './types';
+import { FETCH_ANNONCES, FETCH_ANNONCE, FETCH_RESULTATS_SEARCH, NEW_ANNONCE, DELETE_ANNONCE, CLEAR_NEW_ANNONCE, EDIT_ANNONCE, API_ANNONCE , API_SEARCH} from './types';
 import axios from 'axios';
 
 //cette fonction recupere touts les articles du database et update l'etat du store
@@ -97,3 +97,5 @@ export const clearNewAnnonce = () => dispatch => {
     
       
 }
+
+

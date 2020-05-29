@@ -8,7 +8,7 @@
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
  <link rel="icon" href="{!! asset('images/logo.png') !!}" />
-        <title>URBATER</title>
+        <title>URBATeR</title>
        
         <!-- Fonts -->
         {{-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> --}}

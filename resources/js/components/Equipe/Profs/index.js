@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
@@ -12,6 +12,9 @@ import Grid from '@material-ui/core/Grid';
 
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import useStyles from '../../Style/GeneralJSX';
+import data from './Profs.json';
+
+import UnProf from './UnProf';
 
 export default function Fondation() {
   
@@ -26,16 +29,12 @@ export default function Fondation() {
 }
 const image = <AccountCircleIcon style={{height:'200px',width:'200px' , padding:'15px', color:"gray"}}/>
   return (
-    <div className={classes.root} id="fondation">
+    <div className={classes.root} >
       <Divider />
       <div >
-        <ExpansionPanelSummary
-          // expandIcon={<ExpandMoreIcon />}
-          // aria-controls="panel1c-content"
-          // id="panel1c-header"
-        >
+        <ExpansionPanelSummary  >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T E R</Typography>
+            <Typography className={classes.heading}>U R B A T e R</Typography>
           </div>
         
         </ExpansionPanelSummary>
@@ -54,45 +53,28 @@ const image = <AccountCircleIcon style={{height:'200px',width:'200px' , padding:
          </Grid>
          <Divider /><Divider /><Divider />
           <Grid container spacing={1}>
-            <Grid item xs={12} sm={3}>
-              
-               {image}
-           </Grid>
-            <Grid item xs={12} sm={3}>
-            <Paper>
-                <div className="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                </Paper>
+          {data.profs.map((prof, index)=>
+             
+          <Fragment key={index}>
+            <Grid item xs={12} sm={4}>
+               <UnProf 
+             nom={prof.nom}
+             titre={prof.titre}
+             email={prof.email}
+             phone={prof.phone}
+             diplomes={prof.diplomes}
+             biographie={prof.biographie}
+             cours={prof.cours}
+             expertise={prof.expertise}
+             />
             </Grid>
+                 
+          </Fragment>
+           
+              )}
+          
 
-            <Grid item xs={12} sm={3}>
-                {/* <img style={{height:'200px',width:'200px' , padding:'15px'}} src={require('../images/prof.jpg')} /><br /> */}
-                {image}
-           </Grid>
-            <Grid item xs={12} sm={3}>
-            <Paper>
-                <div className="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                </Paper>
-            </Grid>
-         </Grid>
-
-         <Grid container spacing={1}>
-            <Grid item xs={12} sm={3}>
-            {image}
-           </Grid>
-            <Grid item xs={12} sm={3}>
-            <Paper>
-                <div className="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                </Paper>
-            </Grid>
-            
-            <Grid item xs={12} sm={3}>
-            {image}
-           </Grid>
-            <Grid item xs={12} sm={3}>
-            <Paper>
-                <div className="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                </Paper>
-            </Grid>
+         
          </Grid>
       </div>
     </div>

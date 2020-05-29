@@ -36,15 +36,20 @@ import Conferences from '../Activites/Conferences';
 import InfoPratiques from '../EspaceEtudiant/InfoPratiques';
 import PrixEtBourses from '../EspaceEtudiant/PrixEtBourses';
 import Stage from '../EspaceEtudiant/Stage';
+import Collation from '../EspaceEtudiant/Collation';
+import Plateforme from '../EspaceEtudiant/Plateforme';
 
 import Contact from '../Contact';
 import Articles from '../Articles';
+//PUBLICATION
+import Publications from '../Publications';
 //ONLY FOR ADMIN
 import Admin from '../Admin';
 import LoginForm from '../Login/LoginForm';
 import AdminAnnonces from '../Admin/Annonces';
 import AdminRegister from '../Admin/Register';
 import AdminConferences from '../Admin/Conferences';
+import AdminLexique from '../Admin/Lexique';
 
 import {PrivateRoute} from '../PrivateRoute'
 import Accueil from '../Accueil';
@@ -56,10 +61,10 @@ export default class Main extends Component {
 render(){
     
   return (
-    <React.Fragment>    
+    <React.Fragment >    
            <Router >
            <CssBaseline />
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" style={{ backgroundColor:"#f9f9f9"}}>
    
         <Header  />
         <main> 
@@ -100,11 +105,16 @@ render(){
                            <Route path="/espaceEtudiant/info" exact component={InfoPratiques} />
                           <Route path="/espaceEtudiant/prix" exact component={PrixEtBourses}/>
                           <Route path="/espaceEtudiant/stage" exact component={Stage}/>
+                          <Route path="/espaceEtudiant/collation" exact component={Collation}/>
+                          <Route path="/espaceEtudiant/plateforme" exact component={Plateforme}/>
+                           {/* PUBLICATIONS */}
+                           <Route path="/publications" exact component={Publications} />
                          {/* POUM METE PRIVATE ROUTE APRES */}
                          <PrivateRoute path="/admin" exact component={Admin} />
                          <PrivateRoute path="/admin/annonces" exact component={AdminAnnonces}/>
                          <PrivateRoute path="/admin/register" exact component={AdminRegister}/>
                          <PrivateRoute path="/admin/conferences" exact component={AdminConferences}/>
+                         <PrivateRoute path="/admin/lexique" exact component={AdminLexique}/>
 
                         <Route path="/login" exact component={ LoginForm } />
                        

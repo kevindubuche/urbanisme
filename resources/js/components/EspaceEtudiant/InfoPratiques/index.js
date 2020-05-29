@@ -10,7 +10,11 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import useStyles from '../../Style/GeneralJSX';
 
-export default function Fondation() {
+import data from './InfoPratiques.json';
+import {useSelector} from 'react-redux';
+export default function InfoPratiques() {
+  const store = useSelector(store => store);
+  const TEXT = store.langue.item == '1' ? data.francais : data.creole;
   const classes = useStyles();
   const style ={
     image: {
@@ -25,11 +29,9 @@ export default function Fondation() {
     <div className={classes.root} id="fondation">
       <Divider />
       <div >
-        <ExpansionPanelSummary
-          
-        >
+        <ExpansionPanelSummary >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T E R</Typography>
+            <Typography className={classes.heading}>U R B A T e R</Typography>
           </div>
         
         </ExpansionPanelSummary>
@@ -42,12 +44,11 @@ export default function Fondation() {
                  </Paper>
             </Grid>
             <Grid item xs={12} sm={6}>
-            <Typography variant="h4" className="card-body">
-              INFORMATIONS PRATIQUES
+            <Typography variant="h4" className={classes.title}>
+          {TEXT.title}
              
             </Typography>
-                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
-             
+                <div className={classes.body}>{TEXT.body}</div>
             </Grid>
             
          </Grid>

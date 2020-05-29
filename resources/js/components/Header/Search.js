@@ -1,6 +1,4 @@
 import React from 'react';
-import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Input from '@material-ui/core/Input';
 import FilledInput from '@material-ui/core/FilledInput';
@@ -11,72 +9,82 @@ import TextField from '@material-ui/core/TextField';
 import SearchIcon from '@material-ui/icons/Search';
 import {Link} from 'react-router-dom';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    alignSelf: 'flex-end',
- 
-  },
-  margin: {
-    margin: theme.spacing(1),
-  },
-  withoutLabel: {
-    marginTop: theme.spacing(3),
-  },
-  textField: {
-    width: '35ch',
-  },
-}));
+import PropTypes from 'prop-types'; 
+import {connect} from 'react-redux';
+import {fetchResultats} from '../../actions/searchActions';
 
-export default function InputAdornments() {
-  const classes = useStyles();
-  const [values, setValues] = React.useState({
-    amount: '',
-    password: '',
-    weight: '',
-    weightRange: '',
-    showPassword: false,
-  });
 
-  const handleChange = (prop) => (event) => {
-    setValues({ ...values, [prop]: event.target.value });
-  };
+import { withRouter } from 'react-router-dom';
 
-  const handleClickShowPassword = () => {
-    setValues({ ...values, showPassword: !values.showPassword });
-  };
+ class Search extends React.Component {
+  constructor(props){
+    super(props);
+    this.state= {
+               keyWords : '',
+       }
+}
 
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
-  };
+  handleChange = (e)  => {
+    this.setState({
+           keyWords: e.target.value
+    })
+    console.log(e.target.value);
+    // this.props.fetchResultats(value);
+    // this.props.history.push('/resultats'); 
+}
+handleSubmit =() =>{
+  if(this.state.keyWords !=''){
+      this.props.fetchResultats(this.state);
+  this.props.history.push('/resultats'); 
+  }
 
+}
+// UNSAFE_componentWillReceiveProps(nextProps){
+//   console.log('new props receive')
+//   if(nextProps.resultatsSearch){
+    
+  
+//   }
+
+// }
+
+  render(){
+    
   return (
-    <div className={classes.root}>
-     <FormControl className={clsx(classes.margin, classes.textField)} variant="filled">
-          <InputLabel htmlFor="filled-adornment-password">Recherche</InputLabel>
+    <div>
+     <FormControl  variant="filled">
+          <InputLabel htmlFor="filled-adornment-password">Mot cle</InputLabel>
           <FilledInput
             id="filled-adornment-password"
             type='text' 
-            value={values.password}
-            onChange={handleChange('password')}
+            value={this.state.keyWords}
+            onChange={this.handleChange}
             endAdornment={
               <InputAdornment position="end">
-                <Link to="/resultats">
-                 <Button>
+                {/* <Link to="/resultats"> */}
+                 <Button onClick={this.handleSubmit}>
                    <SearchIcon />
                 </Button>
-                </Link>
+                {/* </Link> */}
 
-               
-               
               </InputAdornment>
             }
           />
         </FormControl>
-      <div>
-     
-      </div>
+   
     </div>
   );
+  }
 }
+
+Search.propTypes = {
+  fetchResultats : PropTypes.func.isRequired,
+  resultatsSearch : PropTypes.array.isRequired,
+  
+}
+const mapStateToProps =(state) => ({
+  resultatsSearch : state.resultatsSearch.items,
+
+});
+
+export default connect(mapStateToProps, { fetchResultats })(withRouter(Search)) 

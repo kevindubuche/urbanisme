@@ -84,21 +84,7 @@ function createData(francais, creole, explication) {
   return { francais, creole, explication };
 }
 
-const rows = [
-  createData('territoire', 'teritwa','se yon espas ki la se yon espas blabllabla'),
-  createData('territoire', 'teritwa','se yon espas ki la se yon espas blabllabla'),
-  createData('territoire', 'teritwa','se yon espas ki la se yon espas blabllabla'),
-  createData('territoire', 'teritwa','se yon espas ki la se yon espas blabllabla'),
-  createData('territoire', 'teritwa','se yon espas ki la se yon espas blabllabla'),
-  createData('territoire', 'teritwa','se yon espas ki la se yon espas blabllabla'),
-  createData('territoire', 'teritwa','se yon espas ki la se yon espas blabllabla'),
-  createData('territoire', 'teritwa','se yon espas ki la se yon espas blabllabla'),
-  createData('territoire', 'teritwa','se yon espas ki la se yon espas blabllabla'),
-  createData('territoire', 'teritwa','se yon espas ki la se yon espas blabllabla'),
-  createData('territoire', 'teritwa','se yon espas ki la se yon espas blabllabla'),
-  createData('territoire', 'teritwa','se yon espas ki la se yon espas blabllabla'),
-  createData('territoire', 'teritwa','se yon espas ki la se yon espas blabllabla'),
-].sort((a, b) => (a.calories < b.calories ? -1 : 1));
+
 
 const useStyles2 = makeStyles({
   table: {
@@ -106,10 +92,15 @@ const useStyles2 = makeStyles({
   },
 });
 
-export default function CustomPaginationActionsTable() {
+export default function CustomPaginationActionsTable(props) {
   const classes = useStyles2();
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
+  const rows = [].sort((a, b) => (a.calories < b.calories ? -1 : 1));
+
+props.lexique.map(( mot, index) => rows.push(
+  createData(mot.creole, mot.francais, mot.explication)
+));
 
   const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 

@@ -5,7 +5,8 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
-
+import {useSelector} from 'react-redux';
+import data from './Accueil.json';
 const useStyles = makeStyles((theme) => ({
   mainFeaturedPost: {
     position: 'relative',
@@ -36,6 +37,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function MainFeaturedPost(props) {
+  const store = useSelector(store => store);
+  console.log(store.langue);
+  const TEXT = store.langue.item == '1' ?data.francais : data.creole;
+
   const classes = useStyles();
   const { post } = props;
 
@@ -47,15 +52,13 @@ export default function MainFeaturedPost(props) {
       <Grid container>
         <Grid item md={6}>
           <div className={classes.mainFeaturedPostContent}>
-            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-              {post.title}
+            <Typography component="h1" variant="h3" color="inherit" gutterBottom style={{fontFamily:"Open Sans"}}>
+              {TEXT.title}
             </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
-              {post.description}
+            <Typography variant="h5" color="inherit" paragraph style={{fontFamily:"Arial Regular"}}>
+              {TEXT.subtitle}
             </Typography>
-            <Link variant="subtitle1" href="#">
-              {post.linkText}
-            </Link>
+            
           </div>
         </Grid>
       </Grid>
