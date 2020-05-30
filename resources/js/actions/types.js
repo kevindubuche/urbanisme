@@ -4,6 +4,7 @@ export const API_COMMENT = '/api/comment';
 export const API_REGISTER = '/api/user/register';
 export const API_LOGIN = '/api/user/login';
 export const API_ANNONCE = '/api/annonce';
+export const API_KONBIT = '/api/konbit';
 export const API_LEXIQUE = '/api/lexique';
 export const API_SEARCH = '/api/search';
 
@@ -44,6 +45,16 @@ export const NEW_ANNONCE = 'NEW_ANNONCE';
 export const DELETE_ANNONCE = 'DELETE_ANNONCE';
 export const EDIT_ANNONCE = 'EDIT_ANNONCE';
 export const CLEAR_NEW_ANNONCE = 'CLEAR_NEW_ANNONCE';
+
+//.................................................
+
+// the actions name for the konbits
+export const FETCH_KONBITS = 'FETCH_KONBITS';
+export const FETCH_KONBIT = 'FETCH_KONBIT';
+export const NEW_KONBIT = 'NEW_KONBIT';
+export const DELETE_KONBIT = 'DELETE_KONBIT';
+export const EDIT_KONBIT = 'EDIT_KONBIT';
+export const CLEAR_NEW_KONBIT = 'CLEAR_NEW_KONBIT';
 
 //.................................................
 

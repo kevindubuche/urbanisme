@@ -47,6 +47,7 @@ import Publications from '../Publications';
 import Admin from '../Admin';
 import LoginForm from '../Login/LoginForm';
 import AdminAnnonces from '../Admin/Annonces';
+import AdminKonbits from '../Admin/Konbits';
 import AdminRegister from '../Admin/Register';
 import AdminConferences from '../Admin/Conferences';
 import AdminLexique from '../Admin/Lexique';
@@ -112,6 +113,7 @@ render(){
                          {/* POUM METE PRIVATE ROUTE APRES */}
                          <PrivateRoute path="/admin" exact component={Admin} />
                          <PrivateRoute path="/admin/annonces" exact component={AdminAnnonces}/>
+                         <PrivateRoute path="/admin/konbits" exact component={AdminKonbits}/>
                          <PrivateRoute path="/admin/register" exact component={AdminRegister}/>
                          <PrivateRoute path="/admin/conferences" exact component={AdminConferences}/>
                          <PrivateRoute path="/admin/lexique" exact component={AdminLexique}/>

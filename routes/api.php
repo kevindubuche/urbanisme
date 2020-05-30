@@ -29,6 +29,7 @@ function(){
 Route::resource('blog','Api\ArticleController');
 Route::resource('comment','Api\CommentController');
 Route::resource('annonce', 'Api\AnnonceController');
+Route::resource('konbit', 'Api\KonbitController');
 Route::resource('lexique', 'Api\LexiqueController');
 Route::post('search','Api\AnnonceController@search');
 // Route::get('blog/{id}','Api\BlogController@show');

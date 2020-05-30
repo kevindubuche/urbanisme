@@ -1,19 +1,11 @@
 import React,{Fragment} from 'react';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
-
-import fondation from '../images/prof.jpg';
-import ListProfs from './ListProfs';
-
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import useStyles from '../../Style/GeneralJSX';
 import data from './Profs.json';
-
 import UnProf from './UnProf';
 
 export default function Fondation() {
@@ -38,19 +30,6 @@ const image = <AccountCircleIcon style={{height:'200px',width:'200px' , padding:
           </div>
         
         </ExpansionPanelSummary>
-  
-        <Divider />
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={6}>
-              
-                <ListProfs/>
-       
-            </Grid>
-            <Grid item xs={12} sm={6}>
-            <ListProfs/>
-            </Grid>
-            
-         </Grid>
          <Divider /><Divider /><Divider />
           <Grid container spacing={1}>
           {data.profs.map((prof, index)=>
@@ -68,13 +47,10 @@ const image = <AccountCircleIcon style={{height:'200px',width:'200px' , padding:
              expertise={prof.expertise}
              />
             </Grid>
-                 
           </Fragment>
            
               )}
           
-
-         
          </Grid>
       </div>
     </div>

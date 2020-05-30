@@ -14,7 +14,7 @@ import Divider from '@material-ui/core/Divider';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
-import Konbit from './Konbit';
+import Konbit from './Konbits';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',

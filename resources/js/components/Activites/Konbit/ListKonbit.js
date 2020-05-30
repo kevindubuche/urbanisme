@@ -17,6 +17,8 @@ import LastPageIcon from '@material-ui/icons/LastPage';
 import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+
+import {useSelector} from 'react-redux';
 const Image= <img style={{height:'150px',width:'150px', borderRadius:'75px'}} src={require('../marc.jpg')} />
 
 const useStyles1 = makeStyles((theme) => ({
@@ -87,237 +89,6 @@ function createData(name, calories, fat) {
   return { name, calories, fat };
 }
 
-const rows = [
-  createData(  <div>
-    <Grid item xs={12} sm={3}>
-         {Image}
-         </Grid>
-            <Grid item xs={12} sm={9}>
-            <Paper>
-                    <Typography variant="caption" display="block" gutterBottom >
-                        14 Avril 2020 <br />
-                        Kevin J. Dubuche
-                </Typography>
-                
-               <Link href="#">
-               <Typography variant="subtitle2" gutterBottom >
-                    Decouverte d'un vaccin contre le COVID 19 
-                 </Typography>
-               </Link>
-                
-                
-                <Typography variant="body2" gutterBottom tooltip="Description here" style={{cursor:"pointer"}}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipit
-            </Typography>
-            </Paper>
-        </Grid>
-        </div>
-
-),
-
-// A DELETE
-createData(  <div>
-  <Grid item xs={12} sm={3}>
-       {Image}
-       </Grid>
-          <Grid item xs={12} sm={9}>
-          <Paper>
-                  <Typography variant="caption" display="block" gutterBottom >
-                      14 Avril 2020 <br />
-                      Kevin J. Dubuche
-              </Typography>
-              
-             <Link href="#">
-             <Typography variant="subtitle2" gutterBottom >
-                  Decouverte d'un vaccin contre le COVID 19 
-               </Typography>
-             </Link>
-              
-              
-              <Typography variant="body2" gutterBottom tooltip="Description here" style={{cursor:"pointer"}}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit
-          </Typography>
-          </Paper>
-      </Grid>
-      </div>
-
-), createData(  <div>
-    <Grid item xs={12} sm={3}>
-         {Image}
-         </Grid>
-            <Grid item xs={12} sm={9}>
-            <Paper>
-                    <Typography variant="caption" display="block" gutterBottom >
-                        14 Avril 2020 <br />
-                        Kevin J. Dubuche
-                </Typography>
-                
-               <Link href="#">
-               <Typography variant="subtitle2" gutterBottom >
-                    Decouverte d'un vaccin contre le COVID 19 
-                 </Typography>
-               </Link>
-                
-                
-                <Typography variant="body2" gutterBottom tooltip="Description here" style={{cursor:"pointer"}}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipit
-            </Typography>
-            </Paper>
-        </Grid>
-        </div>
-
-), createData(  <div>
-  <Grid item xs={12} sm={3}>
-       {Image}
-       </Grid>
-          <Grid item xs={12} sm={9}>
-          <Paper>
-                  <Typography variant="caption" display="block" gutterBottom >
-                      14 Avril 2020 <br />
-                      Kevin J. Dubuche
-              </Typography>
-              
-             <Link href="#">
-             <Typography variant="subtitle2" gutterBottom >
-                  Decouverte d'un vaccin contre le COVID 19 
-               </Typography>
-             </Link>
-              
-              
-              <Typography variant="body2" gutterBottom tooltip="Description here" style={{cursor:"pointer"}}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit
-          </Typography>
-          </Paper>
-      </Grid>
-      </div>
-
-), createData(  <div>
-    <Grid item xs={12} sm={3}>
-         {Image}
-         </Grid>
-            <Grid item xs={12} sm={9}>
-            <Paper>
-                    <Typography variant="caption" display="block" gutterBottom >
-                        14 Avril 2020 <br />
-                        Kevin J. Dubuche
-                </Typography>
-                
-               <Link href="#">
-               <Typography variant="subtitle2" gutterBottom >
-                    Decouverte d'un vaccin contre le COVID 19 
-                 </Typography>
-               </Link>
-                
-                
-                <Typography variant="body2" gutterBottom tooltip="Description here" style={{cursor:"pointer"}}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipit
-            </Typography>
-            </Paper>
-        </Grid>
-        </div>
-
-), createData(  <div>
-  <Grid item xs={12} sm={3}>
-       {Image}
-       </Grid>
-          <Grid item xs={12} sm={9}>
-          <Paper>
-                  <Typography variant="caption" display="block" gutterBottom >
-                      14 Avril 2020 <br />
-                      Kevin J. Dubuche
-              </Typography>
-              
-             <Link href="#">
-             <Typography variant="subtitle2" gutterBottom >
-                  Decouverte d'un vaccin contre le COVID 19 
-               </Typography>
-             </Link>
-              
-              
-              <Typography variant="body2" gutterBottom tooltip="Description here" style={{cursor:"pointer"}}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit
-          </Typography>
-          </Paper>
-      </Grid>
-      </div>
-
-), createData(  <div>
-  <Grid item xs={12} sm={3}>
-       {Image}
-       </Grid>
-          <Grid item xs={12} sm={9}>
-          <Paper>
-                  <Typography variant="caption" display="block" gutterBottom >
-                      14 Avril 2020 <br />
-                      Kevin J. Dubuche
-              </Typography>
-              
-             <Link href="#">
-             <Typography variant="subtitle2" gutterBottom >
-                  Decouverte d'un vaccin contre le COVID 19 
-               </Typography>
-             </Link>
-              
-              
-              <Typography variant="body2" gutterBottom tooltip="Description here" style={{cursor:"pointer"}}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-              unde suscipit
-          </Typography>
-          </Paper>
-      </Grid>
-      </div>
-
-),
-
-
-//FIN A DELETE
-
-
-
-
-
-].sort((a, b) => (a.calories < b.calories ? -1 : 1));
 
 const useStyles2 = makeStyles({
   table: {
@@ -326,9 +97,45 @@ const useStyles2 = makeStyles({
 });
 
 export default function ListKonbit(props) {
+  const store = useSelector(store=>store);
+  const konbits = store.konbits.items ;
+
   const classes = useStyles2();
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
+
+  
+  const rows = [
+   
+  ].sort((a, b) => (a.calories < b.calories ? -1 : 1));
+  konbits.map(( annonce, index) => rows.push(
+    createData(
+    <div key={index}>
+    <Grid item xs={12} sm={3}>
+         
+         <img src={"/konbits_images/"+annonce.image} style={{height:'150px',width:'150px', borderRadius:'75px'}}  />
+         </Grid>
+            <Grid item xs={12} sm={9}>
+            <Paper>
+                    <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}}>
+                    {annonce.created_at}<br />
+                    {annonce.author}
+                </Typography>
+                
+               <Link to={"/konbit/"+annonce.id}>
+               <Typography variant="subtitle2" gutterBottom style={{ fontWeight:"bold"}} >
+               {annonce.title} 
+                 </Typography>
+               </Link>
+                
+                
+                <Typography variant="body2" gutterBottom tooltip="Description here" style={{cursor:"pointer"}}>
+               {annonce.resume}
+            </Typography>
+            </Paper>
+        </Grid>
+        </div>
+  )) )
 
 
   const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
