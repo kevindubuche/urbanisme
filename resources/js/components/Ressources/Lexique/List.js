@@ -122,10 +122,10 @@ props.lexique.map(( mot, index) => rows.push(
             : rows
           ).map((row) => (
             <TableRow key={row.name}>
-              <TableCell component="th" scope="row" style={{color:"red"}}>
+              <TableCell component="th" scope="row" >
                 {row.francais}
               </TableCell>
-              <TableCell align="right" style={{color:"blue"}}>{row.creole} </TableCell>
+              <TableCell align="right" >{row.creole} </TableCell>
               <TableCell align="right"  >{row.explication} </TableCell>
             </TableRow>
           ))}

@@ -1,4 +1,4 @@
-import { FETCH_KONBITS, FETCH_KOBIT,  NEW_KONBIT, DELETE_KONBIT, CLEAR_NEW_KONBIT, EDIT_KONBIT, API_KONBIT } from './types';
+import { FETCH_KONBITS, FETCH_KONBIT,  NEW_KONBIT, DELETE_KONBIT, CLEAR_NEW_KONBIT, EDIT_KONBIT, API_KONBIT } from './types';
 import axios from 'axios';
 
 //cette fonction recupere touts les articles du database et update l'etat du store

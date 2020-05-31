@@ -31,6 +31,7 @@ import Lexique from '../Ressources/Lexique';
 import LiensUtiles from '../Ressources/LiensUtiles';
 //ACTIVITES
 import Konbits from '../Activites/Konbit/Konbits';
+import Konbit from '../Activites/Konbit/Konbit';
 import Conferences from '../Activites/Conferences';
 //ESPACE ETUDIANT
 import InfoPratiques from '../EspaceEtudiant/InfoPratiques';
@@ -101,6 +102,7 @@ render(){
                           <Route path="/ressources/liensUtiles" exact component={LiensUtiles} />
                           {/* ACTIVITES */}
                           <Route path="/activites/konbits" exact component={Konbits} />
+                          <Route path="/konbit/:id" exact component={Konbit} />
                           <Route path="/activites/conferences" exact component={Conferences}/>
                            {/* ESPACE ETUDIANT */}
                            <Route path="/espaceEtudiant/info" exact component={InfoPratiques} />

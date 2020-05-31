@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Paper from '@material-ui/core/Paper';
 
 import Grid from '@material-ui/core/Grid';
@@ -44,64 +44,15 @@ class UneAnnonce extends Component {
                              {this.props.annonce.created_at} <br />
                                  {this.props.annonce.author}
                          </Typography>
-                         <Typography variant="h2" gutterBottom>
+                         <Typography variant="h2" gutterBottom style={{fontFamily:"Open Sans"}}>
                           {this.props.annonce.title}
                           </Typography>
-                        
+                             
                          <Typography variant="body2" gutterBottom>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit
-                     </Typography>
-                     <Typography variant="body2" gutterBottom>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit
-                     </Typography>
-                     <Typography variant="body2" gutterBottom>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit
-                     </Typography>
-                     <Typography variant="body2" gutterBottom>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit
-                     </Typography>
-                     <Typography variant="body2" gutterBottom>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit
-                     </Typography>
-                     <Typography variant="body2" gutterBottom>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit
-                     </Typography>
+                         <Fragment>
+                             <div className="content" style={{fontFamily:"Arial Regular"}}  dangerouslySetInnerHTML={{__html:this.props.annonce.body} }></div>   
+                            </Fragment>  
+                         </Typography>
                      </Paper>
                  </Grid>
             </div>
