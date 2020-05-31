@@ -108,7 +108,7 @@ import data from './Navbar.json';
                <EventAvailableOutlinedIcon />  {TEXT.activites.Activites}
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <Link to="/activites/konbit" className="nav-link dropdown-item ">{TEXT.activites.Konbit}</Link>
+                <Link to="/activites/konbits" className="nav-link dropdown-item ">{TEXT.activites.Konbit}</Link>
                 <div className="dropdown-divider"></div>
                   <Link to="/activites/conferences" className="nav-link dropdown-item" href="/">{TEXT.activites.Conferences}</Link>
                  </div>

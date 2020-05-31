@@ -30,7 +30,7 @@ import Theses from '../Recherche/Theses';
 import Lexique from '../Ressources/Lexique';
 import LiensUtiles from '../Ressources/LiensUtiles';
 //ACTIVITES
-import Konbit from '../Activites/Konbit';
+import Konbits from '../Activites/Konbit/Konbits';
 import Conferences from '../Activites/Conferences';
 //ESPACE ETUDIANT
 import InfoPratiques from '../EspaceEtudiant/InfoPratiques';
@@ -100,7 +100,7 @@ render(){
                           <Route path="/ressources/lexique" exact component={Lexique} />
                           <Route path="/ressources/liensUtiles" exact component={LiensUtiles} />
                           {/* ACTIVITES */}
-                          <Route path="/activites/konbit" exact component={Konbit} />
+                          <Route path="/activites/konbits" exact component={Konbits} />
                           <Route path="/activites/conferences" exact component={Conferences}/>
                            {/* ESPACE ETUDIANT */}
                            <Route path="/espaceEtudiant/info" exact component={InfoPratiques} />
