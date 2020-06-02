@@ -38,7 +38,8 @@ import { fetchAnnonces } from '../../actions/annonceActions';
                                         <Typography
                                          variant="subtitle2"
                                           gutterBottom style={{ fontWeight:"bold",
-                                          fontFamily:"Open Sans"}}>
+                                          fontFamily:"Open Sans",
+                                          color:"black"}}>
                                         {annonce.title}
                                          </Typography>
                                         </Link>

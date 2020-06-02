@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 import {BrowserRouter as Router , Link, Route} from 'react-router-dom';
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import HomeIcon from '@material-ui/icons/Home';
-import GroupOutlinedIcon from '@material-ui/icons/GroupOutlined';
-import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
-import PageviewOutlinedIcon from '@material-ui/icons/PageviewOutlined';
-import MailOutlineOutlinedIcon from '@material-ui/icons/MailOutlineOutlined';
-import LocalLibraryOutlinedIcon from '@material-ui/icons/LocalLibraryOutlined';
-import EventAvailableOutlinedIcon from '@material-ui/icons/EventAvailableOutlined';
-import LinkIcon from '@material-ui/icons/Link';
+// import GroupOutlinedIcon from '@material-ui/icons/GroupOutlined';
+// import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+// import PageviewOutlinedIcon from '@material-ui/icons/PageviewOutlined';
+// import MailOutlineOutlinedIcon from '@material-ui/icons/MailOutlineOutlined';
+// import LocalLibraryOutlinedIcon from '@material-ui/icons/LocalLibraryOutlined';
+// import EventAvailableOutlinedIcon from '@material-ui/icons/EventAvailableOutlined';
+// import LinkIcon from '@material-ui/icons/Link';
 import { connect } from 'react-redux';
 import data from './Navbar.json';
 
@@ -27,13 +27,13 @@ import data from './Navbar.json';
        
           <ul className="navbar-nav w-100 nav-justified" style={{marginRight:25}}>
          
-            <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                   <Link to="/" style={{color:"gray"}}><HomeIcon /></Link>
+            <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" style={{marginTop:"4px"}}>
+                   <Link to="/" style={{color:"gray" }}><HomeIcon /></Link>
                    </li>
           
               <li className="nav-item dropdown">
                 <a className="nav-link  dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 <InfoOutlinedIcon />{TEXT.mission.Mission}
+                 {TEXT.mission.Mission}
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
                  <Link to="/mission/presentation" className="nav-link dropdown-item" >{TEXT.mission.Presentation}</Link> 
@@ -49,7 +49,7 @@ import data from './Navbar.json';
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <GroupOutlinedIcon />{TEXT.equipe.Equipe}
+             {TEXT.equipe.Equipe}
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <Link to="/equipe/direction" className="nav-link dropdown-item ">{TEXT.equipe.Direction}</Link>
@@ -79,7 +79,7 @@ import data from './Navbar.json';
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link  dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <PageviewOutlinedIcon />{TEXT.recherche.Recherche}
+            {TEXT.recherche.Recherche}
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <Link to="/recherche/laRecherche" className="nav-link dropdown-item ">{TEXT.recherche.LaRecherche}</Link>
@@ -95,7 +95,7 @@ import data from './Navbar.json';
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <LinkIcon />{TEXT.ressources.Ressources}
+               {TEXT.ressources.Ressources}
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <Link to="/ressources/lexique" className="nav-link dropdown-item ">{TEXT.ressources.Lexique}</Link>
@@ -105,7 +105,7 @@ import data from './Navbar.json';
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link  dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <EventAvailableOutlinedIcon />  {TEXT.activites.Activites}
+              {TEXT.activites.Activites}
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <Link to="/activites/konbits" className="nav-link dropdown-item ">{TEXT.activites.Konbit}</Link>
@@ -115,7 +115,7 @@ import data from './Navbar.json';
               </li>
                  <li className="nav-item dropdown">
                 <a className="nav-link  dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <LocalLibraryOutlinedIcon /> {TEXT.espace.Espace}
+              {TEXT.espace.Espace}
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <Link to="/espaceEtudiant/info" className="nav-link dropdown-item ">{TEXT.espace.Info}</Link>
@@ -133,7 +133,7 @@ import data from './Navbar.json';
               <li className="nav-item">
               <div data-toggle="collapse" data-target=".navbar-collapse.show">
                   <Link to="/contact" className="nav-link ">
-                    <MailOutlineOutlinedIcon />{TEXT.contact.Contact}</Link>
+                 {TEXT.contact.Contact}</Link>
                   </div>
               </li>
                  

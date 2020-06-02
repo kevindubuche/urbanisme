@@ -68,7 +68,7 @@ export default function FullWidthTabs() {
   return (
     <div className={classes.root}>
       <AppBar position="static" color="default">
-        <Tabs
+        {/* <Tabs
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
@@ -78,7 +78,7 @@ export default function FullWidthTabs() {
         >
           <Tab label="Publications" {...a11yProps(0)} />
           <Tab label={data.title} {...a11yProps(1)} />
-        </Tabs>
+        </Tabs> */}
       </AppBar>
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}

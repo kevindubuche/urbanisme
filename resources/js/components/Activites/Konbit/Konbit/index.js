@@ -67,7 +67,7 @@ export default function Direction() {
       <div >
         <ExpansionPanelSummary >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T e R</Typography>
+            <Typography variant="h5"  className={classes.title}>KONBIT</Typography>
           </div>
         
         </ExpansionPanelSummary>

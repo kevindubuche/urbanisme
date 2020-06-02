@@ -43,7 +43,7 @@ class UnKonbit extends Component {
                              {this.props.konbit.created_at} <br />
                                  {this.props.konbit.author}
                          </Typography>
-                         <Typography variant="h2" gutterBottom>
+                         <Typography variant="h4" gutterBottom>
                           {this.props.konbit.title}
                           </Typography>
                         

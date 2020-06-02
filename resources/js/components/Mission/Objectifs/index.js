@@ -27,8 +27,7 @@ export default function Demarche() {
     image: {
       
         width: '100%',
-        height: '10%',
-        padding :'3%',
+        height: '10%'
     }
 }
 
@@ -38,12 +37,11 @@ export default function Demarche() {
       <div >
         <ExpansionPanelSummary  >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T e R</Typography>
+            <Typography variant="h5"  className={classes.title}> {TEXT.title}</Typography>
           </div>
         
         </ExpansionPanelSummary>
   
-        <Divider />
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
                 <Paper>
@@ -52,7 +50,7 @@ export default function Demarche() {
             </Grid>
             <Grid item xs={12} sm={6}>
             <Typography variant="h4" className={classes.title}>
-             {TEXT.title}
+            
              
             </Typography>
                 <div className={classes.body}>{TEXT.body}</div>

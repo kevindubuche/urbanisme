@@ -17,7 +17,7 @@ export default function UnKonbit(props) {
                         14 Avril 2020 <br />
                         Kevin J. Dubuche
                 </Typography>
-                <Typography variant="h2" gutterBottom>
+                <Typography variant="h4" gutterBottom>
                     {props.data.title}
                  </Typography>
                

@@ -13,10 +13,11 @@ const theme = createMuiTheme();
 const styles = theme => ({
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 50,
-    width:50,
+    minWidth: 60,
+    width:70,
     height:20,
-    float:'right'
+    float:'right',
+    marginRight:70,
   },
   selectEmpty: {
     marginTop: theme.spacing(2),

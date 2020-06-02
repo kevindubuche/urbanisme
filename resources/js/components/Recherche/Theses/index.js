@@ -69,21 +69,7 @@ export default function Presentation() {
             <UneThese />
             </Grid>
          </Grid>
-         <Divider />
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={3}>
-            <UneThese />
-            </Grid>
-            <Grid item xs={12} sm={3}>
-            <UneThese />
-            </Grid>
-            <Grid item xs={12} sm={3}>
-            <UneThese />
-            </Grid>
-            <Grid item xs={12} sm={3}>
-            <UneThese />
-            </Grid>
-         </Grid>
+    
       </div>
     </div>
   );

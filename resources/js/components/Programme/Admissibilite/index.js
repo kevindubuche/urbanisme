@@ -26,8 +26,7 @@ export default function Fondation() {
     image: {
       
         width: '100%',
-        height: '10%',
-        padding :'3%',
+        height: '10%'
     }
 }
 
@@ -37,12 +36,12 @@ export default function Fondation() {
       <div >
         <ExpansionPanelSummary   >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T e R</Typography>
+            <Typography variant="h5" className={classes.title}>{TEXT.title}</Typography>
           </div>
         
         </ExpansionPanelSummary>
   
-        <Divider />
+       
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
               
@@ -51,13 +50,11 @@ export default function Fondation() {
                  </Paper>
        
             </Grid>
-            <Grid item xs={12} sm={6}>
-            <Typography variant="h4" className={classes.title}>
-            {TEXT.title}
-            </Typography>
+            <Grid item xs={12} sm={6} >
+            
                 <div className={classes.body}>{TEXT.body}</div>
-                <a href="/files/formulaire.pdf" target='_blank'>   
-  <Button  variant="contained" color="primary" >{TEXT.button}</Button>
+                <a href="/files/formulaire.pdf" target='_blank' >   
+  <Button  variant="contained" color="primary" style={{marginTop:50}} >{TEXT.button}</Button>
           </a>
              
             </Grid>

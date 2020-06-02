@@ -56,15 +56,7 @@ export default function FullWidthTabs() {
   return (
     <div className={classes.root}>
       <AppBar position="static" color="default">
-        <Tabs
-          value={value}
-          indicatorColor="primary"
-          textColor="primary"
-          variant="fullWidth"
-          aria-label="full width tabs example"
-        >
-          <Tab label="Les annonces" {...a11yProps(0)} />
-        </Tabs>
+      
       </AppBar>
  
         <TabPanel value={value} index={0} dir={theme.direction}>

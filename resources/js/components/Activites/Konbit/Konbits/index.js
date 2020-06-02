@@ -21,7 +21,6 @@ export default function Konbit() {
       
         width: '100%',
         height: '10%',
-        padding :'3%',
     }
 }
 
@@ -33,12 +32,12 @@ export default function Konbit() {
       
         >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T e R</Typography>
+            <Typography variant="h5"  className={classes.title}>KONBIT</Typography>
           </div>
         
         </ExpansionPanelSummary>
   
-        <Divider />
+      
           <Grid container spacing={3}>
             <Grid item xs={12} sm={12}>
             <Grid container spacing={3}>
@@ -60,8 +59,8 @@ export default function Konbit() {
               </Typography>
            </Grid>
           </Grid>
-          <Divider />
-                   <TabKonbit />
+       
+                   <TabKonbit style={{marginTop:40}}/>
             </Grid>
             
          </Grid>

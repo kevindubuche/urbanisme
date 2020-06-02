@@ -16,7 +16,7 @@ import { fetchAnnonces } from '../../actions/annonceActions';
      }
     render(){
         return (
-            <div style={{marginRight:'50px', marginLeft:'50px'}} >
+            <div style={{marginRight:'75px', marginLeft:'50px'}} >
                            
                            <marquee behavior="scroll" direction="left">
                                {this.props.annonces.slice(0,5).map((annonce, index)=>

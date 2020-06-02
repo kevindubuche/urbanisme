@@ -113,14 +113,14 @@ export default function ListAnnonces(props) {
            <img src={"/konbits_images/"+annonce.image} style={{height:'150px',width:'150px', borderRadius:'75px'}}  />
            </Grid>
               <Grid item xs={12} sm={9}>
-              <Paper>
+              
                       <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}}>
                       {annonce.created_at}<br />
                       {annonce.author}
                   </Typography>
                   
-                 <Link to={"/konbit/"+annonce.id}>
-                 <Typography variant="subtitle2" gutterBottom style={{ fontWeight:"bold"}} >
+                 <Link to={"/konbit/"+annonce.id} style={{color:'black'}}>
+                 <Typography variant="body1" gutterBottom style={{ fontWeight:"bold"}} >
                  {annonce.title} 
                    </Typography>
                  </Link>
@@ -129,7 +129,7 @@ export default function ListAnnonces(props) {
                   <Typography variant="body2" gutterBottom tooltip="Description here" style={{cursor:"pointer"}}>
                  {annonce.resume}
               </Typography>
-              </Paper>
+              
           </Grid>
           </div>
     )) )

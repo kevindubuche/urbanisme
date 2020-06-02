@@ -26,15 +26,29 @@ export default function Header(props) {
 
   return (
               <React.Fragment> 
-                <MovingText />  <SwitchLanguage  />
-                  <Toolbar className={classes.toolbar}> 
+                <MovingText /> 
+                <div>
+                    <SwitchLanguage  />
+                </div>
+               
+                  <Toolbar  style={{display:'flex', flexWrap:'wrap', flexDirection:'column'}}> 
                   <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap', alignItems: 'center'}}>
-                    <img src={logo}  width="170" height="170" alt="logo"></img> 
-                    <h5>URBATeR</h5>
+                    <img src={logo}  width="170" height="170" alt="logo" style={{float:"left"}}></img> 
+                    <h5 style={{display:'flex', flexWrap:'wrap', alignItems: 'left'}}>URBATeR, Maîtrise en Urbanisme Résilient et Aménagement des Territoires à Risques</h5>
                   </div>
-                    <Search />
+                
+                    <div  style={{ alignSelf:'flex-end', marginRight:"-100px"}}>
+                      <div >
+                         <Search />
+                      </div>
+                    
+                    </div>
+                  
                   </Toolbar>
-                    <Navbar />
+                  <div style={{paddingTop:20, paddingBottom:20}}>
+                     <Navbar />
+                  </div>
+                   
               </React.Fragment>
   );
 }

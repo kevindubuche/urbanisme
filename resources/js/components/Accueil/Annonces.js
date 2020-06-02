@@ -36,9 +36,10 @@ import { fetchAnnonces } from '../../actions/annonceActions';
                                         
                                         <Link to={"/annonce/"+annonce.id}> 
                                         <Typography
-                                         variant="subtitle2"
+                                         variant="body1"
                                           gutterBottom style={{ fontWeight:"bold",
-                                          fontFamily:"Open Sans"}}>
+                                          fontFamily:"Open Sans",
+                                          color:"black"}}>
                                         {annonce.title}
                                          </Typography>
                                         </Link>

@@ -44,7 +44,7 @@ class UneAnnonce extends Component {
                              {this.props.annonce.created_at} <br />
                                  {this.props.annonce.author}
                          </Typography>
-                         <Typography variant="h2" gutterBottom style={{fontFamily:"Open Sans"}}>
+                         <Typography variant="h4" gutterBottom style={{fontFamily:"Open Sans"}}>
                           {this.props.annonce.title}
                           </Typography>
                              

@@ -28,23 +28,22 @@ export default function Fondation() {
     image: {
       
         width: '100%',
-        height: '10%',
-        padding :'3%',
+        height: '10%'
     }
 }
 
   return (
-    <div className={classes.root} id="fondation">
+    <div className={classes.root} >
       <Divider />
       <div >
         <ExpansionPanelSummary    >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T e R</Typography>
+            <Typography  variant="h5" className={classes.title}>{TEXT.title}</Typography>
           </div>
         
         </ExpansionPanelSummary>
   
-        <Divider />
+        
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
               
@@ -54,24 +53,22 @@ export default function Fondation() {
        
             </Grid>
             <Grid item xs={12} sm={6}>
-            <Typography variant="h4" className={classes.title}>
-            {TEXT.title}
-            </Typography>
+  
                 <div className={classes.body}>{TEXT.body}</div>
             </Grid>
             
          </Grid>
-         <Divider /><Divider /><Divider />
-          <Grid container spacing={1}>
+         
+          <Grid container spacing={1} style={{paddingTop:60}}>
             <Grid item xs={12} sm={6}>
                 <Cours />
            </Grid>
             <Grid item xs={12} sm={6}>
             <Cours />
             </Grid>
-            <Grid item xs={12} sm={12}>
+            <Grid item xs={12} sm={12} style={{paddingTop:20}}>
             <a href="/files/formulaire.pdf" target='_blank'>   
-                <Button  variant="contained" color="primary" >VOIR LE PROGRAMME COMPLET</Button>
+                <Button  variant="contained" color="primary" >{TEXT.button}</Button>
           </a>
             </Grid>
            
