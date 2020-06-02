@@ -6,7 +6,6 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelActions from '@material-ui/core/ExpansionPanelActions';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Chip from '@material-ui/core/Chip';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 
@@ -30,18 +29,17 @@ export default function Partenaires() {
       
         width: '100%',
         height: '10%',
-        paddingRight :'5%',
     }
 }
 
   return (
-    <div className={classes.root} id="partenaires">
+    <div className={classes.root} >
      
       <Divider />
       <div >
         <ExpansionPanelSummary  >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T e R</Typography>
+            <Typography variant="h5" className={classes.title}> {TEXT.title}</Typography>
           </div>
         
         </ExpansionPanelSummary>
@@ -54,47 +52,14 @@ export default function Partenaires() {
                  </Paper>
             </Grid>
             <Grid item xs={12} sm={6}>
-            <Typography variant="h4" className={classes.title}>
-             {TEXT.title}
-             
-            </Typography>
+          
                 <div className={classes.body}>{TEXT.body}</div>    
             </Grid>
             
          </Grid>
       </div>
       <br />
-        <Divider />
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={4}>
-                <Paper>
-              <Link href="https://www.google.com" ><img src={logo}  width={100} height={100} style={{borderRadius:50}}/></Link> 
-                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
-                 <Divider />
-                 <Link href="https://www.google.com" ><img src={logo}  width={100} height={100} style={{borderRadius:50}}/></Link> 
-                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
-               
-                </Paper>
-            </Grid>
-            <Grid item xs={12} sm={4}>
-                <Paper>
-                <Link href="https://www.google.com" ><img src={logo}  width={100} height={100} style={{borderRadius:50}}/></Link> 
-                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
-                 <Divider />
-                 <Link href="https://www.google.com" ><img src={logo}  width={100} height={100} style={{borderRadius:50}}/></Link> 
-                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
-                 </Paper>
-            </Grid>
-            <Grid item xs={12} sm={4}>
-                <Paper>
-                <Link href="https://www.google.com" ><img src={logo}  width={100} height={100} style={{borderRadius:50}}/></Link> 
-                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
-                 <Divider />
-                 <Link href="https://www.google.com" ><img src={logo}  width={100} height={100} style={{borderRadius:50}}/></Link> 
-                <div className="card-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
-                 </Paper>
-            </Grid>
-         </Grid>
+       
     
     </div>
   );

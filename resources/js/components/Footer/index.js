@@ -58,20 +58,20 @@ export default function Footer(props) {
        <OtherLink to='/contact' >
          <Typography color='textSecondary'>
            <HomeIcon />
-       Adresse : #34,Delmas 33, Haiti WE
+           27, rue Toussaint Louverture, Delmas 33 (local Laboratoire National du Bâtiment et des Travaux Publics)
          </Typography>
         </OtherLink>
        
          <OtherLink to='/contact'  >
          <Typography color='textSecondary'>
        <MailIcon />
-       Email : hurbanisme@mail.com
+       Email : urbater@ueh.edu.ht
        </Typography>
         </OtherLink> 
        <OtherLink to='/contact'  >
        <Typography color='textSecondary'>
        <PhoneIcon />
-       Phone : +509 38403623
+       Phone : +509 31 35 9233
        </Typography>
         </OtherLink>
     
