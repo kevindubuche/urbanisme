@@ -19,7 +19,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://www.google.com/">
+      <Link color="inherit" href="#">
         www.urbater.org
       </Link>{' '}
       {new Date().getFullYear()}
@@ -65,20 +65,20 @@ export default function Footer(props) {
          <OtherLink to='/contact'  >
          <Typography color='textSecondary'>
        <MailIcon />
-       Email : urbater@ueh.edu.ht
+      urbater@ueh.edu.ht
        </Typography>
         </OtherLink> 
        <OtherLink to='/contact'  >
        <Typography color='textSecondary'>
        <PhoneIcon />
-       Phone : +509 31 35 9233
+        +509 31 35 9233
        </Typography>
         </OtherLink>
     
         </div>
      
         
-        <img src={logo} width={"60px"} height={"60px"}  style={{marginRight:50, alignSelf:'flex-end'}}/>
+        <img src={logo} width={"60px"} height={"60px"}  style={{marginRight:100, alignSelf:'flex-end'}}/>
         
        
         <div style={{justifyContent:'center', alignItems:'flex-end'}}>

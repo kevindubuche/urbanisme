@@ -60,7 +60,7 @@ export default function Konbit() {
            </Grid>
           </Grid>
        
-                   <TabKonbit style={{marginTop:40}}/>
+                   <TabKonbit />
             </Grid>
             
          </Grid>

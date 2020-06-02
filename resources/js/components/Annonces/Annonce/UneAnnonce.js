@@ -35,11 +35,11 @@ class UneAnnonce extends Component {
         return (
             <div>
                  <Grid item xs={12} sm={3}>
-                  <img src={"/annonces_images/"+this.props.annonce.image} style={{height:'250px',width:'250px', borderRadius:'125px'}} />
+                  <img src={"/annonces_images/"+this.props.annonce.image} style={{height:'80%',width:'80%'}} />
                   
                   </Grid>
                      <Grid item xs={12} sm={9}>
-                     <Paper>
+                     <Fragment>
                              <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
                              {this.props.annonce.created_at} <br />
                                  {this.props.annonce.author}
@@ -53,7 +53,7 @@ class UneAnnonce extends Component {
                              <div className="content" style={{fontFamily:"Arial Regular"}}  dangerouslySetInnerHTML={{__html:this.props.annonce.body} }></div>   
                             </Fragment>  
                          </Typography>
-                     </Paper>
+                     </Fragment>
                  </Grid>
             </div>
            

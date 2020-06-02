@@ -35,7 +35,7 @@ function Copyright() {
 const useStyles = makeStyles((theme) => ({
   root: {
     height: '100vh',
-    paddingTop:40
+    paddingTop:70
   },
   image: {
     // backgroundImage: 'url(https://source.unsplash.com/random)',
@@ -73,17 +73,16 @@ export default function SignInSide() {
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-   
+  
       <Grid item xs={false} sm={4} md={7} className={classes.image} >
-     
       <Grid container spacing={3}>
             <Grid item xs={12} sm={10}>
-            <Typography variant="body2" color="textSecondary" align="center" style={{paddingBottom:40}}>Pour nous contacter</Typography>
+            <Typography variant="body2" color="textSecondary" align="center" style={{paddingBottom:40}}>{TEXT.pourContacter}</Typography>
                 
                <Typography variant="body2" color="textSecondary" align="center">{TEXT.tilleContact}</Typography>
                 <Divider/>
                 <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:20}}><HomeIcon/>
-                 27, rue Toussaint Louverture, Delmas 33 (local Laboratoire National du Bâtiment et des Travaux Publics)</Typography>
+                 27, Rue Toussaint Louverture, Delmas 33 (local Laboratoire National du Bâtiment et des Travaux Publics)</Typography>
           <Divider/>
                 <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:20}}>
                   <PhoneIcon/>

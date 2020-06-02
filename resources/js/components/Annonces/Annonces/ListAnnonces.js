@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
@@ -110,17 +110,17 @@ export default function ListAnnonces(props) {
       <div key={index}>
       <Grid item xs={12} sm={3}>
            
-           <img src={"/annonces_images/"+annonce.image} style={{height:'150px',width:'150px', borderRadius:'75px'}}  />
+           <img src={"/annonces_images/"+annonce.image} style={{height:'80%',width:'80%'}}  />
            </Grid>
               <Grid item xs={12} sm={9}>
-              <Paper>
+              <Fragment>
                       <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}}>
                       {annonce.created_at}<br />
                       {annonce.author}
                   </Typography>
                   
                  <Link to={"/annonce/"+annonce.id}>
-                 <Typography variant="subtitle2" gutterBottom style={{ fontWeight:"bold"}} >
+                 <Typography variant="subtitle2" gutterBottom style={{ fontWeight:"bold", color:"black"}} >
                  {annonce.title} 
                    </Typography>
                  </Link>
@@ -129,7 +129,7 @@ export default function ListAnnonces(props) {
                   <Typography variant="body2" gutterBottom tooltip="Description here" style={{cursor:"pointer"}}>
                  {annonce.resume}
               </Typography>
-              </Paper>
+              </Fragment>
           </Grid>
           </div>
     )) )
