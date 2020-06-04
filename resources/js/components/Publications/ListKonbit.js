@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
@@ -93,7 +93,7 @@ const rows = [
          {Image}
          </Grid>
             <Grid item xs={12} sm={9}>
-            <Paper>
+            <Fragment>
                     <Typography variant="caption" display="block" gutterBottom >
                         14 Avril 2020 <br />
                         Kevin J. Dubuche
@@ -115,7 +115,7 @@ const rows = [
                 unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
                 unde suscipit
             </Typography>
-            </Paper>
+            </Fragment>
         </Grid>
         </div>
 

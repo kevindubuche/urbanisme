@@ -33,7 +33,7 @@ export default function Direction() {
       <div >
         <ExpansionPanelSummary >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T e R</Typography>
+            <Typography className={classes.heading}>RESULTATS</Typography>
           </div>
         
         </ExpansionPanelSummary>

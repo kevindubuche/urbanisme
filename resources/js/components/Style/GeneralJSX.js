@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
       },
     },
     title: {
-     fontFamily:"Open Sans",
+     fontFamily:"Arial",
       paddingBottom:20,
      marginLeft:"-25px",
     },

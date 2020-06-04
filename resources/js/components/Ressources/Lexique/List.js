@@ -114,7 +114,7 @@ props.lexique.map(( mot, index) => rows.push(
   };
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} >
       <Table className={classes.table} aria-label="custom pagination table">
         <TableBody>
           {(rowsPerPage > 0
@@ -122,11 +122,11 @@ props.lexique.map(( mot, index) => rows.push(
             : rows
           ).map((row) => (
             <TableRow key={row.name}>
-              <TableCell component="th" scope="row" >
+              <TableCell component="th" scope="row" align="left" >
                 {row.francais}
               </TableCell>
-              <TableCell align="right" >{row.creole} </TableCell>
-              <TableCell align="right"  >{row.explication} </TableCell>
+              <TableCell align="left" >{row.creole} </TableCell>
+              <TableCell align="left"  >{row.explication} </TableCell>
             </TableRow>
           ))}
 

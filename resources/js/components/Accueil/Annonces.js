@@ -29,7 +29,7 @@ import { fetchAnnonces } from '../../actions/annonceActions';
                                    <img src={"/annonces_images/"+annonce.image} width={"80%"} height={"80%"}  />
                                 </Grid>
                                 <Grid item xs={12} sm={9}>
-                                    <Paper>
+                                    <Fragment>
                                             <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
                                                 {annonce.created_at}
                                         </Typography>
@@ -49,7 +49,7 @@ import { fetchAnnonces } from '../../actions/annonceActions';
                                         style={{fontFamily:"Arial Regular"}}>
                                         {annonce.resume}
                                     </Typography>
-                                    </Paper>
+                                    </Fragment>
                                 </Grid>
 
                                <br /> <br /> <br /> <br />

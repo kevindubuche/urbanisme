@@ -77,19 +77,19 @@ export default function SignInSide() {
       <Grid item xs={false} sm={4} md={7} className={classes.image} >
       <Grid container spacing={3}>
             <Grid item xs={12} sm={10}>
-            <Typography variant="body2" color="textSecondary" align="center" style={{paddingBottom:40}}>{TEXT.pourContacter}</Typography>
+            <Typography variant="body2" color="textSecondary" align="center" style={{paddingBottom:50}}>{TEXT.pourContacter}</Typography>
                 
                <Typography variant="body2" color="textSecondary" align="center">{TEXT.tilleContact}</Typography>
                 <Divider/>
-                <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:20}}><HomeIcon/>
+                <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:30}}><HomeIcon/>
                  27, Rue Toussaint Louverture, Delmas 33 (local Laboratoire National du Bâtiment et des Travaux Publics)</Typography>
           <Divider/>
-                <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:20}}>
+                <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:30}}>
                   <PhoneIcon/>
                 +509 31 35 9233
                 </Typography>
                 <Divider/>
-                <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:20}}>
+                <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:30}}>
                   <MailIcon/>
                   urbater@ueh.edu.ht
                 </Typography>

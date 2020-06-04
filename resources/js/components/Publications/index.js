@@ -34,12 +34,12 @@ export default function Konbit() {
       
         >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T e R</Typography>
+            <Typography variant="h5" className={classes.title}>PUBLICATION</Typography>
           </div>
         
         </ExpansionPanelSummary>
   
-        <Divider />
+ 
           <Grid container spacing={3}>
             <Grid item xs={12} sm={12}>
         

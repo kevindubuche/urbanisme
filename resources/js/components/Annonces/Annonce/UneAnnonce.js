@@ -9,7 +9,7 @@ import { fetchAnnonce } from '../../../actions/annonceActions';
 import { connect } from 'react-redux';
 
 import {withRouter} from 'react-router-dom';
-
+var dateFormat  = require('date-format');
 // const Image= <img style={{height:'250px',width:'250px', borderRadius:'125px'}} src={require('../marc.jpg')} />
 
 class UneAnnonce extends Component {
@@ -32,7 +32,9 @@ class UneAnnonce extends Component {
     }
    
     render(){
+       
         return (
+            
             <div>
                  <Grid item xs={12} sm={3}>
                   <img src={"/annonces_images/"+this.props.annonce.image} style={{height:'80%',width:'80%'}} />
@@ -41,7 +43,11 @@ class UneAnnonce extends Component {
                      <Grid item xs={12} sm={9}>
                      <Fragment>
                              <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
-                             {this.props.annonce.created_at} <br />
+                             {/* {this.props.annonce.created_at} */}
+      
+                             
+                             { Date(this.props.annonce.created_at)  }
+                              <br />
                                  {this.props.annonce.author}
                          </Typography>
                          <Typography variant="h4" gutterBottom style={{fontFamily:"Open Sans"}}>

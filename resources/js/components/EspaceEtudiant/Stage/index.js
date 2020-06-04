@@ -11,7 +11,7 @@ import Divider from '@material-ui/core/Divider';
 
 import partenaires from '../images/partenaires.png';
 import logo from '../images/logo.png';
-import Link from '@material-ui/core/Link';
+import {Link} from 'react-router-dom';
 
 
 import Paper from '@material-ui/core/Paper';
@@ -54,6 +54,10 @@ export default function Partenaires() {
             <Grid item xs={12} sm={6}>
           
                 <div className={classes.body}>{TEXT.body}</div>    
+
+                <Link to="/mission/partenaires" >   
+  <Button  variant="contained" color="primary" style={{marginTop:50}} >{TEXT.button}</Button>
+          </Link>
             </Grid>
             
          </Grid>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component , Fragment} from 'react';
 import Paper from '@material-ui/core/Paper';
 
 import Grid from '@material-ui/core/Grid';
@@ -34,11 +34,11 @@ class UnKonbit extends Component {
         return (
             <div>
                  <Grid item xs={12} sm={3}>
-                  <img src={"/konbits_images/"+this.props.konbit.image} style={{height:'250px',width:'250px', borderRadius:'125px'}} />
+                  <img src={"/konbits_images/"+this.props.konbit.image} style={{height:'80%',width:'80%'}} />
                   
                   </Grid>
                      <Grid item xs={12} sm={9}>
-                     <Paper>
+                     <Fragment>
                              <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
                              {this.props.konbit.created_at} <br />
                                  {this.props.konbit.author}
@@ -47,15 +47,8 @@ class UnKonbit extends Component {
                           {this.props.konbit.title}
                           </Typography>
                         
-                         <Typography variant="body2" gutterBottom>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit
-                     </Typography>
+                       
+          
                      <Typography variant="body2" gutterBottom>
                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
                          unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
@@ -65,43 +58,7 @@ class UnKonbit extends Component {
                          unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
                          unde suscipit
                      </Typography>
-                     <Typography variant="body2" gutterBottom>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit
-                     </Typography>
-                     <Typography variant="body2" gutterBottom>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit
-                     </Typography>
-                     <Typography variant="body2" gutterBottom>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit
-                     </Typography>
-                     <Typography variant="body2" gutterBottom>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit
-                     </Typography>
-                     </Paper>
+                     </Fragment>
                  </Grid>
             </div>
            

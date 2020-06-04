@@ -53,9 +53,9 @@ export default function Presentation() {
 
           
             
-              <Link href="https://fds.edu.ht/site/"  >{TEXT.link1}</Link><br /><Divider />
-              <Link href="https://fds.edu.ht/site/" >{TEXT.link2} </Link><br /><Divider />
-              <Link href="https://web.umons.ac.be/fr/" >{TEXT.link3}</Link><br /><Divider />
+              <Link href="https://fds.edu.ht/site/"  >{TEXT.link1}</Link><br /><Divider /><div style={{paddingTop:30}} />
+              <Link href="https://fds.edu.ht/site/" >{TEXT.link2} </Link><br /><Divider /><div style={{paddingTop:30}} />
+              <Link href="https://web.umons.ac.be/fr/" >{TEXT.link3}</Link><br /><Divider /><div style={{paddingTop:30}} />
               <Link href="https://www.uliege.be/cms/c_8699436/en/uliege" >{TEXT.link4} </Link><br /><Divider />
             
                

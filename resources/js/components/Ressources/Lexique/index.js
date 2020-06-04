@@ -46,7 +46,7 @@ export default function Presentation() {
           <Grid container spacing={3}>
             <Grid item xs={12} sm={12}>
           
-                <div className={classes.body} style={{marginBottom:40}}>{TEXT.body}</div>
+                <div className={classes.body} style={{marginBottom:80}}>{TEXT.body}</div>
                   <GetLexique />
             </Grid>
             
