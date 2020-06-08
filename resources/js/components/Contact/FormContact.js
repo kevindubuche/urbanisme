@@ -1,9 +1,12 @@
 import React, { Component} from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
-
 import Box from '@material-ui/core/Box';
- export default class FormContact extends Component{
+
+import {connect} from 'react-redux';
+import { sendEmail } from '../../actions/mailActions';
+
+ class FormContact extends Component{
     constructor(props){
         super(props);
         this.state= {
@@ -28,10 +31,13 @@ import Box from '@material-ui/core/Box';
    }
 
    handleSubmit= e =>{
-    
+    // TODO : validate
+    e.preventDefault();
+    this.props.sendEmail(this.state);
    
     
 }
+
 
    handleChange = name => ({target: {value}}) => {
     this.setState({
@@ -46,7 +52,7 @@ import Box from '@material-ui/core/Box';
         
     
         return(
-            <form  noValidate>
+            <form  noValidate onSubmit={this.handleSubmit}>
             <TextField
                 variant="outlined"
                 margin="normal"
@@ -99,3 +105,5 @@ import Box from '@material-ui/core/Box';
         )
     }
 }
+
+export default connect(null, { sendEmail })(FormContact);

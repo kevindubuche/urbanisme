@@ -7,6 +7,7 @@ export const API_ANNONCE = '/api/annonce';
 export const API_KONBIT = '/api/konbit';
 export const API_LEXIQUE = '/api/lexique';
 export const API_SEARCH = '/api/search';
+export const API_MAIL = '/api/sendmail';
 
 //.................................................
 
@@ -75,4 +76,9 @@ export const EDIT_MOT = 'EDIT_MOT';
 // the actions name for the search
 export const FETCH_RESULTATS_SEARCH = 'FETCH_RESULTATS_SEARCH';
 export const GET_STATE_RESULTATS = 'GET_STATE_RESULTATS';
+//................................................., 
+
+
+// the actions name for the mail
+export const NEW_MAIL = 'NEW_MAIL';
 //.................................................

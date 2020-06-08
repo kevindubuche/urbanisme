@@ -29,9 +29,9 @@ class MailController extends Controller
     // )->setBody('okookokokoko');
   $sendmail=  Mail::send([], [], function ($message) use ($request){
         $message->to('kevin.dubuche@student.ueh.edu.ht')
-          ->subject($request->subject)
+          ->subject('MESSAGE D\'UN VISITEUR DU SITE WEB URBATeR')
           // here comes what you want
-          ->setBody($request->body); // assuming text/plain
+          ->setBody($request->message); // assuming text/plain
       });
         if (empty($sendmail)) {
             return response()->json(['message' => 'Mail Sent Sucssfully'], 200);

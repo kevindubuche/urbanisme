@@ -35,6 +35,6 @@ Route::post('search','Api\AnnonceController@search');
 // Route::get('blog/{id}','Api\BlogController@show');
 
 // Route::post('mail','Api\MailController@sendEmail');
-Route::group(['prefix' => 'v1'], function () {
+Route::group(['prefix' => ''], function () {
     Route::post('sendmail', 'MailController@sendEmail');
 });
