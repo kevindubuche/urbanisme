@@ -9,7 +9,7 @@ import { fetchKonbit } from '../../../../actions/konbitActions';
 import { connect } from 'react-redux';
 
 import {withRouter} from 'react-router-dom';
-
+var moment  = require('moment');
 
 class UnKonbit extends Component {
     constructor(props){
@@ -40,7 +40,8 @@ class UnKonbit extends Component {
                      <Grid item xs={12} sm={9}>
                      <Fragment>
                              <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
-                             {this.props.konbit.created_at} <br />
+                             {/* {this.props.konbit.created_at} */}
+                             {moment(new Date(this.props.konbit.created_at)).format('ll') } <br />
                                  {this.props.konbit.author}
                          </Typography>
                          <Typography variant="h4" gutterBottom>

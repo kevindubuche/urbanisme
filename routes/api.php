@@ -33,3 +33,8 @@ Route::resource('konbit', 'Api\KonbitController');
 Route::resource('lexique', 'Api\LexiqueController');
 Route::post('search','Api\AnnonceController@search');
 // Route::get('blog/{id}','Api\BlogController@show');
+
+// Route::post('mail','Api\MailController@sendEmail');
+Route::group(['prefix' => 'v1'], function () {
+    Route::post('sendmail', 'MailController@sendEmail');
+});

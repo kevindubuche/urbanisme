@@ -9,7 +9,7 @@ import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchAnnonces } from '../../actions/annonceActions';
-
+var moment  = require('moment');
  class Annonces extends Component {
     constructor(props){
         super(props);
@@ -31,7 +31,8 @@ import { fetchAnnonces } from '../../actions/annonceActions';
                                 <Grid item xs={12} sm={9}>
                                     <Fragment>
                                             <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
-                                                {annonce.created_at}
+                                            
+                                                {moment(new Date(annonce.created_at)).format('ll') }
                                         </Typography>
                                         
                                         <Link to={"/annonce/"+annonce.id}> 

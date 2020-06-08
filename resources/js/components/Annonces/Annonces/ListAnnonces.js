@@ -18,7 +18,7 @@ import {Link} from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
-
+var moment  = require('moment');
 
 const useStyles1 = makeStyles((theme) => ({
   root: {
@@ -115,7 +115,9 @@ export default function ListAnnonces(props) {
               <Grid item xs={12} sm={9}>
               <Fragment>
                       <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}}>
-                      {annonce.created_at}<br />
+                      {moment(new Date(annonce.created_at)).format('ll') }
+                      {/* {annonce.created_at} */}
+                      <br />
                       {annonce.author}
                   </Typography>
                   

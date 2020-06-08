@@ -19,18 +19,8 @@ import MailIcon from '@material-ui/icons/Mail';
 
 import data from './Contact.json';
 import {useSelector} from 'react-redux';
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://google.com/">
-        www.urbater.org
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+
+import FormContact from './FormContact';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -93,7 +83,7 @@ export default function SignInSide() {
                   <MailIcon/>
                   urbater@ueh.edu.ht
                 </Typography>
-                <Divider/>
+             
             </Grid>
           </Grid>
      
@@ -106,7 +96,7 @@ export default function SignInSide() {
           <Typography component="h1" variant="h5">
           {TEXT.titleLeaveMsg}
           </Typography>
-          <form className={classes.form} noValidate>
+          {/* <form className={classes.form} noValidate>
           <TextField
               variant="outlined"
               margin="normal"
@@ -152,9 +142,9 @@ export default function SignInSide() {
             </Button>
           
             <Box mt={5}>
-              <Copyright />
             </Box>
-          </form>
+          </form> */}
+         < FormContact placeholderNom ={TEXT.placeholderNom} placeholderMail={TEXT.placeholderMail} placeholderMsg={TEXT.placeholderMsg} boutton={TEXT.boutton} />
         </div>
       </Grid>
     </Grid>

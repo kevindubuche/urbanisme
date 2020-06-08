@@ -9,7 +9,7 @@ import { fetchAnnonce } from '../../../actions/annonceActions';
 import { connect } from 'react-redux';
 
 import {withRouter} from 'react-router-dom';
-var dateFormat  = require('date-format');
+var moment  = require('moment');
 // const Image= <img style={{height:'250px',width:'250px', borderRadius:'125px'}} src={require('../marc.jpg')} />
 
 class UneAnnonce extends Component {
@@ -45,8 +45,8 @@ class UneAnnonce extends Component {
                              <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
                              {/* {this.props.annonce.created_at} */}
       
-                             
-                             { Date(this.props.annonce.created_at)  }
+                            
+                             {moment(new Date(this.props.annonce.created_at)).format('ll') }
                               <br />
                                  {this.props.annonce.author}
                          </Typography>

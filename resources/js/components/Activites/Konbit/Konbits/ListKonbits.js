@@ -17,6 +17,7 @@ import LastPageIcon from '@material-ui/icons/LastPage';
 import {Link} from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+var moment  = require('moment');
 
 
 
@@ -114,7 +115,8 @@ export default function ListAnnonces(props) {
                <Grid item xs={12} sm={8}>
                    <Fragment>
                            <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
-                               {annonce.created_at}
+                               {/* {annonce.created_at} */}
+                               {moment(new Date(annonce.created_at)).format('ll') } 
                        </Typography>
                        
                        <Link to={"/konbit/"+annonce.id}> 
