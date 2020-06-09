@@ -47,7 +47,7 @@ const image = <AccountCircleIcon style={{height:'200px',width:'200px' , padding:
 
           <ExpansionPanelSummary >
           <div className={classes.column} style={{paddingTop:40}}>
-            <Typography className={classes.title}>{TEXT.title}</Typography>
+            <Typography className={classes.title}>{TEXT.title2}</Typography>
           </div>
         
         </ExpansionPanelSummary>

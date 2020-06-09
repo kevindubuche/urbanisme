@@ -29,7 +29,7 @@ var moment  = require('moment');
                                    <img src={"/annonces_images/"+annonce.image} width={"80%"} height={"80%"}  />
                                 </Grid>
                                 <Grid item xs={12} sm={9}>
-                                    <Paper>
+                                    <Fragment>
                                             <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
                                             
                                                 {moment(new Date(annonce.created_at)).format('ll') }
@@ -50,7 +50,7 @@ var moment  = require('moment');
                                         style={{fontFamily:"Arial Regular"}}>
                                         {annonce.resume}
                                     </Typography>
-                                    </Paper>
+                                    </Fragment>
                                 </Grid>
 
                                <br /> <br /> <br /> <br />
