@@ -102,7 +102,24 @@
            " Géotechnique",
            "Mouvements de sols"
       ]
- }
+ },
+ {
+     "nom":"ISABELLE ALICE, JOLICOEUR",
+     "titre":"Enseignante",
+     "email":"isabelle_alice.jolicoeur@ueh.edu.ht",
+     "phone":"34 56 95 94",
+     "diplomes":[
+      "Maitrise en Architecture 2015, Université de Montréal (Canada)",
+     "Licence en Architecture2010, Université de Montréal (Canada)"
+     ],
+     "biographie":"Née en Haïti, Isabelle A. Jolicoeur obtient sa licence puis une Maitrise en Architecture de l’Université de Montréal. Avant de co-fonder la firme d’architecture Ateliers Co-Lab elle accumule huit (8) années d’expérience au sein d’agences primées à Montréal comme Atelier VAP, MXMA et MU Architecture. En 2015, elle fonde Aetypik, une plateforme qui agit à la fois comme une vitrine virtuelle sur la créativité Haïtienne mais aussi comme incubateur d’initiatives formatrices et inspirantes (conférences, ateliers etc.) pour professionnels ainsi que le grand public. Avec ces multiples engagements, elle cultive une même mission: faire valoir l’architecture, et la créativité en général, comme outil indispensable au façonnement d’une société durable. S’épanouissant le mieux dans un cadre collaboratif, son souci du détail ainsi que son sens de l’initiative lui permettent de mener à bien tous projets. Elle enseigne également à l’Université Quisqueya et au sein de la Maîtrise en Urbanisme Résilient et Territoires à risques (Urbater) de l'UEH.",
+      "cours":["Architecture Résiliente : méthodologie de suivi et d’évaluation (M2-ARLPME2-114)"],
+     "expertise":[
+          "Architecture résiliente",
+          " Conception et gestion de projet",
+          "Architecture et numérique"
+     ]
+}
       
      ]
      
@@ -212,7 +229,24 @@
            " Géotechnique",
            "Mouvements de sols"
       ]
- }
+ },
+ {
+     "nom":"ISABELLE ALICE, JOLICOEUR",
+     "titre":"Enseignante",
+     "email":"isabelle_alice.jolicoeur@ueh.edu.ht",
+     "phone":"34 56 95 94",
+     "diplomes":[
+      "Maitrise en Architecture 2015, Université de Montréal (Canada)",
+     "Licence en Architecture2010, Université de Montréal (Canada)"
+     ],
+     "biographie":"Née en Haïti, Isabelle A. Jolicoeur obtient sa licence puis une Maitrise en Architecture de l’Université de Montréal. Avant de co-fonder la firme d’architecture Ateliers Co-Lab elle accumule huit (8) années d’expérience au sein d’agences primées à Montréal comme Atelier VAP, MXMA et MU Architecture. En 2015, elle fonde Aetypik, une plateforme qui agit à la fois comme une vitrine virtuelle sur la créativité Haïtienne mais aussi comme incubateur d’initiatives formatrices et inspirantes (conférences, ateliers etc.) pour professionnels ainsi que le grand public. Avec ces multiples engagements, elle cultive une même mission: faire valoir l’architecture, et la créativité en général, comme outil indispensable au façonnement d’une société durable. S’épanouissant le mieux dans un cadre collaboratif, son souci du détail ainsi que son sens de l’initiative lui permettent de mener à bien tous projets. Elle enseigne également à l’Université Quisqueya et au sein de la Maîtrise en Urbanisme Résilient et Territoires à risques (Urbater) de l'UEH.",
+      "cours":["Architecture Résiliente : méthodologie de suivi et d’évaluation (M2-ARLPME2-114)"],
+     "expertise":[
+          "Architecture résiliente",
+          " Conception et gestion de projet",
+          "Architecture et numérique"
+     ]
+}
       
      ]
      

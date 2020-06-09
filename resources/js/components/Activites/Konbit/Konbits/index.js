@@ -43,7 +43,7 @@ export default function Konbit() {
             <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
                 <Typography variant="h6" gutterBottom>
-               {TEXT.title}
+               {TEXT.titleDefinition}
               </Typography>
                 <Typography variant="body2" gutterBottom>
                 {TEXT.definition}
@@ -52,7 +52,7 @@ export default function Konbit() {
 
            <Grid item xs={12} sm={6}>
                 <Typography variant="h6" gutterBottom>
-                {TEXT.title}
+                {TEXT.titleRaison}
               </Typography>
                 <Typography variant="body2" gutterBottom>
               {TEXT.raison}

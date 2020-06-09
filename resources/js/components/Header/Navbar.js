@@ -73,8 +73,8 @@ import data from './Navbar.json';
                   <Link to="/programme/perspectives" className="nav-link dropdown-item" href="/">{TEXT.programme.Perspectives}</Link>
                   <div className="dropdown-divider"></div>
                   <Link to="/programme/couts" className="nav-link dropdown-item" href="/">{TEXT.programme.Couts}</Link>
-                  <div className="dropdown-divider"></div>
-                  <Link to="/programme/mobilite" className="nav-link dropdown-item" href="/">{TEXT.programme.Mobilite}</Link>
+                  {/* <div className="dropdown-divider"></div>
+                  <Link to="/programme/mobilite" className="nav-link dropdown-item" href="/">{TEXT.programme.Mobilite}</Link> */}
                 </div>
               </li>
               <li className="nav-item dropdown">

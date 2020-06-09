@@ -49,11 +49,8 @@ export default function Demarche() {
                  </Paper>
             </Grid>
             <Grid item xs={12} sm={6}>
-            <Typography variant="h4" className={classes.title}>
-            
-             
-            </Typography>
-                <div className={classes.body}>{TEXT.body}</div>
+      
+                <div className={classes.body} >{TEXT.body}</div>
             </Grid>
             
          </Grid>

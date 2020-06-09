@@ -11,7 +11,7 @@ import Divider from '@material-ui/core/Divider';
 import partenaires from '../images/partenaires.png';
 import logo from '../images/logo.png';
 import Link from '@material-ui/core/Link';
-
+import LesPartenaires from './Partenaires';
 
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -34,7 +34,7 @@ export default function Partenaires() {
 }
 
   return (
-    <div className={classes.root} id="partenaires">
+    <div className={classes.root}  style={{backgroundColor:"white"}}>
      
       <Divider />
       <div >
@@ -45,15 +45,9 @@ export default function Partenaires() {
         
         </ExpansionPanelSummary>
 
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={6}>
-                <Paper>
-                <img src={partenaires}  style={style.image}/>
-                 </Paper>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-            
-                <div className={classes.body}> {TEXT.body}</div>
+          <Grid container spacing={3} style={{paddingTop:40}}>
+            <Grid item xs={12} sm={12}>          
+                <LesPartenaires/>
             </Grid>
             
          </Grid>

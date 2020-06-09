@@ -45,7 +45,58 @@ export default function Direction() {
             </Grid>
             <Grid item xs={12} sm={6}>
 
-                <div  className={classes.body}> {TEXT.body} </div>
+                <div  className={classes.body}> 
+                <div className="card-body">
+                <Typography  variant="h5" gutterBottom>
+              {TEXT.directeur.nom}
+          </Typography>
+          <Typography  variant="subtitle2" gutterBottom>
+              {TEXT.directeur.titre}
+          </Typography>
+          <Typography  variant="subtitle2" gutterBottom>
+              {TEXT.directeur.email}
+          </Typography>
+          <Typography  variant="subtitle2" gutterBottom>
+              {TEXT.directeur.phone}
+          </Typography>
+          </div>
+
+                {TEXT.directeur.diplomes.map((diplome, ind)=>
+                <div className="card-body">
+          <Typography key={ind}  gutterBottom>
+              {diplome}
+          </Typography>
+          </div>
+          )}   
+          <div className="card-body">
+              <Typography variant="subtitle2" gutterBottom>
+                <strong>Biographie</strong> 
+              </Typography>
+          {TEXT.directeur.biographie} </div>
+          <div className="card-body">
+            <Typography variant="subtitle2" gutterBottom>
+            <strong>Cours</strong> 
+            </Typography>
+            {TEXT.directeur.cours.map((cour,ind)=>
+              <Typography key={ind} variant="body2" gutterBottom>
+              {cour}
+            </Typography>
+            )}
+        </div>
+        <div className="card-body">
+            <Typography variant="subtitle2" gutterBottom>
+            <strong>Expertise</strong> 
+            </Typography>
+            {TEXT.directeur.expertise.map((ex, ind)=>
+            <Typography key={ind} variant="body2" gutterBottom>
+                {ex}
+            </Typography>
+            )} 
+
+              </div>
+
+                
+                </div>
             </Grid>
             
          </Grid>

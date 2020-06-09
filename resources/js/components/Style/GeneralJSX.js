@@ -40,6 +40,8 @@ const useStyles = makeStyles((theme) => ({
     },
     body: {
      fontFamily:"Arial Regular",
+     whiteSpace:"pre-wrap",
+      textAlign:"justify",
     //  textAlign: "center"
     },
   }));

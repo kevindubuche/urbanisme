@@ -15,13 +15,15 @@ import mict from '../../images/logoPartenaires/mict.jpg';
 import mtptc from '../../images/logoPartenaires/mtptc.png';
 import omrh from '../../images/logoPartenaires/omrh.jpg';
 import ueh from '../../images/logoPartenaires/ueh.png';
+import umons from '../../images/logoPartenaires/umons.png';
+
 
 export default class Partenaires extends Component {
     render(){
         return(
             <div>
               <div style={{display:"flex",  justifyContent: "center", flexWrap:"wrap"}}>
-                <img src={ares} width={"150px"} height={"80px"} style={{marginRight:50}} />
+                <img src={ares} width={"170px"} height={"80px"} style={{marginRight:50}} />
                 <img src={bid} width={"100px"} height={"80px"} style={{marginRight:50}} />
                 <img src={bonfed} width={"150px"} height={"80px"} style={{marginRight:50}} />
                 <img src={ciat} width={"80px"} height={"80px"} style={{marginRight:50}} />
@@ -47,6 +49,7 @@ export default class Partenaires extends Component {
             <img src={ueh} width={"170px"} height={"80px"} style={{marginRight:50}} />
             <img src={fds} width={"170px"} height={"80px"} style={{marginRight:50}} />
                 <img src={mairiedelmas} width={"80px"} height={"80px"} style={{marginRight:50}} />
+                <img src={umons} width={"170px"} height={"80px"} style={{marginRight:50}} />
         </div>
             </div>
     
