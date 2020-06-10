@@ -43,7 +43,7 @@ import Plateforme from '../EspaceEtudiant/Plateforme';
 import Contact from '../Contact';
 import Articles from '../Articles';
 //PUBLICATION
-import Publications from '../Publications';
+import Publications from '../Publications/Publications';
 //ONLY FOR ADMIN
 import Admin from '../Admin';
 import LoginForm from '../Login/LoginForm';
