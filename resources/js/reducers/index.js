@@ -4,10 +4,12 @@ import commentReducer from './commentReducer';
 import authReducer from './authReducer';
 import annonceReducer from './annonceReducer';
 import konbitReducer from './konbitReducer';
+import conferenceReducer from './conferenceReducer';
 import langueReducer from './langueReducer';
 import lexiqueReducer from './lexiqueReducer';
 import searchReducer from './searchReducer';
 import mailReducer from './mailReducer';
+import publicationReducer from './publicationReducer';
 
 export default combineReducers({
     posts: postReducer,
@@ -15,8 +17,10 @@ export default combineReducers({
     user: authReducer,
     annonces: annonceReducer,
     konbits: konbitReducer,
+    conferences: conferenceReducer,
     langue: langueReducer,
     lexique: lexiqueReducer,
     resultatsSearch: searchReducer,
     mail: mailReducer,
+    publications: publicationReducer,
 });

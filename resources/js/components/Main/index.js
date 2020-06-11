@@ -44,6 +44,7 @@ import Contact from '../Contact';
 import Articles from '../Articles';
 //PUBLICATION
 import Publications from '../Publications/Publications';
+import Publication from '../Publications/Publication';
 //ONLY FOR ADMIN
 import Admin from '../Admin';
 import LoginForm from '../Login/LoginForm';
@@ -52,6 +53,7 @@ import AdminKonbits from '../Admin/Konbits';
 import AdminRegister from '../Admin/Register';
 import AdminConferences from '../Admin/Conferences';
 import AdminLexique from '../Admin/Lexique';
+import AdminPublications from '../Admin/Publications';
 
 import {PrivateRoute} from '../PrivateRoute'
 import Accueil from '../Accueil';
@@ -112,6 +114,7 @@ render(){
                           <Route path="/espaceEtudiant/plateforme" exact component={Plateforme}/>
                            {/* PUBLICATIONS */}
                            <Route path="/publications" exact component={Publications} />
+                           <Route path="/publication/:id" exact component={Publication} />
                          {/* POUM METE PRIVATE ROUTE APRES */}
                          <PrivateRoute path="/admin" exact component={Admin} />
                          <PrivateRoute path="/admin/annonces" exact component={AdminAnnonces}/>
@@ -119,6 +122,7 @@ render(){
                          <PrivateRoute path="/admin/register" exact component={AdminRegister}/>
                          <PrivateRoute path="/admin/conferences" exact component={AdminConferences}/>
                          <PrivateRoute path="/admin/lexique" exact component={AdminLexique}/>
+                         <PrivateRoute path="/admin/publications" exact component={AdminPublications}/>
 
                         <Route path="/login" exact component={ LoginForm } />
                        

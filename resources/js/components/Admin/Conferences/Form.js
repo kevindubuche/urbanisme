@@ -6,9 +6,10 @@ import Button from '@material-ui/core/Button';
 
 import PropTypes from 'prop-types'; 
 import {connect} from 'react-redux';
-import { createOrEditPost } from '../../../actions/postActions';
+import { createOrEditConference } from '../../../actions/conferenceActions';
 
 import { withStyles } from '@material-ui/styles';
+import CropImage from '../Annonces/CropImage';
 
 
 const styles = theme =>({
@@ -26,11 +27,17 @@ const styles = theme =>({
                    author : '',
                    source : '',
                    image :'',
+                   keyWords:'',
                    created_at: '',
                    updated_at : '',
                 //    token : localStorage.getItem('user')
                },
-               imagePreviewUrl:''
+               imagePreviewUrl:'',
+               ///////////
+               userProfilePic:'',
+              editor:null,
+              scaleValue:1.5,
+            
            }
    }
    componentDidMount(){
@@ -40,7 +47,9 @@ const styles = theme =>({
             body:'',
             author : '',
             source : '',
+            resume :'',
             image: '',
+            keyWords:'',
             created_at: '',
             updated_at : '',
             // token : localStorage.getItem('user')
@@ -49,20 +58,19 @@ const styles = theme =>({
     })
 
    }
-   UNSAFE_componentWillReceiveProps({article}){
+   UNSAFE_componentWillReceiveProps({article}){//nou pa use redux la donc nap veye changement de article selectionner
+       console.log('ou resevwa props')
        this.setState({
            localArticle : article
        })
 
    }
 
-   
    handleSubmit= e =>{
     // TODO : validate
-
     e.preventDefault();
-    this.props.createOrEditPost(this.state.localArticle);
-    
+    this.onCrop();
+    this.props.createOrEditConference(this.state.localArticle);
     //si c'est SAVE on ferme le modal & si EDIT on affiche succes
     !this.state.localArticle.id ? this.props.closeModal() :this.props.openAlert();
    
@@ -77,15 +85,6 @@ const styles = theme =>({
         }
     })
 }
-// handleCKChange = data => {
-//     this.setState({
-//         ...this.state.localArticle,
-//           body : data.getData()
-        
-//     })
-// }
-
-//this converts a blob type image to base64 encoded string
 getBase64 = (file,callback) => {
     const reader = new FileReader();
     reader.addEventListener('load',()=>callback(reader.result));
@@ -104,7 +103,40 @@ fileTransform = (e) =>{
         console.log(this.state.localArticle)
     })
 }
+setEditorRef = editor => this.setState({editor});
 
+profileImageChange = (fileChangeEvent) =>{
+    const file = fileChangeEvent.target.files[0];
+    const {type} = file;
+  
+      if(type.endsWith('jpg') || type.endsWith('jpeg') || type.endsWith('png')){
+        this.setState({selectedImage : file})
+      this.setState({
+            imagePreviewUrl: file
+          });
+        this.onCrop();
+    }
+
+    
+}
+
+onCrop =(e) =>{
+    const {editor} = this.state;
+    if(editor != null){
+        console.log('okkkkkkk')
+        const url = editor.getImageScaledToCanvas().toDataURL();
+        this.setState({userProfilePic : url});
+        console.log('men li : '+url);
+       this.state.localArticle.image =url;
+      
+    }
+}
+
+onScaleChange = (scaleValueEvent) =>{
+    const scaleValue = parseFloat(scaleValueEvent.target.value);
+    this.setState({ scaleValue});
+    console.log('wap chanje size')
+}
     render(){
         let {imagePreviewUrl} = this.state;
         let $imagePreview = null;
@@ -119,16 +151,6 @@ fileTransform = (e) =>{
                 className={this.props.classes.FormControl}
                 required
                 /> 
-                {/* <br />
-                 <TextField
-                label="Article"
-                multiline
-                rows="4"
-                onChange={this.handleChange('body')}
-                value={this.state.localArticle.body}
-                margin="normal"
-                className={this.props.classes.FormControl}
-                /> */}
                 <br />
                     <TextField
                 label="Auteur"
@@ -148,15 +170,56 @@ fileTransform = (e) =>{
                 required
                 /> 
                 <br />
-            <h6>Image</h6>
-                <input type="file" id="image" onChange={this.fileTransform} />
+                <br />
+                    <TextField
+                label="Resume"
+                onChange={this.handleChange('resume')}
+                value={this.state.localArticle.resume}
+                margin="normal"
+                multiline
+                rows="4"
+                className={this.props.classes.FormControl}
+                required
+                /> 
+                <br />
+                <TextField
+                label="KeyWords"
+                onChange={this.handleChange('keyWords')}
+                value={this.state.localArticle.keyWords}
+                margin="normal"
+                multiline
+                rows="4"
+                className={this.props.classes.FormControl}
+                /> 
+              <h6>Image</h6>
+                <input
+                    type="file"
+                    accept="image/png, image/jpeg, image/jpg"
+                    onChange={this.profileImageChange} 
+                    />
+
                 <br /> 
-                {  imagePreviewUrl ?
-                    $imagePreview = (<img src={imagePreviewUrl} width='200px' height='200px'/>) 
-                    :  <img src={"/articles_images/"+this.state.localArticle.image} width={200} height={200} /> 
+                {  imagePreviewUrl ?//nap verifier si se new or edit
+                   
+                  <CropImage
+                     imageSrc={imagePreviewUrl}
+                     setEditorRef={this.setEditorRef}
+                      onCrop={this.onCrop}
+                     scaleValue={this.state.scaleValue}
+                     onScaleChange={this.onScaleChange}
+                   /> 
+                    :  this.props.article ?
+                   <CropImage
+                    imageSrc={"/conferences_images/"+this.state.localArticle.image}
+                    setEditorRef={this.setEditorRef}
+                     onCrop={this.onCrop}
+                    scaleValue={this.state.scaleValue}
+                    onScaleChange={this.onScaleChange}
+                    />
+                        : <div></div>
                 } 
                 <br />
-                  
+
                 <CKEditor
                     editor={ ClassicEditor }
                     data={this.state.localArticle.body}
@@ -207,8 +270,7 @@ fileTransform = (e) =>{
         )
     }
 }
-
 Form.propTypes = {
-    createOrEditPost : PropTypes.func.isRequired
+    createOrEditConference : PropTypes.func.isRequired
 }
-export default connect(null, { createOrEditPost })(withStyles (styles) (Form) )
+export default connect(null, { createOrEditConference })(withStyles (styles) (Form) )

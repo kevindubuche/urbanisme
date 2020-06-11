@@ -11,7 +11,7 @@ import useStyles from '../../Style/GeneralJSX';
 import Index2 from './Index2';
 import NavAdmin from '../NavAdm';
 
-export default function Annonces() {
+export default function Konbits() {
   const classes = useStyles();
   const style ={
     image: {
@@ -30,7 +30,7 @@ export default function Annonces() {
           
         >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T E R</Typography>
+            <Typography className={classes.heading}>CONFERENCES</Typography>
           </div>
         <NavAdmin />
         </ExpansionPanelSummary>

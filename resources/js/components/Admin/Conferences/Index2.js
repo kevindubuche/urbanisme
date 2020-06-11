@@ -10,8 +10,6 @@ import IconButton from '@material-ui/core/IconButton';
 import Delete from '@material-ui/icons/Delete';
 import Edit from '@material-ui/icons/Edit';
 
-// import ImageUpload from '../ImageUpload';
-// import NavAdm from '../NavAdm';
 import AddConference from './AddConference';
 
 import Snackbar from '@material-ui/core/Snackbar';
@@ -28,11 +26,9 @@ import Slide from '@material-ui/core/Slide';
 
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { fetchPosts } from '../../../actions/postActions';
-import { onDelete } from '../../../actions/postActions';
-import { clearNewPost } from '../../../actions/postActions';
-
-import AllComments from '../../Articles/AllComments';
+import { fetchConferences } from '../../../actions/conferenceActions';
+import { onDelete } from '../../../actions/conferenceActions';
+import { clearNewConference } from '../../../actions/conferenceActions';
 
 import Form from './Form';
 
@@ -45,7 +41,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
   });
 
-class  Blogs extends Component {
+class  Conferences extends Component {
     constructor(props){
         super(props);
         this.state={
@@ -66,20 +62,20 @@ class  Blogs extends Component {
   
    }
 UNSAFE_componentWillMount(){
-   this.props.fetchPosts();
+   this.props.fetchConferences();
 }
 UNSAFE_componentWillReceiveProps(nextProps){
-    if(nextProps.newPost){
+    if(nextProps.clearNewConference){
     
-         if(nextProps.newPost.id )//on verifie si y a un nouveau article pour afficher un alert
+         if(nextProps.newConference.id )//on verifie si y a un nouveau article pour afficher un alert
        {
-        this.props.posts.unshift(nextProps.newPost); //on ajoute le nouveau article en tete de liste
-           console.log('New article added successfully !');
-           console.log(nextProps.newPost);
+        this.props.conferences.unshift(nextProps.newConference); //on ajoute le nouveau article en tete de liste
+           console.log('New Conferences added successfully !');
+           console.log(nextProps.newConference);
         this.setState({
             openAlert :true
         })
-        this.props.clearNewPost();
+        this.props.clearNewConference();
        } 
     
     }
@@ -87,7 +83,7 @@ UNSAFE_componentWillReceiveProps(nextProps){
 }
 onSelectArticle = id =>{
     this.setState({
-        localArticle : this.props.posts.find(article => article.id === id),
+        localArticle : this.props.conferences.find(article => article.id === id),
         editMode : false
     })
     // console.log('qqqqqqqqq: '+this.props.file_directory+"/"+this.state.localArticle.image)
@@ -127,7 +123,7 @@ onSelectArticle = id =>{
         }
         onSelectEdit = id =>{
             this.setState({
-                localArticle : this.props.posts.find(article => article.id === id),
+                localArticle : this.props.conferences.find(article => article.id === id),
                 editMode : true
             })
            
@@ -155,7 +151,7 @@ onSelectArticle = id =>{
            
             <Grid container>
                 <Grid item xm= {12} sm={12} md={4} >  <Paper style={styles.Paper} >
-                        {this.props.posts.map(( blog, index) => 
+                        {this.props.conferences.map(( blog, index) => 
                         <Fragment key={index}>
                             <Typography 
                                 variant="h6"
@@ -226,11 +222,9 @@ onSelectArticle = id =>{
                          </Typography>
                          {/* {this.props.postsfile_directory+"/"+this.state.localArticle.image} */}
                          {this.state.localArticle.id ?
-                         <img src={"/articles_images/"+this.state.localArticle.image} width={200} height={200} />
+                         <img src={"/conferences_images/"+this.state.localArticle.image} width={200} height={200} />
                          : '' }
-                         {this.state.localArticle.id ?
-                         <AllComments idArticle={this.state.localArticle.id} canDelete={true}/>
-                         : '' }
+                        
                     </Fragment>
                     }
                    
@@ -261,8 +255,7 @@ onSelectArticle = id =>{
                 <DialogTitle id="alert-dialog-slide-title">{"Confirmer la suppression de cet article"}</DialogTitle>
                 <DialogContent>
                 <DialogContentText id="alert-dialog-slide-description">
-                    Let Google help apps determine location. This means sending anonymous location data to
-                    Google, even when no apps are running.
+                    Confirmer la suppression. ATTENTION !!! Cette operation est irresersible.
                 </DialogContentText>
                 </DialogContent>
                 <DialogActions>
@@ -280,18 +273,18 @@ onSelectArticle = id =>{
     )}
 }
 
-Blogs.propTypes = {
-    fetchPosts : PropTypes.func.isRequired,
-    posts : PropTypes.array.isRequired,
-    newPost : PropTypes.object,
+Conferences.propTypes = {
+    fetchConferences : PropTypes.func.isRequired,
+    conferences : PropTypes.array.isRequired,
+    newConference : PropTypes.object,
     onDelete : PropTypes.func.isRequired,
-    clearNewPost : PropTypes.func.isRequired,
+    clearNewConference : PropTypes.func.isRequired,
 
 }
 const mapStateToProps =(state) => ({
-        posts : state.posts.items,
-        newPost : state.posts.item,
+        conferences : state.conferences.items,
+        newConference : state.conferences.item,
       
 });
 
-export default connect(mapStateToProps,{ fetchPosts, clearNewPost, onDelete })(Blogs)
+export default connect(mapStateToProps,{ fetchConferences, clearNewConference, onDelete })(Conferences)

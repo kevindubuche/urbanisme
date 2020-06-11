@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 
 import Divider from '@material-ui/core/Divider';
 
-import TabAnnonces from './TabAnnonces';
+import TabPublications from './TabPublications';
 import Grid from '@material-ui/core/Grid';
 import useStyles from '../../Style/GeneralJSX';
 import data from './Publications.json';
@@ -36,7 +36,7 @@ export default function Direction() {
   
           <Grid container spacing={3}>
             <Grid item xs={12} sm={12}>
-                   <TabAnnonces />
+                   <TabPublications />
             </Grid>
             
          </Grid>

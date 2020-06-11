@@ -42,7 +42,7 @@ export default class Create extends Component{
                 onClose={this.handleToggle}
                 aria-labelledby="form-dialog-title">
                         <DialogTitle id="form-dialog-title">
-                            Creer un nouvel article
+                            Creer un nouveau konbit
                         </DialogTitle>
                         <DialogContent>
                             <DialogContentText>

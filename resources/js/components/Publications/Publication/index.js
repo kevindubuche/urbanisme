@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
 
-import TabAnnonces from './TabAnnonces';
+import TabPublications from './TabPublications';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import useStyles from '../../Style/GeneralJSX';
@@ -28,15 +28,14 @@ export default function Direction() {
       <div >
         <ExpansionPanelSummary  >
           <div className={classes.column}>
-            <Typography variant="h5" className={classes.title}>ANNONCES</Typography>
+            <Typography variant="h5" className={classes.title}>PUBLICATIONS</Typography>
           </div>
         
         </ExpansionPanelSummary>
   
-        <Divider />
           <Grid container spacing={3}>
             <Grid item xs={12} sm={12}>
-                   <TabAnnonces />
+                   <TabPublications />
             </Grid>
             
          </Grid>
