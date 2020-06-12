@@ -154,7 +154,9 @@ export default function ListAnnonces(props) {
   };
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer 
+    // component={Paper}
+    >
       <Table aria-label="custom pagination table">
         <TableBody>
           {(rowsPerPage > 0

@@ -34,23 +34,38 @@ const image = <AccountCircleIcon style={{height:'200px',width:'200px' , padding:
         
         >
           <div className={classes.column}>
-            <Typography className={classes.title}>{TEXT.title}</Typography>
+            <Typography className={classes.title} style={{marginLeft:'-25px'}}>{TEXT.title}</Typography>
           </div>
         
         </ExpansionPanelSummary>
   
-          <Grid container spacing={1}>
-          <Grid item xs={12} sm={12} className={classes.body}> 
+          <Grid container spacing={3}>
+          <Grid item xs={12} sm={6} className={classes.body}> 
               
-              {TEXT.body}
+              {TEXT.body1}
+          </Grid>
+           <Grid item xs={12} sm={6} className={classes.body}> 
+              
+              {TEXT.body2}
           </Grid>
 
           <ExpansionPanelSummary >
           <div className={classes.column} style={{paddingTop:40}}>
-            <Typography className={classes.title}>{TEXT.title2}</Typography>
+            <Typography className={classes.title} style={{marginLeft:'-15px'}}>{TEXT.title2}</Typography>
           </div>
+           
         
         </ExpansionPanelSummary>
+         </Grid>
+         <Grid container spacing={3}>
+         <Grid item xs={12} sm={6} className={classes.body}> 
+              
+              {TEXT.body3}
+          </Grid>
+           <Grid item xs={12} sm={6} className={classes.body}> 
+              
+              {TEXT.body4}
+          </Grid>
          
          </Grid>
       </div>

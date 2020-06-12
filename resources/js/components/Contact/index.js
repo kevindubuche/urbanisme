@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: theme.palette.primary.main,
+    // backgroundColor: theme.palette.primary.main,
   },
   form: {
     width: '100%', // Fix IE 11 issue.
@@ -67,19 +67,19 @@ export default function SignInSide() {
       <Grid item xs={false} sm={4} md={7} className={classes.image} >
       <Grid container spacing={3}>
             <Grid item xs={12} sm={10}>
-            <Typography variant="body2" color="textSecondary" align="center" style={{paddingBottom:50}}>{TEXT.pourContacter}</Typography>
+            <Typography variant="h6" align="left" style={{paddingBottom:50, fontWeight:"bold"}}>{TEXT.pourContacter}</Typography>
                 
                <Typography variant="body2" color="textSecondary" align="center">{TEXT.tilleContact}</Typography>
                 <Divider/>
-                <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:30}}><HomeIcon/>
+                <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:60}}><HomeIcon/>
                  27, Rue Toussaint Louverture, Delmas 33 (local Laboratoire National du Bâtiment et des Travaux Publics)</Typography>
           <Divider/>
-                <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:30}}>
+                <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:60}}>
                   <PhoneIcon/>
                 +509 31 35 9233
                 </Typography>
                 <Divider/>
-                <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:30}}>
+                <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:60}}>
                   <MailIcon/>
                   urbater@ueh.edu.ht
                 </Typography>
@@ -96,54 +96,7 @@ export default function SignInSide() {
           <Typography component="h1" variant="h5">
           {TEXT.titleLeaveMsg}
           </Typography>
-          {/* <form className={classes.form} noValidate>
-          <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              id="nom"
-              label= {TEXT.placeholderNom}
-              name="nom"
         
-            />
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label={TEXT.placeholderMail}
-              name="email"
-              autoComplete="email"
-        
-            />
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              name="message"
-              label={TEXT.placeholderMsg}
-              type="text"
-              id="message"
-              multiline
-                rows="5"
-            />
-         
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              color="primary"
-              className={classes.submit}
-            >
-              {TEXT.boutton}
-            </Button>
-          
-            <Box mt={5}>
-            </Box>
-          </form> */}
          < FormContact placeholderNom ={TEXT.placeholderNom} placeholderMail={TEXT.placeholderMail} placeholderMsg={TEXT.placeholderMsg} boutton={TEXT.boutton} />
         </div>
       </Grid>

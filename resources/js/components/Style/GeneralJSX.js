@@ -34,9 +34,9 @@ const useStyles = makeStyles((theme) => ({
       },
     },
     title: {
-     fontFamily:"Arial",
+     fontFamily:"Arial Regular",
       paddingBottom:20,
-     marginLeft:"-25px",
+     
     },
     body: {
      fontFamily:"Arial Regular",

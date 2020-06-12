@@ -68,7 +68,7 @@ import data from './Navbar.json';
                 <div className="dropdown-divider"></div>
                   <Link to="/programme/admissibilite" className="nav-link dropdown-item ">{TEXT.programme.Conditions}</Link>
                   <div className="dropdown-divider"></div>
-                  <Link to="/login" className="nav-link dropdown-item" href="/">{TEXT.programme.Ressources}</Link>
+                  <Link to="/programme/ressources" className="nav-link dropdown-item" href="/">{TEXT.programme.Ressources}</Link>
                   <div className="dropdown-divider"></div>
                   <Link to="/programme/perspectives" className="nav-link dropdown-item" href="/">{TEXT.programme.Perspectives}</Link>
                   <div className="dropdown-divider"></div>

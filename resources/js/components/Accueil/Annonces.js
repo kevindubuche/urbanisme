@@ -2,7 +2,6 @@ import React, { Component, Fragment} from 'react';
 import ReactDOM from 'react-dom';
 
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import {Link} from 'react-router-dom';
 
@@ -32,7 +31,7 @@ var moment  = require('moment');
                                     <Fragment>
                                             <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
                                             
-                                                {moment(new Date(annonce.created_at)).format('ll') }
+                                                {moment(new Date(annonce.created_at)).locale("de").format('LL') }
                                         </Typography>
                                         
                                         <Link to={"/annonce/"+annonce.id}> 
@@ -56,7 +55,10 @@ var moment  = require('moment');
                                <br /> <br /> <br /> <br />
                                </Fragment >
                   )}
+                  <Grid item xs={12} sm={3}></Grid>
+                  <Grid item xs={12} sm={9} style={{paddingTop:40}}>
                                <Link to='/annonces'>Voir plus</Link>
+                               </Grid>
                             </Fragment>   
                        
                      </Grid>

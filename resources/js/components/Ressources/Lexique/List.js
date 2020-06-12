@@ -15,6 +15,7 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import LastPageIcon from '@material-ui/icons/LastPage';
 
+import TableHead from '@material-ui/core/TableHead';
 const useStyles1 = makeStyles((theme) => ({
   root: {
     flexShrink: 0,
@@ -116,6 +117,13 @@ props.lexique.map(( mot, index) => rows.push(
   return (
     <TableContainer component={Paper} >
       <Table className={classes.table} aria-label="custom pagination table">
+       <TableHead>
+          <TableRow>
+            <TableCell align="left" style={{fontWeight:"bold"}}>CREOLE</TableCell>
+            <TableCell align="left"style={{fontWeight:"bold"}}>FRANCAIS</TableCell>
+            <TableCell align="left" style={{fontWeight:"bold"}}>COMMENTAIRE</TableCell>
+          </TableRow>
+        </TableHead>
         <TableBody>
           {(rowsPerPage > 0
             ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)

@@ -36,7 +36,7 @@ export default function Fondation() {
       <div >
         <ExpansionPanelSummary   >
           <div className={classes.column}>
-            <Typography variant="h5" className={classes.title}>{TEXT.title}</Typography>
+            
           </div>
         
         </ExpansionPanelSummary>
@@ -51,10 +51,10 @@ export default function Fondation() {
        
             </Grid>
             <Grid item xs={12} sm={6} >
-            
+            <Typography variant="h5" className={classes.title}>{TEXT.title}</Typography>
                 <div className={classes.body}>{TEXT.body}</div>
                 <a href="/files/formulaire.pdf" target='_blank' >   
-  <Button  variant="contained" color="primary" style={{marginTop:50}} >{TEXT.button}</Button>
+  <Button  variant="contained" disableElevation style={{marginTop:50}} >{TEXT.button}</Button>
           </a>
              
             </Grid>

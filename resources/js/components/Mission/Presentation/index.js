@@ -40,7 +40,7 @@ export default function Presentation() {
       <div >
         <ExpansionPanelSummary >
           <div className={classes.column}>
-            <Typography variant="h5"  className={classes.title}>{TEXT.title}</Typography>
+            
           </div>
         
         </ExpansionPanelSummary>
@@ -52,10 +52,7 @@ export default function Presentation() {
                  </Paper>
             </Grid>
             <Grid item xs={12} sm={6}>
-            {/* <Typography variant="h4"  className={classes.title}>
-              
-             
-            </Typography> */}
+            <Typography variant="h5"  className={classes.title}>{TEXT.title}</Typography>
                 <div  className={classes.body} >{TEXT.body}</div>
              
             </Grid>

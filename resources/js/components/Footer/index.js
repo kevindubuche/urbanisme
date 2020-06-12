@@ -78,7 +78,7 @@ export default function Footer(props) {
         </div>
      
         
-        <img src={logo} width={"60px"} height={"60px"}  style={{marginRight:100, alignSelf:'flex-end'}}/>
+        <img src={logo} width={"60px"} height={"60px"}  style={{marginRight:180, alignSelf:'flex-end'}}/>
         
        
         <div style={{justifyContent:'center', alignItems:'flex-end'}}>

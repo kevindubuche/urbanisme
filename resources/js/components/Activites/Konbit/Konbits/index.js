@@ -32,7 +32,7 @@ export default function Konbit() {
       
         >
           <div className={classes.column}>
-            <Typography variant="h5"  className={classes.title}>KONBIT</Typography>
+            <Typography variant="h5"  className={classes.title} style={{marginLeft:"-25px"}}>KONBIT</Typography>
           </div>
         
         </ExpansionPanelSummary>
@@ -42,7 +42,7 @@ export default function Konbit() {
             <Grid item xs={12} sm={12}>
             <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
-                <Typography variant="h6" gutterBottom>
+                <Typography variant="h6" gutterBottom style={{fontFamily:"Arial Regular", color:"black"}}>
                {TEXT.titleDefinition}
               </Typography>
                 <Typography variant="body2" gutterBottom>
@@ -51,10 +51,8 @@ export default function Konbit() {
            </Grid>
 
            <Grid item xs={12} sm={6}>
-                <Typography variant="h6" gutterBottom>
-                {TEXT.titleRaison}
-              </Typography>
-                <Typography variant="body2" gutterBottom>
+                
+                <Typography variant="body2" gutterBottom style={{paddingTop:30}}>
               {TEXT.raison}
               </Typography>
            </Grid>

@@ -154,14 +154,16 @@ export default function ListAnnonces(props) {
   };
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer 
+    // component={Paper}
+    >
       <Table aria-label="custom pagination table">
         <TableBody>
           {(rowsPerPage > 0
             ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
             : rows
           ).map((row, index) => (
-            <TableRow key={index} onClick={()=>props.handleChangeIndexPam(1,'le titre extraordinaire')} >
+            <TableRow key={index}  >
               <TableCell component="th" scope="row">
                 {row.block}
               </TableCell>
