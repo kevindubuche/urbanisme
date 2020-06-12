@@ -39,12 +39,11 @@ export default function Partenaires() {
       <div >
         <ExpansionPanelSummary  >
           <div className={classes.column}>
-            <Typography variant="h5" className={classes.title}> {TEXT.title}</Typography>
+            
           </div>
         
         </ExpansionPanelSummary>
   
-        <Divider />
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
                 <Paper>
@@ -52,7 +51,7 @@ export default function Partenaires() {
                  </Paper>
             </Grid>
             <Grid item xs={12} sm={6}>
-          
+          <Typography variant="h5" className={classes.title}> {TEXT.title}</Typography>
                 <div className={classes.body}>{TEXT.body}</div>    
 
                 <Link to="/mission/partenaires" >   

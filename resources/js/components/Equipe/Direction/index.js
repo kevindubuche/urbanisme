@@ -32,7 +32,7 @@ export default function Direction() {
       <div >
         <ExpansionPanelSummary  >
           <div className={classes.column}>
-            <Typography variant="h5"  className={classes.title}>    {TEXT.title}</Typography>
+           
           </div>
         
         </ExpansionPanelSummary>
@@ -44,36 +44,43 @@ export default function Direction() {
                  </Paper>
             </Grid>
             <Grid item xs={12} sm={6}>
-
+ 
                 <div  className={classes.body}> 
-                <div className="card-body">
-                <Typography  variant="h5" gutterBottom>
+                  <Typography variant="h5"  className={classes.title}>{TEXT.title}</Typography>
+                <div >
+              
+                <Typography  variant="h6" gutterBottom>
               {TEXT.directeur.nom}
           </Typography>
-          <Typography  variant="subtitle2" gutterBottom>
+          
+          <Typography  variant="subtitle2" gutterBottom style={{fontWeight:"bold"}}>
               {TEXT.directeur.titre}
           </Typography>
-          <Typography  variant="subtitle2" gutterBottom>
+          <Typography  variant="subtitle2" gutterBottom style={{fontWeight:"bold"}}>
               {TEXT.directeur.email}
           </Typography>
-          <Typography  variant="subtitle2" gutterBottom>
+          <Typography  variant="subtitle2" gutterBottom style={{fontWeight:"bold"}}>
               {TEXT.directeur.phone}
           </Typography>
+          
+          <br/>
           </div>
 
                 {TEXT.directeur.diplomes.map((diplome, ind)=>
-                <div className="card-body">
+                <div >
           <Typography key={ind}  gutterBottom>
               {diplome}
           </Typography>
           </div>
           )}   
-          <div className="card-body">
+          <div >
+           <br/>
               <Typography variant="subtitle2" gutterBottom>
                 <strong>Biographie</strong> 
               </Typography>
           {TEXT.directeur.biographie} </div>
-          <div className="card-body">
+          <div >
+           <br/>
             <Typography variant="subtitle2" gutterBottom>
             <strong>Cours</strong> 
             </Typography>
@@ -83,7 +90,8 @@ export default function Direction() {
             </Typography>
             )}
         </div>
-        <div className="card-body">
+        <div >
+         <br/>
             <Typography variant="subtitle2" gutterBottom>
             <strong>Expertise</strong> 
             </Typography>

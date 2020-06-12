@@ -2,8 +2,68 @@
      "francais":{
           "title":"PROFESSEURS",
      "profs":[
+           {
+      "nom":"Jean Odile ETIENNE",
+      "titre":"Enseignant-Chercheur",
+      "email":"jeanodile78@yahoo.fr",
+      "phone":"3271-1680/3393-2576",
+      "diplomes":[
+       "Doctorat en Géographie à l’Université Paris 8 ",
+      "Master2 recherche Géographie des Pays Emergents et en Développement à  l’Université  Paris1 Panthéon Sorbonne",
+      "Master1(Maitrise) en Géographie à l’Université Paris1 Panthéon Sorbonne"
+      ],
+      "biographie":"Jean Odile ETIENNE is a Geographer-Urbanist, Researcher, Expert-Consultant-Head of Studies and Research in Development. He is a specialist in Risk Management and Vulnerability Reduction. Dr Etienne received his Doctorate in Geography from the University of Paris-VIII/Saint Denis, France. He obtained his Master’s degree from the University of Paris-I, Sorbonne/Pantheon, France. He completed his undergraduate studies at the Ecole Normale Supérieure of Port-au-Prince. He has many years of experience as a professor at the State University of Haiti in Port-au-Prince and in Gonaives. ",
+       "cours":["Résilience et gestion des risques territoriaux ",
+                 "Résilience et gestion des risques humains"],
+      "expertise":[
+           "Reconstruction post-catastrophe",
+           "Vulnérabilités post-catastrophe",
+           "Aménagement du territoire",
+           "Urbanisme",
+           "Vulnérabilités urbaines",
+           "Géographie urbaine et sociale",
+           "Gestion de risques et de réduction des vulnérabilités"
+      ]
+ },
+  {
+      "nom":"Kelly GUERRIER",
+      "titre":"Enseignant-Chercheur",
+      "email":"kelly.guerrier@ueh.edu.ht",
+      "phone":"+50928171065",
+      "diplomes":[
+       " Administration Publique, 2017,École Nationale d'Administration et de Politiques Publiques (Haïti) ",
+      "Docteur en Sciences de l'Ingénieur, 2013, Université catholique de Louvain (Belgique) ",
+      "Ingénieur Civil, 2006, Université d'État d'Haïti (Haïti)"
+      ],
+      "biographie":"Kelly Guerrier est diplômé de la FDS-UEH en génie civil en 2006. Il bénéficie la même année d’une bourse de doctorat en Sciences de l’Ingénieur à l’Université catholique de Louvain en Belgique dans le cadre d’une coopération universitaire entre l’UEH, l’Université catholique de Louvain et l’Université de Liège financé par la Commission Universitaire pour le Développement (CUD). En 2011, il est engagé comme enseignant chercheur à l'UEH. Il rentre définitivement en Haïti après sa soutenance de thèse en décembre de 2013. Actuellement, Kelly Guerrier est co-promoteur de 2 projets de coopération avec la Belgique financés par l'Académie pour la Recherche et l'Enseignement Supérieur (ARES) :  - URBANISME RESILIENT ET AMÉNAGEMENT DES TERRITOIRES A RISQUES (URBATER) avec l'UMons et l'ULiège - EARTHQUAKE HAZARD AND VULNERABILITY ASSESSMENT – DEVELOPING INNOVATIVE SOLUTIONS FOR SUSTAINABLE RISK REDUCTION AND COMMUNICATION IN HAITI avec l'ULiège et l'UNamur ",
+       "cours":["Risques,  climat et géologie ( M1-RCG2-214)",
+                 "Résilience et gestion des risques humains"],
+      "expertise":[
+           "Géophysique",
+           " Géotechnique",
+           "Mouvements de sols"
+      ]
+ },
+
+ {
+     "nom":"Isabelle Alice JOLICOEUR",
+     "titre":"Enseignante",
+     "email":"isabelle_alice.jolicoeur@ueh.edu.ht",
+     "phone":"34 56 95 94",
+     "diplomes":[
+      "Maitrise en Architecture 2015, Université de Montréal (Canada)",
+     "Licence en Architecture2010, Université de Montréal (Canada)"
+     ],
+     "biographie":"Née en Haïti, Isabelle A. Jolicoeur obtient sa licence puis une Maitrise en Architecture de l’Université de Montréal. Avant de co-fonder la firme d’architecture Ateliers Co-Lab elle accumule huit (8) années d’expérience au sein d’agences primées à Montréal comme Atelier VAP, MXMA et MU Architecture. En 2015, elle fonde Aetypik, une plateforme qui agit à la fois comme une vitrine virtuelle sur la créativité Haïtienne mais aussi comme incubateur d’initiatives formatrices et inspirantes (conférences, ateliers etc.) pour professionnels ainsi que le grand public. Avec ces multiples engagements, elle cultive une même mission: faire valoir l’architecture, et la créativité en général, comme outil indispensable au façonnement d’une société durable. S’épanouissant le mieux dans un cadre collaboratif, son souci du détail ainsi que son sens de l’initiative lui permettent de mener à bien tous projets. Elle enseigne également à l’Université Quisqueya et au sein de la Maîtrise en Urbanisme Résilient et Territoires à risques (Urbater) de l'UEH.",
+      "cours":["Architecture Résiliente : méthodologie de suivi et d’évaluation (M2-ARLPME2-114)"],
+     "expertise":[
+          "Architecture résiliente",
+          " Conception et gestion de projet",
+          "Architecture et numérique"
+     ]
+},
           {
-          "nom":"Christophe Longchamp",
+          "nom":"Christophe LONGCHAMP",
           "titre":"Professeur agrégé",
           "email":"christophe.longchamp@ueh.edu",
           "phone":"509 45 45 88 88",
@@ -19,27 +79,7 @@
                "Design collaboratif"
           ]
      },
-     {
-      "nom":"CHRISTIAN, UBERTINI",
-      "titre":"Architecte",
-      "email":"cubertini@bluewin.ch",
-      "phone":"+41 76 506 3369",
-      "diplomes":[
-       "Mastère en Patrimoine Archéologique Monumental 2001, Université Marc-Bloch, Strasbourg. ",
-      "Diplôme en Architecture 1997, Haute Ecole Spécialisée de Genève.",
-      "Dessinateur en bâtiment 1991, Ecole Professionnelle de Lausanne."
-      ],
-      "biographie":"Architecte avec une maitrise en Archéologie et Patrimoine, il est l’auteur de plusieurs études et publications sur l’architecture de l’Égypte antique. Membre de l’ICOMOS, il est actif dans le domaine de la conservation du patrimoine et à travers des évaluations de projet de mise en valeur de vestiges archéologiques. Depuis 2006, il travaille également dans le domaine de la coopération internationale où il gère plusieurs projets de reconstruction post-catastrophes à travers le monde. Établis en Haïti depuis 2009, il travaille comme architecte expert au sein de plusieurs agences internationales. Il a notamment appuyé l’État haïtien dans l’élaboration des référentiels techniques pour la normalisation des écoles en Haïti. ",
-       "cours":["Histoire de l’architecture moderne en Haïti et ailleurs (M1-HAMH2-236)",
-                 "Introduction à la notion du patrimoine et méthodologie de lecture (M1-MPBSV3-114)"],
-      "expertise":[
-           "Conception et gestion de projet",
-           "Infrastructures scolaires",
-           "Conservation du patrimoine bâti",
-           "Recherches architecturales",
-           "Enseignement"
-      ]
- },
+     
  {
       "nom":"Joseph Garry LHERISSON",
       "titre":"Architecte et Urbaniste",
@@ -61,7 +101,37 @@
            "Equipements urbains dans le contexte d’Haïti, marchés publics en particulier."
       ]
  },
- {
+     {
+      "nom":"Christian UBERTINI",
+      "titre":"Architecte",
+      "email":"cubertini@bluewin.ch",
+      "phone":"+41 76 506 3369",
+      "diplomes":[
+       "Mastère en Patrimoine Archéologique Monumental 2001, Université Marc-Bloch, Strasbourg. ",
+      "Diplôme en Architecture 1997, Haute Ecole Spécialisée de Genève.",
+      "Dessinateur en bâtiment 1991, Ecole Professionnelle de Lausanne."
+      ],
+      "biographie":"Architecte avec une maitrise en Archéologie et Patrimoine, il est l’auteur de plusieurs études et publications sur l’architecture de l’Égypte antique. Membre de l’ICOMOS, il est actif dans le domaine de la conservation du patrimoine et à travers des évaluations de projet de mise en valeur de vestiges archéologiques. Depuis 2006, il travaille également dans le domaine de la coopération internationale où il gère plusieurs projets de reconstruction post-catastrophes à travers le monde. Établis en Haïti depuis 2009, il travaille comme architecte expert au sein de plusieurs agences internationales. Il a notamment appuyé l’État haïtien dans l’élaboration des référentiels techniques pour la normalisation des écoles en Haïti. ",
+       "cours":["Histoire de l’architecture moderne en Haïti et ailleurs (M1-HAMH2-236)",
+                 "Introduction à la notion du patrimoine et méthodologie de lecture (M1-MPBSV3-114)"],
+      "expertise":[
+           "Conception et gestion de projet",
+           "Infrastructures scolaires",
+           "Conservation du patrimoine bâti",
+           "Recherches architecturales",
+           "Enseignement"
+      ]
+ }
+      
+     ]
+     
+ 
+    
+     },
+     "creole":{
+          "title":"PWOFESE",
+     "profs":[
+              {
       "nom":"Jean Odile ETIENNE",
       "titre":"Enseignant-Chercheur",
       "email":"jeanodile78@yahoo.fr",
@@ -84,7 +154,7 @@
            "Gestion de risques et de réduction des vulnérabilités"
       ]
  },
- {
+  {
       "nom":"Kelly GUERRIER",
       "titre":"Enseignant-Chercheur",
       "email":"kelly.guerrier@ueh.edu.ht",
@@ -103,8 +173,9 @@
            "Mouvements de sols"
       ]
  },
+
  {
-     "nom":"ISABELLE ALICE, JOLICOEUR",
+     "nom":"Isabelle Alice JOLICOEUR",
      "titre":"Enseignante",
      "email":"isabelle_alice.jolicoeur@ueh.edu.ht",
      "phone":"34 56 95 94",
@@ -119,19 +190,10 @@
           " Conception et gestion de projet",
           "Architecture et numérique"
      ]
-}
-      
-     ]
-     
- 
-    
-     },
-     "creole":{
-          "title":"PWOFESE",
-     "profs":[
+},
           {
-          "nom":"Christophe Longchamp",
-          "titre":"Pwofese agrégé",
+          "nom":"Christophe LONGCHAMP",
+          "titre":"Professeur agrégé",
           "email":"christophe.longchamp@ueh.edu",
           "phone":"509 45 45 88 88",
           "diplomes":[
@@ -146,27 +208,7 @@
                "Design collaboratif"
           ]
      },
-     {
-      "nom":"CHRISTIAN, UBERTINI",
-      "titre":"Architecte",
-      "email":"cubertini@bluewin.ch",
-      "phone":"+41 76 506 3369",
-      "diplomes":[
-       "Mastère en Patrimoine Archéologique Monumental 2001, Université Marc-Bloch, Strasbourg. ",
-      "Diplôme en Architecture 1997, Haute Ecole Spécialisée de Genève.",
-      "Dessinateur en bâtiment 1991, Ecole Professionnelle de Lausanne."
-      ],
-      "biographie":"Architecte avec une maitrise en Archéologie et Patrimoine, il est l’auteur de plusieurs études et publications sur l’architecture de l’Égypte antique. Membre de l’ICOMOS, il est actif dans le domaine de la conservation du patrimoine et à travers des évaluations de projet de mise en valeur de vestiges archéologiques. Depuis 2006, il travaille également dans le domaine de la coopération internationale où il gère plusieurs projets de reconstruction post-catastrophes à travers le monde. Établis en Haïti depuis 2009, il travaille comme architecte expert au sein de plusieurs agences internationales. Il a notamment appuyé l’État haïtien dans l’élaboration des référentiels techniques pour la normalisation des écoles en Haïti. ",
-       "cours":["Histoire de l’architecture moderne en Haïti et ailleurs (M1-HAMH2-236)",
-                 "Introduction à la notion du patrimoine et méthodologie de lecture (M1-MPBSV3-114)"],
-      "expertise":[
-           "Conception et gestion de projet",
-           "Infrastructures scolaires",
-           "Conservation du patrimoine bâti",
-           "Recherches architecturales",
-           "Enseignement"
-      ]
- },
+     
  {
       "nom":"Joseph Garry LHERISSON",
       "titre":"Architecte et Urbaniste",
@@ -188,65 +230,29 @@
            "Equipements urbains dans le contexte d’Haïti, marchés publics en particulier."
       ]
  },
- {
-      "nom":"Jean Odile ETIENNE",
-      "titre":"Enseignant-Chercheur",
-      "email":"jeanodile78@yahoo.fr",
-      "phone":"3271-1680/3393-2576",
+     {
+      "nom":"Christian UBERTINI",
+      "titre":"Architecte",
+      "email":"cubertini@bluewin.ch",
+      "phone":"+41 76 506 3369",
       "diplomes":[
-       "Doctorat en Géographie à l’Université Paris 8 ",
-      "Master2 recherche Géographie des Pays Emergents et en Développement à  l’Université  Paris1 Panthéon Sorbonne",
-      "Master1(Maitrise) en Géographie à l’Université Paris1 Panthéon Sorbonne"
+       "Mastère en Patrimoine Archéologique Monumental 2001, Université Marc-Bloch, Strasbourg. ",
+      "Diplôme en Architecture 1997, Haute Ecole Spécialisée de Genève.",
+      "Dessinateur en bâtiment 1991, Ecole Professionnelle de Lausanne."
       ],
-      "biographie":"Jean Odile ETIENNE is a Geographer-Urbanist, Researcher, Expert-Consultant-Head of Studies and Research in Development. He is a specialist in Risk Management and Vulnerability Reduction. Dr Etienne received his Doctorate in Geography from the University of Paris-VIII/Saint Denis, France. He obtained his Master’s degree from the University of Paris-I, Sorbonne/Pantheon, France. He completed his undergraduate studies at the Ecole Normale Supérieure of Port-au-Prince. He has many years of experience as a professor at the State University of Haiti in Port-au-Prince and in Gonaives. ",
-       "cours":["Résilience et gestion des risques territoriaux ",
-                 "Résilience et gestion des risques humains"],
+      "biographie":"Architecte avec une maitrise en Archéologie et Patrimoine, il est l’auteur de plusieurs études et publications sur l’architecture de l’Égypte antique. Membre de l’ICOMOS, il est actif dans le domaine de la conservation du patrimoine et à travers des évaluations de projet de mise en valeur de vestiges archéologiques. Depuis 2006, il travaille également dans le domaine de la coopération internationale où il gère plusieurs projets de reconstruction post-catastrophes à travers le monde. Établis en Haïti depuis 2009, il travaille comme architecte expert au sein de plusieurs agences internationales. Il a notamment appuyé l’État haïtien dans l’élaboration des référentiels techniques pour la normalisation des écoles en Haïti. ",
+       "cours":["Histoire de l’architecture moderne en Haïti et ailleurs (M1-HAMH2-236)",
+                 "Introduction à la notion du patrimoine et méthodologie de lecture (M1-MPBSV3-114)"],
       "expertise":[
-           "Reconstruction post-catastrophe",
-           "Vulnérabilités post-catastrophe",
-           "Aménagement du territoire",
-           "Urbanisme",
-           "Vulnérabilités urbaines",
-           "Géographie urbaine et sociale",
-           "Gestion de risques et de réduction des vulnérabilités"
+           "Conception et gestion de projet",
+           "Infrastructures scolaires",
+           "Conservation du patrimoine bâti",
+           "Recherches architecturales",
+           "Enseignement"
       ]
- },
- {
-      "nom":"Kelly GUERRIER",
-      "titre":"Enseignant-Chercheur",
-      "email":"kelly.guerrier@ueh.edu.ht",
-      "phone":"+50928171065",
-      "diplomes":[
-       " Administration Publique, 2017,École Nationale d'Administration et de Politiques Publiques (Haïti) ",
-      "Docteur en Sciences de l'Ingénieur, 2013, Université catholique de Louvain (Belgique) ",
-      "Ingénieur Civil, 2006, Université d'État d'Haïti (Haïti)"
-      ],
-      "biographie":"Kelly Guerrier est diplômé de la FDS-UEH en génie civil en 2006. Il bénéficie la même année d’une bourse de doctorat en Sciences de l’Ingénieur à l’Université catholique de Louvain en Belgique dans le cadre d’une coopération universitaire entre l’UEH, l’Université catholique de Louvain et l’Université de Liège financé par la Commission Universitaire pour le Développement (CUD). En 2011, il est engagé comme enseignant chercheur à l'UEH. Il rentre définitivement en Haïti après sa soutenance de thèse en décembre de 2013. Actuellement, Kelly Guerrier est co-promoteur de 2 projets de coopération avec la Belgique financés par l'Académie pour la Recherche et l'Enseignement Supérieur (ARES) :  - URBANISME RESILIENT ET AMÉNAGEMENT DES TERRITOIRES A RISQUES (URBATER) avec l'UMons et l'ULiège - EARTHQUAKE HAZARD AND VULNERABILITY ASSESSMENT – DEVELOPING INNOVATIVE SOLUTIONS FOR SUSTAINABLE RISK REDUCTION AND COMMUNICATION IN HAITI avec l'ULiège et l'UNamur ",
-       "cours":["Risques,  climat et géologie ( M1-RCG2-214)",
-                 "Résilience et gestion des risques humains"],
-      "expertise":[
-           "Géophysique",
-           " Géotechnique",
-           "Mouvements de sols"
-      ]
- },
- {
-     "nom":"ISABELLE ALICE, JOLICOEUR",
-     "titre":"Enseignante",
-     "email":"isabelle_alice.jolicoeur@ueh.edu.ht",
-     "phone":"34 56 95 94",
-     "diplomes":[
-      "Maitrise en Architecture 2015, Université de Montréal (Canada)",
-     "Licence en Architecture2010, Université de Montréal (Canada)"
-     ],
-     "biographie":"Née en Haïti, Isabelle A. Jolicoeur obtient sa licence puis une Maitrise en Architecture de l’Université de Montréal. Avant de co-fonder la firme d’architecture Ateliers Co-Lab elle accumule huit (8) années d’expérience au sein d’agences primées à Montréal comme Atelier VAP, MXMA et MU Architecture. En 2015, elle fonde Aetypik, une plateforme qui agit à la fois comme une vitrine virtuelle sur la créativité Haïtienne mais aussi comme incubateur d’initiatives formatrices et inspirantes (conférences, ateliers etc.) pour professionnels ainsi que le grand public. Avec ces multiples engagements, elle cultive une même mission: faire valoir l’architecture, et la créativité en général, comme outil indispensable au façonnement d’une société durable. S’épanouissant le mieux dans un cadre collaboratif, son souci du détail ainsi que son sens de l’initiative lui permettent de mener à bien tous projets. Elle enseigne également à l’Université Quisqueya et au sein de la Maîtrise en Urbanisme Résilient et Territoires à risques (Urbater) de l'UEH.",
-      "cours":["Architecture Résiliente : méthodologie de suivi et d’évaluation (M2-ARLPME2-114)"],
-     "expertise":[
-          "Architecture résiliente",
-          " Conception et gestion de projet",
-          "Architecture et numérique"
-     ]
-}
+ }
+      
+    
       
      ]
      

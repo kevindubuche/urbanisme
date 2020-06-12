@@ -94,7 +94,7 @@ import { sendEmail } from '../../actions/mailActions';
                 type="submit"
                 fullWidth
                 variant="contained"
-                color="primary"
+                // color="primary"
                 // className={classes.submit}
               >
                 {this.props.boutton}

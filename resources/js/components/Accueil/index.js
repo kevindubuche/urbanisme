@@ -31,9 +31,9 @@ export default function Accueil (props) {
         return (
             <div >
                 <ImageWelcome post={mainFeaturedPost} />
-                <Grid container spacing={3}>
+                <Grid container spacing={3} style={{backgroundColor:"white"}}>
                     <Grid item xs={12} sm={6}>
-                        <Paper> 
+                        <div > 
                             <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> 
                                 <Box display="flex" justifyContent="center"  style={{ backgroundColor:"#414342"}}>
                                     <Box p={1} >
@@ -44,7 +44,8 @@ export default function Accueil (props) {
                                             gutterBottom className='annoncesTitle'
                                             style={{color:"white",
                                             backgroundColor:"#414342", 
-                                            fontFamily:"Open Sans"}}>
+                                            fontFamily:"Arial",
+                                            fontWeight:'bold'}}>
                                             {TEXT.annonces} 
                                         </Typography>
                                         </Link> 
@@ -53,15 +54,15 @@ export default function Accueil (props) {
                             </Typography>
                             <Divider /><Divider />
                              <Annonces />
-                        </Paper>
+                        </div>
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
-                      <Paper> 
+                      <div > 
                             <Typography variant="h6" display="block" gutterBottom className='annoncesTitle'> 
                                 <Box display="flex" justifyContent="center"  style={{ backgroundColor:"#414342"}}>
                                     <Box p={1} >
-                                        <Link to="annonces">
+                                        <Link to="activites/konbits">
                                             <Typography 
                                                 variant="h6"
                                                 display="block"
@@ -69,7 +70,8 @@ export default function Accueil (props) {
                                                 className='annoncesTitle'
                                                 style={{color:"white", 
                                                 backgroundColor:"#414342",
-                                                    fontFamily:"Open Sans"}}
+                                                    fontFamily:"Arial",
+                                                    fontWeight:'bold'}}
                                                 > 
                                                 {TEXT.activites}
                                             </Typography>
@@ -80,7 +82,7 @@ export default function Accueil (props) {
                             <Divider />  <Divider />
                             
                             <Activites />
-                        </Paper>
+                        </div >
                     </Grid>
                </Grid>
             </div>

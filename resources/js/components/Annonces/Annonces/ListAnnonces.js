@@ -115,7 +115,7 @@ export default function ListAnnonces(props) {
               <Grid item xs={12} sm={9}>
               <Fragment>
                       <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}}>
-                      {moment(new Date(annonce.created_at)).format('ll') }
+                      {moment(new Date(annonce.created_at)).locale("de").format('LL') }
                       {/* {annonce.created_at} */}
                       <br />
                       {annonce.author}

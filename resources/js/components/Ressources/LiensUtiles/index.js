@@ -37,7 +37,7 @@ export default function Presentation() {
       <div >
         <ExpansionPanelSummary >
           <div className={classes.column}>
-            <Typography variant="h5" className={classes.title}>  {TEXT.title}</Typography>
+          
           </div>
         
         </ExpansionPanelSummary>
@@ -51,7 +51,7 @@ export default function Presentation() {
             </Grid>
             <Grid item xs={12} sm={6}>
 
-          
+            <Typography variant="h5" className={classes.title}>  {TEXT.title}</Typography>
             
               <Link href="https://fds.edu.ht/site/"  >{TEXT.link1}</Link><br /><Divider /><div style={{paddingTop:30}} />
               <Link href="https://fds.edu.ht/site/" >{TEXT.link2} </Link><br /><Divider /><div style={{paddingTop:30}} />
