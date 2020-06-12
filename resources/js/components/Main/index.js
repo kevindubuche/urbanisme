@@ -32,7 +32,8 @@ import LiensUtiles from '../Ressources/LiensUtiles';
 //ACTIVITES
 import Konbits from '../Activites/Konbit/Konbits';
 import Konbit from '../Activites/Konbit/Konbit';
-import Conferences from '../Activites/Conferences';
+import Conferences from '../Activites/Conferences/Conferences';
+import Conference from '../Activites/Conferences/Conference';
 //ESPACE ETUDIANT
 import InfoPratiques from '../EspaceEtudiant/InfoPratiques';
 import PrixEtBourses from '../EspaceEtudiant/PrixEtBourses';
@@ -106,6 +107,7 @@ render(){
                           <Route path="/activites/konbits" exact component={Konbits} />
                           <Route path="/konbit/:id" exact component={Konbit} />
                           <Route path="/activites/conferences" exact component={Conferences}/>
+                          <Route path="/conference/:id" exact component={Conference} />
                            {/* ESPACE ETUDIANT */}
                            <Route path="/espaceEtudiant/info" exact component={InfoPratiques} />
                           <Route path="/espaceEtudiant/prix" exact component={PrixEtBourses}/>

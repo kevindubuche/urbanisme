@@ -11,10 +11,10 @@ import Chip from '@material-ui/core/Chip';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 
+
+import TabConferences from './TabConferences';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-
-import Conferences from './Conferences';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
@@ -50,42 +50,36 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ManageConferences() {
+export default function Direction() {
   const classes = useStyles();
   const style ={
     image: {
       
         width: '100%',
         height: '10%',
-        paddingRight :'5%',
+        padding :'3%',
     }
 }
 
   return (
-    <div className={classes.root} id="conferences">
-      <ExpansionPanel defaultExpanded>
-        <ExpansionPanelSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1c-content"
-          id="panel1c-header"
-        >
+    <div className={classes.root} >
+      <Divider />
+      <div >
+        <ExpansionPanelSummary >
           <div className={classes.column}>
-            <Typography className={classes.heading}>U R B A T E R</Typography>
+            <Typography variant="h5"  className={classes.title}>KONBIT</Typography>
           </div>
-          <div className={classes.column}>
-            <Typography className={classes.secondaryHeading}>Manage Conferences</Typography>
-          </div>
+        
         </ExpansionPanelSummary>
-        <ExpansionPanelDetails className={classes.details}>
-          <div className={classes.column} />
-         
-        
-        </ExpansionPanelDetails>
+  
         <Divider />
-        
-            <Conferences />
-         
-      </ExpansionPanel>
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={12}>
+                   <TabConferences />
+            </Grid>
+            
+         </Grid>
+      </div>
     </div>
   );
 }

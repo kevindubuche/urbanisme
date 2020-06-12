@@ -36,7 +36,7 @@ const styles = theme =>({
                ///////////
                userProfilePic:'',
               editor:null,
-              scaleValue:1.5,
+              scaleValue:1,
             
            }
    }

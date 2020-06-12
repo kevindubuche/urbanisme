@@ -51,8 +51,8 @@ class  Publications extends Component {
            confirmDelete:false,
            localArticle: {
                id :'',
-               title : 'Bienvenue !',
-               body:'Selectionnez un article dans la liste ci-contre.',
+               title : '',
+               body:'',
                author : '',
                source : '',
                created_at: '',
@@ -111,8 +111,8 @@ onSelectArticle = id =>{
                 editMode : this.state.localArticle.id===this.state.idArtDelete ? false : this.state.editMode,
                 localArticle : this.state.localArticle.id===this.state.idArtDelete ? {
                     
-               title : 'Bienvenue !',
-               body:'Selectionnez un article dans la liste ci-contre.'
+               title : '',
+               body:''
                 } : this.state.localArticle
             })
         }
@@ -196,20 +196,24 @@ onSelectArticle = id =>{
                             >
                                {this.state.localArticle.title}
                             </Typography >
+
+                            {this.state.localArticle.id ?
+                         <img src={"/publications_images/"+this.state.localArticle.image} width={200} height={200} />
+                         : '' }
                             <Typography
-                            variant="h6"
+                              variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}}
                             >
-                              Auteur : {this.state.localArticle.author}
+                              {this.state.localArticle.author}
                             </Typography >
                             <Typography
-                            variant="h6"
+                              variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}}
                             >
-                              Source :  {this.state.localArticle.source}
+                              {this.state.localArticle.source}
                             </Typography >
                             <Typography
-                            variant="h6"
+                              variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}}
                             >
-                               Date de  publication : {this.state.localArticle.created_at}
+                          {this.state.localArticle.created_at}
                             </Typography >
                             <br />
                             <Typography
@@ -221,10 +225,7 @@ onSelectArticle = id =>{
                                 
                            
                          </Typography>
-                         {/* {this.props.postsfile_directory+"/"+this.state.localArticle.image} */}
-                         {this.state.localArticle.id ?
-                         <img src={"/publications_images/"+this.state.localArticle.image} width={200} height={200} />
-                         : '' }
+                      
                         
                     </Fragment>
                     }
