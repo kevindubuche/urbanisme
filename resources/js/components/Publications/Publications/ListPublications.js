@@ -148,7 +148,7 @@ export default function ListPublications(props) {
   };
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer >
       <Table aria-label="custom pagination table">
         <TableBody>
           {(rowsPerPage > 0

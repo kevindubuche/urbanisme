@@ -33,7 +33,7 @@ export default class Partenaires extends Component {
              
 
             </div>
-            <div style={{display:"flex",  justifyContent: "center", flexWrap:"wrap" , marginTop:40}}>
+            <div style={{display:"flex",  justifyContent: "center", flexWrap:"wrap" , marginTop:60}}>
 
             <img src={mairiekafou} width={"80px"} height={"80px"} style={{marginRight:50}} />
             <img src={mairiepop} width={"80px"} height={"80px"} style={{marginRight:50}} />
@@ -44,7 +44,7 @@ export default class Partenaires extends Component {
             <img src={mtptc} width={"80px"} height={"80px"} style={{marginRight:50}} />
             
         </div>
-        <div  style={{display:"flex",  justifyContent: "center", flexWrap:"wrap" , marginTop:40, marginBottom:60}}>
+        <div  style={{display:"flex",  justifyContent: "center", flexWrap:"wrap" , marginTop:60, marginBottom:60}}>
         <img src={omrh} width={"80px"} height={"80px"} style={{marginRight:50}} />
             <img src={ueh} width={"170px"} height={"80px"} style={{marginRight:50}} />
             <img src={fds} width={"170px"} height={"80px"} style={{marginRight:50}} />
