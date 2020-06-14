@@ -50,18 +50,19 @@ import { sendEmail } from '../../actions/mailActions';
 
     render(){
         
-    
+  
         return(
-            <form  noValidate onSubmit={this.handleSubmit}>
+            <form   onSubmit={this.handleSubmit}>
             <TextField
                 variant="outlined"
                 margin="normal"
-                required
+               
                 fullWidth
                 id="nom"
                 label= {this.props.placeholderNom}
                 name="nom"
                 onChange={this.handleChange('nom')}
+                required
               />
               <TextField
                 variant="outlined"
@@ -91,7 +92,7 @@ import { sendEmail } from '../../actions/mailActions';
            <div   style={{paddingTop:40}}></div>
               <Button
             
-                type="submit"
+                type='submit'
                 fullWidth
                 variant="contained"
                 // color="primary"

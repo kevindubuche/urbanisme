@@ -25,7 +25,7 @@ export default function Direction() {
       <div >
         <ExpansionPanelSummary  >
           <div className={classes.column}>
-            <Typography className={classes.title}>ANNONCES</Typography>
+            <Typography className={classes.title} style={{marginLeft:"-25px"}}>ANNONCES</Typography>
           </div>
         
         </ExpansionPanelSummary>
