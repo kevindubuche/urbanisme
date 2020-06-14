@@ -5,8 +5,6 @@ import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
 import direction from '../images/direction.jpg';
-
-
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import useStyles from '../../Style/GeneralJSX';
@@ -27,7 +25,7 @@ export default function Direction() {
 }
 
   return (
-    <div className={classes.root} id="direction">
+    <div className={classes.root} >
       <Divider />
       <div >
         <ExpansionPanelSummary  >

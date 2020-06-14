@@ -8,7 +8,6 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableFooter from '@material-ui/core/TableFooter';
 import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
 import IconButton from '@material-ui/core/IconButton';
 import FirstPageIcon from '@material-ui/icons/FirstPage';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
@@ -116,7 +115,7 @@ export default function ListAnnonces(props) {
               <Fragment>
                       <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}}>
                       {moment(new Date(annonce.created_at)).locale("de").format('LL') }
-                      {/* {annonce.created_at} */}
+                 
                       <br />
                       {annonce.author}
                   </Typography>
@@ -148,14 +147,14 @@ export default function ListAnnonces(props) {
   };
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer >
       <Table aria-label="custom pagination table">
         <TableBody>
           {(rowsPerPage > 0
             ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
             : rows
           ).map((row, index) => (
-            <TableRow key={index} onClick={()=>props.handleChangeIndexPam(1,'le titre extraordinaire')} >
+            <TableRow key={index}  >
               <TableCell component="th" scope="row">
                 {row.block}
               </TableCell>
@@ -172,6 +171,7 @@ export default function ListAnnonces(props) {
         <TableFooter>
           <TableRow>
             <TablePagination
+            labelRowsPerPage=''
               rowsPerPageOptions={[5, 10, 25, { label: 'All', value: -1 }]}
               colSpan={3}
               count={rows.length}

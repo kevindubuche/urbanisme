@@ -172,6 +172,7 @@ export default function ListPublications(props) {
         <TableFooter>
           <TableRow>
             <TablePagination
+                 labelRowsPerPage=''
               rowsPerPageOptions={[5, 10, 25, { label: 'All', value: -1 }]}
               colSpan={3}
               count={rows.length}
