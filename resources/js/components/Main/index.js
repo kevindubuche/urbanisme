@@ -47,7 +47,7 @@ import Articles from '../Articles';
 import Publications from '../Publications/Publications';
 import Publication from '../Publications/Publication';
 //ONLY FOR ADMIN
-import Admin from '../Admin';
+import Admin from '../Admin/Home';
 import LoginForm from '../Login/LoginForm';
 import AdminAnnonces from '../Admin/Annonces';
 import AdminKonbits from '../Admin/Konbits';

@@ -49,7 +49,7 @@ export default function Partenaires() {
                 <div className={classes.body}>{TEXT.body}</div>    
 
                 <Link to="/mission/partenaires" >   
-  <Button  variant="contained" color="primary" style={{marginTop:50}} >{TEXT.button}</Button>
+  <Button  variant="contained"  style={{marginTop:50}} >{TEXT.button}</Button>
           </Link>
             </Grid>
             

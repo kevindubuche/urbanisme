@@ -21,7 +21,7 @@ import umons from '../../images/logoPartenaires/umons.png';
 export default class Partenaires extends Component {
     render(){
         return(
-            <div>
+            <div style={{marginTop:80}}>
               <div style={{display:"flex",  justifyContent: "center", flexWrap:"wrap"}}>
                 <img src={ares} width={"170px"} height={"80px"} style={{marginRight:50}} />
                 <img src={bid} width={"100px"} height={"80px"} style={{marginRight:50}} />

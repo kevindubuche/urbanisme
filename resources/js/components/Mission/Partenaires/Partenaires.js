@@ -39,7 +39,7 @@ export default class Partenaires extends Component {
                            
 
             </div>
-            <div style={{display:"flex",  justifyContent: "center", flexWrap:"wrap" , marginTop:20}}>
+            <div style={{display:"flex",  justifyContent: "center", flexWrap:"wrap" , marginTop:40}}>
             <Link href="www.gooogle.com">
             <img src={culture} width={"80px"} height={"80px"} style={{marginRight:50}} />
             </Link>
@@ -55,7 +55,7 @@ export default class Partenaires extends Component {
             </Link>
             
         </div>
-        <div  style={{display:"flex",  justifyContent: "center", flexWrap:"wrap" , marginTop:20}}>
+        <div  style={{display:"flex",  justifyContent: "center", flexWrap:"wrap" , marginTop:40}}>
         <Link href="www.gooogle.com">
             <img src={mairiepv} width={"80px"} height={"80px"} style={{marginRight:50}} />
             </Link>

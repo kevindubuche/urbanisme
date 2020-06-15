@@ -26,7 +26,7 @@ export default function Demarche() {
 }
 
   return (
-    <div className={classes.root} id="objectifs">
+    <div className={classes.root} >
       <Divider />
       <div >
         <ExpansionPanelSummary  >
