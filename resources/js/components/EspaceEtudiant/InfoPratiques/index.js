@@ -23,7 +23,7 @@ export default function InfoPratiques() {
 }
 
   return (
-    <div className={classes.root} id="fondation">
+    <div className={classes.root} >
       <Divider />
       <div >
         <ExpansionPanelSummary >
