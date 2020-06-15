@@ -28,7 +28,7 @@ export default function InfoPratiques() {
       <div >
         <ExpansionPanelSummary >
           <div className={classes.column}>
-            <Typography  variant="h5" className={classes.title}>{TEXT.title}</Typography>
+           
           </div>
         
         </ExpansionPanelSummary>
@@ -40,7 +40,7 @@ export default function InfoPratiques() {
                  </Paper>
             </Grid>
             <Grid item xs={12} sm={6}>
-           
+            <Typography  variant="h5" className={classes.title}>{TEXT.title}</Typography>
                 <div className={classes.body}>{TEXT.body}</div>
             </Grid>
             

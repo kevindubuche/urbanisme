@@ -24,12 +24,12 @@ export default function Direction() {
 }
 
   return (
-    <div className={classes.root} id="direction">
+    <div className={classes.root} >
       <Divider />
       <div >
         <ExpansionPanelSummary  >
           <div className={classes.column}>
-            <Typography className={classes.title}>{TEXT.title}</Typography>
+            <Typography  variant="h5" className={classes.title} style={{marginLeft:"-25px"}}>{TEXT.title}</Typography>
           </div>
         
         </ExpansionPanelSummary>
