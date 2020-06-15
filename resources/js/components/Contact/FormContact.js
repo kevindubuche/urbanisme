@@ -13,6 +13,8 @@ import { sendEmail } from '../../actions/mailActions';
             name : '',
             email:'',
             message : '',
+
+            mesgFromBackend:'',
             
             
            }
@@ -25,15 +27,37 @@ import { sendEmail } from '../../actions/mailActions';
     })
 
    }
-   UNSAFE_componentWillReceiveProps({article}){//nou pa use redux la donc nap veye changement de article selectionner
-     
+   UNSAFE_componentWillReceiveProps({nextProps}){//nou pa use redux la donc nap veye changement de article selectionner
+    if(nextProps){
+      console.log('receive props')
+    }
+   
+//     if(nextProps.mail =='Mail Sent Sucssfully'){
+      
+//         this.setState({
+//           mesgFromBackend : "Envoye"
+//       })
 
-   }
+// }
+// else{
+  
+//     this.setState({
+//       mesgFromBackend : "Message non envoye !"
+//   })
+// }
+ 
+ 
+}
+   
 
    handleSubmit= e =>{
     // TODO : validate
     e.preventDefault();
     this.props.sendEmail(this.state);
+
+    this.setState({
+          mesgFromBackend : this.props.mail
+      })
    
     
 }
@@ -46,6 +70,9 @@ import { sendEmail } from '../../actions/mailActions';
             [name]:value
         
     })
+    this.setState({
+      mesgFromBackend : ''
+  })
 }
 
     render(){
@@ -90,6 +117,9 @@ import { sendEmail } from '../../actions/mailActions';
                   onChange={this.handleChange('message')}
               />
            <div   style={{paddingTop:40}}></div>
+
+           <p>{this.state.mesgFromBackend=='Message non envoye !' ? <a style={{color:"green"}}>{this.state.mesgFromBackend} </a>: <a style={{color:"red"}}>{this.state.mesgFromBackend} </a> }</p>
+
               <Button
             
                 type='submit'
@@ -108,4 +138,7 @@ import { sendEmail } from '../../actions/mailActions';
     }
 }
 
-export default connect(null, { sendEmail })(FormContact);
+const mapStateToProps =(state) => ({
+  mail : state.mail.item
+});
+export default connect(mapStateToProps, { sendEmail })(FormContact);
