@@ -22,6 +22,7 @@ import Admissibilite from '../Programme/Admissibilite';
 import Perspectives from '../Programme/Perspectives';
 import Couts from '../Programme/Couts';
 import Mobilite from '../Programme/Mobilite';
+import Ressoureces from '../Programme/Ressources';
 //RECHERCHE
 import LaRecherche from '../Recherche/LaRecherche';
 import Urbalab from '../Recherche/Urbalab';
@@ -96,6 +97,7 @@ render(){
                           <Route path="/programme/perspectives" exact component={Perspectives}/>
                           <Route path="/programme/couts" exact component={Couts} />
                           <Route path="/programme/mobilite" exact component={Mobilite} />
+                          <Route path="/programme/ressources" exact component={Ressoureces}/>
                           {/* RECHERCHE */}
                           <Route path="/recherche/laRecherche" exact component={LaRecherche} />
                           <Route path="/recherche/urbalab" exact component={Urbalab} />

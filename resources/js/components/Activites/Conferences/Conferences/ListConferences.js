@@ -163,7 +163,7 @@ export default function ListAnnonces(props) {
             ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
             : rows
           ).map((row, index) => (
-            <TableRow key={index} onClick={()=>props.handleChangeIndexPam(1,'le titre extraordinaire')} >
+            <TableRow key={index}>
               <TableCell component="th" scope="row">
                 {row.block}
               </TableCell>
