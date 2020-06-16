@@ -24,64 +24,64 @@ export default class Partenaires extends Component {
         return(
             <div>
               <div style={{display:"flex",  justifyContent: "center", flexWrap:"wrap"}}>
-                  <Link href="www.gooogle.com">
+                  <Link href="https://www.gooogle.com">
                   <img src={ares} width={"170px"} height={"80px"} style={{marginRight:50}} />
                   </Link>
-                  <Link href="www.gooogle.com">
+                  <Link href="https://www.gooogle.com">
                 <img src={bid} width={"100px"} height={"80px"} style={{marginRight:50}} />
                 </Link>
-                <Link href="www.gooogle.com">
+                <Link href="https://www.gooogle.com">
                 <img src={bonfed} width={"150px"} height={"80px"} style={{marginRight:50}} />
                 </Link>
-                <Link href="www.gooogle.com">
+                <Link href="https://www.gooogle.com">
                     <img src={ciat} width={"80px"} height={"80px"} style={{marginRight:50}} /> 
                 </Link>
                            
 
             </div>
             <div style={{display:"flex",  justifyContent: "center", flexWrap:"wrap" , marginTop:40}}>
-            <Link href="www.gooogle.com">
+            <Link href="https://www.gooogle.com">
             <img src={culture} width={"80px"} height={"80px"} style={{marginRight:50}} />
             </Link>
-            <Link href="www.gooogle.com">
+            <Link href="https://www.gooogle.com">
                 <img src={dinepa} width={"100px"} height={"80px"} style={{marginRight:50}} />
             </Link>
                 
-            <Link href="www.gooogle.com">
+            <Link href="https://www.gooogle.com">
             <img src={mairiekafou} width={"80px"} height={"80px"} style={{marginRight:50}} />
             </Link>
-            <Link href="www.gooogle.com">
+            <Link href="https://www.gooogle.com">
             <img src={mairiepop} width={"80px"} height={"80px"} style={{marginRight:50}} />
             </Link>
             
         </div>
         <div  style={{display:"flex",  justifyContent: "center", flexWrap:"wrap" , marginTop:40}}>
-        <Link href="www.gooogle.com">
+        <Link href="https://www.gooogle.com">
             <img src={mairiepv} width={"80px"} height={"80px"} style={{marginRight:50}} />
             </Link>
-        <Link href="www.gooogle.com">
+        <Link href="https://www.gooogle.com">
             <img src={mde} width={"80px"} height={"80px"} style={{marginRight:50}} />
             </Link>
-            <Link href="www.gooogle.com">
+            <Link href="https://www.gooogle.com">
             <img src={mict} width={"80px"} height={"80px"} style={{marginRight:50}} />
             </Link>
-            <Link href="www.gooogle.com">
+            <Link href="https://www.gooogle.com">
                 <img src={mtptc} width={"80px"} height={"80px"} style={{marginRight:50}} />
             </Link>
             
         </div>
         <div  style={{display:"flex",  justifyContent: "center", flexWrap:"wrap" , marginTop:20}}>
             
-        <Link href="www.gooogle.com">
+        <Link href="https://www.gooogle.com">
             <img src={ueh} width={"170px"} height={"80px"} style={{marginRight:50}} />
             </Link>
-            <Link href="www.gooogle.com">
+            <Link href="https://www.gooogle.com">
             <img src={fds} width={"170px"} height={"80px"} style={{marginRight:50}} />
             </Link>
-            <Link href="www.gooogle.com">
+            <Link href="https://www.gooogle.com">
                 <img src={mairiedelmas} width={"80px"} height={"80px"} style={{marginRight:50}} />
             </Link>
-            <Link href="www.gooogle.com">
+            <Link href="https://www.gooogle.com">
             <img src={umons} width={"170px"} height={"80px"} style={{marginRight:50}} />
             </Link>
         </div>

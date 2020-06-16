@@ -40,7 +40,7 @@ export default function Partenaires() {
       <div >
         <ExpansionPanelSummary  >
           <div className={classes.column}>
-            <Typography variant="h5" className={classes.title}>  {TEXT.title}</Typography>
+            <Typography variant="h5" className={classes.title} style={{marginLeft:"-25px"}}>  {TEXT.title}</Typography>
           </div>
         
         </ExpansionPanelSummary>
