@@ -46,7 +46,7 @@ class UnePublication extends Component {
                              {/* {this.props.publication.created_at} */}
       
                             
-                             {moment(new Date(this.props.publication.created_at)).format('ll') }
+                             {moment(new Date(this.props.publication.created_at)).locale("fr").format('LL') }
                               <br />
                                  {this.props.publication.author}
                          </Typography>

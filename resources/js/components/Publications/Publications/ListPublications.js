@@ -115,7 +115,8 @@ export default function ListPublications(props) {
               <Grid item xs={12} sm={9}>
               <Fragment>
                       <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}}>
-                      {moment(new Date(publication.created_at)).format('ll') }
+              
+                      {moment(new Date(publication.created_at)).locale("fr").format('LL') }
                       {/* {publication.created_at} */}
                       <br />
                       {publication.author}
@@ -155,7 +156,7 @@ export default function ListPublications(props) {
             ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
             : rows
           ).map((row, index) => (
-            <TableRow key={index} onClick={()=>props.handleChangeIndexPam(1,'le titre extraordinaire')} >
+            <TableRow key={index}  >
               <TableCell component="th" scope="row">
                 {row.block}
               </TableCell>

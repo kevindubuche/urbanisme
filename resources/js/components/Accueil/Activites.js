@@ -37,7 +37,7 @@ var moment  = require('moment');
                                     <Fragment>
                                             <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
                                             
-                                                {moment(new Date(conference.created_at)).locale("de").format('LL') }
+                                                {moment(new Date(conference.created_at)).locale("fr").format('LL') }
                                         </Typography>
                                         
                                         <Link to={"/conference/"+conference.id}> 
@@ -81,7 +81,7 @@ var moment  = require('moment');
                                     <Fragment>
                                             <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
                                             
-                                                {moment(new Date(konbit.created_at)).locale("de").format('ll') }
+                                                {moment(new Date(konbit.created_at)).locale("fr").format('LL') }
                                         </Typography>
                                         
                                         <Link to={"/konbit/"+konbit.id}> 

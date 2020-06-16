@@ -31,7 +31,7 @@ var moment  = require('moment');
                                     <Fragment>
                                             <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
                                             
-                                                {moment(new Date(annonce.created_at)).locale("de").format('LL') }
+                                                {moment(new Date(annonce.created_at)).locale("fr").format('LL') }
                                         </Typography>
                                         
                                         <Link to={"/annonce/"+annonce.id}> 
