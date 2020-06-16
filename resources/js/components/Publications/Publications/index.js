@@ -26,7 +26,6 @@ export default function Direction() {
   return (
     <div className={classes.root} >
       <Divider />
-      <div >
         <ExpansionPanelSummary  >
           <div className={classes.column}>
             <Typography  variant="h5" className={classes.title} style={{marginLeft:"-25px"}}>{TEXT.title}</Typography>
@@ -40,7 +39,7 @@ export default function Direction() {
             </Grid>
             
          </Grid>
-      </div>
+   
     </div>
   );
 }

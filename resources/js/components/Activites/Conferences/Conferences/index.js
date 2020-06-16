@@ -8,7 +8,7 @@ import TabConference from './TabConference';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import useStyles from '../../../Style/GeneralJSX';
-import data from './Konbit.json';
+import data from './Conferences.json';
 import {useSelector} from 'react-redux';
 
 export default function Konbit() {
@@ -32,7 +32,7 @@ export default function Konbit() {
       
         >
           <div className={classes.column}>
-            <Typography variant="h5"  className={classes.title}>COONFERENCES</Typography>
+  <Typography variant="h5"  className={classes.title} style={{marginLeft:"-25px"}}>{TEXT.title}</Typography>
           </div>
         
         </ExpansionPanelSummary>

@@ -28,9 +28,9 @@ import { sendEmail } from '../../actions/mailActions';
 
    }
    UNSAFE_componentWillReceiveProps({nextProps}){//nou pa use redux la donc nap veye changement de article selectionner
-    if(nextProps){
-      console.log('receive props')
-    }
+    // if(nextProps){
+    //   console.log('receive props')
+    // }
    
 //     if(nextProps.mail =='Mail Sent Sucssfully'){
       
@@ -118,7 +118,7 @@ import { sendEmail } from '../../actions/mailActions';
               />
            <div   style={{paddingTop:40}}></div>
 
-           <p>{this.state.mesgFromBackend=='Message non envoye !' ? <a style={{color:"green"}}>{this.state.mesgFromBackend} </a>: <a style={{color:"red"}}>{this.state.mesgFromBackend} </a> }</p>
+           {/* <p>{this.state.mesgFromBackend=='Message non envoye !' ? <a style={{color:"green"}}>{this.state.mesgFromBackend} </a>: <a style={{color:"red"}}>{this.state.mesgFromBackend} </a> }</p> */}
 
               <Button
             
