@@ -40,8 +40,8 @@ class UnKonbit extends Component {
                      <Grid item xs={12} sm={9}>
                      <Fragment>
                              <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
-                             {/* {this.props.konbit.created_at} */}
-                             {moment(new Date(this.props.konbit.created_at)).format('ll') } <br />
+                           
+                             {moment(new Date(this.props.konbit.created_at)).locale("fr").format('LL') }<br />
                                  {this.props.konbit.author}
                          </Typography>
                          <Typography variant="h4" gutterBottom>
@@ -50,15 +50,9 @@ class UnKonbit extends Component {
                         
                        
           
-                     <Typography variant="body2" gutterBottom>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipitLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                         unde suscipit
-                     </Typography>
+                          <Fragment>
+                             <div className="content" dangerouslySetInnerHTML={{__html:this.props.konbit.body} }></div>   
+                          </Fragment>  
                      </Fragment>
                  </Grid>
             </div>

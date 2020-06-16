@@ -40,8 +40,8 @@ class UneConference extends Component {
                      <Grid item xs={12} sm={9}>
                      <Fragment>
                              <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
-                             {/* {this.props.konbit.created_at} */}
-                             {moment(new Date(this.props.conference.created_at)).format('ll') } <br />
+                       
+                             {moment(new Date(this.props.conference.created_at)).locale("fr").format('LL') } <br />
                                  {this.props.conference.author}
                          </Typography>
                          <Typography variant="h4" gutterBottom>

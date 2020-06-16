@@ -45,8 +45,7 @@ class UneAnnonce extends Component {
                              <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
                              {/* {this.props.annonce.created_at} */}
       
-                            
-                             {moment(new Date(this.props.annonce.created_at)).format('ll') }
+                             {moment(new Date(this.props.annonce.created_at)).locale("fr").format('LL') }
                               <br />
                                  {this.props.annonce.author}
                          </Typography>

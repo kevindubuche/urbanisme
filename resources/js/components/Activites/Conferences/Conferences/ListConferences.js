@@ -115,8 +115,9 @@ export default function ListAnnonces(props) {
                <Grid item xs={12} sm={8}>
                    <Fragment>
                            <Typography variant="caption" display="block" gutterBottom style={{ color:"#8c8c8c"}} >
-                               {/* {annonce.created_at} */}
-                               {moment(new Date(annonce.created_at)).format('ll') } 
+                         
+                               {moment(new Date(annonce.created_at)).locale("fr").format('LL') }
+                               
                        </Typography>
                        
                        <Link to={"/conference/"+annonce.id}> 
