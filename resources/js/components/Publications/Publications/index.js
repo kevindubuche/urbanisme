@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
@@ -10,9 +10,18 @@ import Grid from '@material-ui/core/Grid';
 import useStyles from '../../Style/GeneralJSX';
 import data from './Publications.json';
 import {useSelector} from 'react-redux';
+import Loading from './Loading';
 export default function Direction() {
   const store = useSelector(store =>store);
   const TEXT = store.langue.item == '1' ? data.francais : data.creole;
+
+  const [ spinner, setSpinner ] = useState(true);
+
+  // It will be executed before rendering
+
+  useEffect(() => {
+    setTimeout(() => setSpinner(false), 500)
+  }, []);
 
   const classes = useStyles();
   const style ={
@@ -24,6 +33,7 @@ export default function Direction() {
 }
 
   return (
+    spinner==true ? <Loading/> : 
     <div className={classes.root} >
       <Divider />
         <ExpansionPanelSummary  >
