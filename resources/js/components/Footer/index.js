@@ -58,7 +58,7 @@ export default function Footer(props) {
        <OtherLink to='/contact' >
          <Typography color='textSecondary'>
            <HomeIcon />
-           27, rue Toussaint Louverture, Delmas 33 (local Laboratoire National du Bâtiment et des Travaux Publics)
+           27, rue Toussaint Louverture, Delmas 33 (Local du Laboratoire National du Bâtiment et des Travaux Publics)
          </Typography>
         </OtherLink>
        
@@ -78,8 +78,8 @@ export default function Footer(props) {
         </div>
      
         
-        <img src={logo} width={"60px"} height={"60px"}  style={{marginRight:180, alignSelf:'flex-end'}}/>
-        
+        {/* <img src={logo} width={"60px"} height={"60px"}  style={{marginRight:180, alignSelf:'flex-end'}}/>
+         */}
        
         <div style={{justifyContent:'center', alignItems:'flex-end'}}>
           <Copyright /> 

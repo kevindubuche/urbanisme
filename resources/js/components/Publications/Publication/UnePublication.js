@@ -3,7 +3,7 @@ import Paper from '@material-ui/core/Paper';
 
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-
+import image from '../../../images/Urbater_ImageGenerique_4.jpg';
 import PropTypes from 'prop-types';
 import { fetchPublication } from '../../../actions/publicationActions';
 import { connect } from 'react-redux';
@@ -37,7 +37,8 @@ class UnePublication extends Component {
             
             <div>
                  <Grid item xs={12} sm={3}>
-                  <img src={"/publications_images/"+this.props.publication.image} style={{height:'80%',width:'80%'}} />
+                 <img src={image} style={{height:'80%',width:'80%'}} />
+                  {/* <img src={"/publications_images/"+this.props.publication.image} style={{height:'80%',width:'80%'}} /> */}
                   
                   </Grid>
                      <Grid item xs={12} sm={9}>

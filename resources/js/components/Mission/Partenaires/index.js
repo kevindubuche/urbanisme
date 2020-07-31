@@ -34,7 +34,9 @@ export default function Partenaires() {
 }
 
   return (
-    <div className={classes.root}  style={{backgroundColor:"white"}}>
+    <div className={classes.root} 
+    //  style={{backgroundColor:"white"}}
+     >
      
       <Divider />
       <div >
@@ -44,13 +46,13 @@ export default function Partenaires() {
           </div>
         
         </ExpansionPanelSummary>
-
+{/* 
           <Grid container spacing={3} style={{paddingTop:40}}>
             <Grid item xs={12} sm={12}>          
                 <LesPartenaires/>
             </Grid>
             
-         </Grid>
+         </Grid> */}
       </div>
      
     

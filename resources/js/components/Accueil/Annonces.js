@@ -8,6 +8,8 @@ import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchAnnonces } from '../../actions/annonceActions';
+
+import image from '../../images/Urbater_ImageGenerique_4.jpg';
 var moment  = require('moment');
  class Annonces extends Component {
     constructor(props){
@@ -25,7 +27,11 @@ var moment  = require('moment');
                   {this.props.annonces.slice(0, 5).map(( annonce, index) => 
                    <Fragment key={index} >
                          <Grid item xs={12} sm={3}>
-                                   <img src={"/annonces_images/"+annonce.image} width={"80%"} height={"80%"}  />
+                                   {/* <img src={"/annonces_images/"+annonce.image} width={"80%"} height={"80%"}  /> */}
+                                   <Link to={"/annonce/"+annonce.id}> 
+                                     <img src={image} width={"80%"} height={"80%"}  />
+                                     </Link>
+
                                 </Grid>
                                 <Grid item xs={12} sm={9}>
                                     <Fragment>

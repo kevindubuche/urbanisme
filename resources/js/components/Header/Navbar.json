@@ -1,5 +1,8 @@
 {
     "francais":{
+           "accueil":{
+                  "Accueil":"Accueil"
+           },
          "mission":{
                 "Mission":"Mission",
                 "Presentation":"Présentation d’Urbater",
@@ -9,19 +12,19 @@
          },
                 
          "equipe":{
-               "Equipe":"Equipe",
+               "Equipe":"Équipe",
                "Direction":"Direction",
                "Prof":"Professeurs",
-               "Internationale":"Equipe Internationale"
+               "Internationale":"Équipe Internationale"
          },
                
          "programme":{
                "Programme":"Programme",
                "Cheminement":"Cheminement et structure",
-               "Conditions":"Conditions d’admissibilite",
+               "Conditions":"Conditions d’admissibilité",
                "Ressources":"Ressources",
                "Perspectives":"Perspectives d’avenir",
-               "Couts":"Couts",
+               "Couts":"Coûts",
                "Mobilite":"Mobilite internationale"
          },
          
@@ -40,12 +43,12 @@
                "Liens":"Liens utiles"
          },
          "activites":{
-               "Activites":"Activites",
+               "Activites":"Activités",
                "Konbit":"Konbit",
-               "Conferences":"Conferences"
+               "Conferences":"Conférences"
          },
          "espace":{
-               "Espace":"Espace Etudiant",
+               "Espace":"Éspace Etudiant",
                "Info":"Informations Pratiques",
                "Stage":"Stage",
                "Prix":"Prix et Bourses",
@@ -57,6 +60,9 @@
          }
     },
     "creole":{
+       "accueil":{
+              "Accueil":"Akey"
+       },
         "mission":{
                "Mission":"Misyon",
                "Presentation":"Prezatasyon Urbater",

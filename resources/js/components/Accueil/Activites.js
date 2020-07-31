@@ -11,6 +11,7 @@ import { connect } from 'react-redux';
 import { fetchKonbits } from '../../actions/konbitActions';
 import { fetchConferences } from '../../actions/conferenceActions';
 
+import image from '../../images/Urbater_ImageGenerique_4.jpg';
 var moment  = require('moment');
  class AllKonbits extends Component {
     constructor(props){
@@ -31,7 +32,11 @@ var moment  = require('moment');
                   {this.props.conferences.slice(0, 3).map(( conference, index) => 
                    <Fragment key={index} >
                          <Grid item xs={12} sm={3}>
-                                   <img src={"/conferences_images/"+conference.image} width={"80%"} height={"80%"}  />
+                         <Link to={"/conference/"+conference.id}> 
+                         <img src={image} width={"80%"} height={"80%"}  />
+                         </Link>
+
+                                   {/* <img src={"/conferences_images/"+conference.image} width={"80%"} height={"80%"}  /> */}
                                 </Grid>
                                 <Grid item xs={12} sm={9}>
                                     <Fragment>
@@ -75,7 +80,10 @@ var moment  = require('moment');
                   {this.props.konbits.slice(0, 2).map(( konbit, index) => 
                    <Fragment key={index} >
                          <Grid item xs={12} sm={3}>
-                                   <img src={"/konbits_images/"+konbit.image} width={"80%"} height={"80%"}  />
+                         <Link to={"/konbit/"+konbit.id}> 
+                            <img src={image} width={"80%"} height={"80%"}  />
+                        </Link>
+                                   {/* <img src={"/konbits_images/"+konbit.image} width={"80%"} height={"80%"}  /> */}
                                 </Grid>
                                 <Grid item xs={12} sm={9}>
                                     <Fragment>

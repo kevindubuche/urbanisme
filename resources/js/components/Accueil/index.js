@@ -52,7 +52,7 @@ export default function Accueil (props) {
                                     </Box>
                                 </Box>
                             </Typography>
-                            <Divider /><Divider />
+                            
                              <Annonces />
                         </div>
                     </Grid>
@@ -79,7 +79,7 @@ export default function Accueil (props) {
                                     </Box>
                                 </Box>
                             </Typography>
-                            <Divider />  <Divider />
+                         
                             
                             <Activites />
                         </div >

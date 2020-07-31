@@ -24,31 +24,31 @@ export default class Partenaires extends Component {
             <div style={{marginTop:80}}>
               <div style={{display:"flex",  justifyContent: "center", flexWrap:"wrap"}}>
                 <img src={ares} width={"170px"} height={"80px"} style={{marginRight:50}} />
-                <img src={bid} width={"100px"} height={"80px"} style={{marginRight:50}} />
-                <img src={bonfed} width={"150px"} height={"80px"} style={{marginRight:50}} />
-                <img src={ciat} width={"80px"} height={"80px"} style={{marginRight:50}} />
+                <img src={bid} width={"150px"} height={"80px"} style={{marginRight:50}} />
+                <img src={bonfed} width={"170px"} height={"100px"} style={{marginRight:50}} />
+                <img src={ciat} width={"100px"} height={"100px"} style={{marginRight:50}} />
 
-                <img src={culture} width={"80px"} height={"80px"} style={{marginRight:50}} />
-                <img src={dinepa} width={"100px"} height={"80px"} style={{marginRight:50}} />
+                <img src={culture} width={"130px"} height={"130px"} style={{marginRight:50}} />
+                <img src={dinepa} width={"170px"} height={"100px"} style={{marginRight:50}} />
              
 
             </div>
             <div style={{display:"flex",  justifyContent: "center", flexWrap:"wrap" , marginTop:60}}>
 
-            <img src={mairiekafou} width={"80px"} height={"80px"} style={{marginRight:50}} />
-            <img src={mairiepop} width={"80px"} height={"80px"} style={{marginRight:50}} />
-            <img src={mairiepv} width={"80px"} height={"80px"} style={{marginRight:50}} />
-            <img src={mde} width={"80px"} height={"80px"} style={{marginRight:50}} />
+            <img src={mairiekafou} width={"100px"} height={"100px"} style={{marginRight:50}} />
+            <img src={mairiepop} width={"100px"} height={"  100px"} style={{marginRight:50}} />
+            <img src={mairiepv} width={"100px"} height={"100px"} style={{marginRight:50}} />
+            <img src={mde} width={"100px"} height={"100px"} style={{marginRight:50}} />
 
-            <img src={mict} width={"80px"} height={"80px"} style={{marginRight:50}} />
-            <img src={mtptc} width={"80px"} height={"80px"} style={{marginRight:50}} />
+            <img src={mict} width={"100px"} height={"100px"} style={{marginRight:50}} />
+            <img src={mtptc} width={"80px"} height={"90px"} style={{marginRight:50}} />
             
         </div>
         <div  style={{display:"flex",  justifyContent: "center", flexWrap:"wrap" , marginTop:60, marginBottom:60}}>
-        <img src={omrh} width={"80px"} height={"80px"} style={{marginRight:50}} />
+        <img src={omrh} width={"100px"} height={"100px"} style={{marginRight:50}} />
             <img src={ueh} width={"170px"} height={"80px"} style={{marginRight:50}} />
             <img src={fds} width={"170px"} height={"80px"} style={{marginRight:50}} />
-                <img src={mairiedelmas} width={"80px"} height={"80px"} style={{marginRight:50}} />
+                <img src={mairiedelmas} width={"100px"} height={"100px"} style={{marginRight:50}} />
                 <img src={umons} width={"170px"} height={"80px"} style={{marginRight:50}} />
         </div>
             </div>

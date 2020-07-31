@@ -53,7 +53,7 @@ handleSubmit =() =>{
   return (
     <div>
      <FormControl  variant="filled">
-          <InputLabel htmlFor="filled-adornment-password">Mot cle</InputLabel>
+          <InputLabel htmlFor="filled-adornment-password">Mot clé</InputLabel>
           <FilledInput
             id="filled-adornment-password"
             type='text' 

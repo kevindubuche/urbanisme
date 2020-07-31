@@ -7,7 +7,7 @@ import Search from './Search';
 import MovingText from './MovingText';
 import logo from '../../images/logo.png';
 import SwitchLanguage from './SwitchLanguage';
-
+import { Link} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -25,30 +25,47 @@ export default function Header(props) {
   const { sections, title } = props;
 
   return (
-              <React.Fragment> 
-                <MovingText /> 
-                <div>
-                    <SwitchLanguage  />
-                </div>
-               
-                  <Toolbar  style={{display:'flex', flexWrap:'wrap', flexDirection:'column'}}> 
-                  <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap', alignItems: 'center'}}>
-                    <img src={logo}  width="170" height="170" alt="logo" style={{float:"left"}}></img> 
-                    <h5 style={{display:'flex', flexWrap:'wrap', alignItems: 'left'}}>URBATeR, Maîtrise en Urbanisme Résilient et Aménagement des Territoires à Risques</h5>
-                  </div>
-                
-                    <div  style={{ alignSelf:'flex-end', marginRight:"-100px"}}>
-                      <div >
-                         <Search />
-                      </div>
-                    
-                    </div>
+              <React.Fragment>
+                 <MovingText /> 
+                <div style={{display:'flex', flexWrap:'wrap', flexDirection:'column'}}>
+                      
+                <div style={{display:'flex', flexWrap:'wrap', flexDirection:'column'}} >
                   
-                  </Toolbar>
+                      <div>
+                          <SwitchLanguage  />
+                      </div>
+                    <div>
+                      <Toolbar  > 
+                            <div  style={{marginLeft:'35px'}}>
+                            <Link to="/" > 
+                                  <img src={logo}  width="170" height="170" alt="logo" style={{float:"left"}}></img> 
+                                  </Link>  
+                            </div>
+                                <div>
+                              
+                                  <div>
+                                    <p style={{fontSize:30}}>URBATeR,</p>
+                                    <p style={{fontSize:25}}>Maîtrise en Urbanisme Résilient</p>
+                                    <p style={{fontSize:25}}>et Aménagement des Territoires à Risques</p>
+                                  </div>
+                                </div>
+                          
+                        </Toolbar>
+                    </div>
+                        
+
+                </div>
+              
+                      <div style={{alignSelf:'flex-end', marginRight:'60px'}}>
+                          <Search />
+                      </div>
+                       
+                  
+                  
                   <div style={{paddingTop:20, paddingBottom:20}}>
                      <Navbar />
                   </div>
-                   
+                </div>
               </React.Fragment>
   );
 }

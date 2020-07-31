@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
+import image from '../../../images/Urbater_ImageGenerique_1.jpg';
 import PropTypes from 'prop-types';
 import { fetchAnnonce } from '../../../actions/annonceActions';
 import { connect } from 'react-redux';
@@ -37,7 +38,9 @@ class UneAnnonce extends Component {
             
             <div>
                  <Grid item xs={12} sm={3}>
-                  <img src={"/annonces_images/"+this.props.annonce.image} style={{height:'80%',width:'80%'}} />
+
+                 <img src={image} style={{height:'80%',width:'80%'}} />
+                  {/* <img src={"/annonces_images/"+this.props.annonce.image} style={{height:'80%',width:'80%'}} /> */}
                   
                   </Grid>
                      <Grid item xs={12} sm={9}>

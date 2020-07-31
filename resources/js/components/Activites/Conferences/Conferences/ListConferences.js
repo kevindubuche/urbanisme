@@ -17,6 +17,8 @@ import LastPageIcon from '@material-ui/icons/LastPage';
 import {Link} from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+
+import image from '../../../../images/Urbater_ImageGenerique_4.jpg';
 var moment  = require('moment');
 
 
@@ -110,7 +112,10 @@ export default function ListAnnonces(props) {
       createData(
         <Fragment key={index} >
         <Grid item xs={12} sm={3}>
-                  <img src={"/conferences_images/"+annonce.image} width={"80%"} height={"80%"}  />
+               <Link to={"/conference/"+annonce.id}> 
+               <img src={image} width={"80%"} height={"80%"}  />
+                  {/* <img src={"/conferences_images/"+annonce.image} width={"80%"} height={"80%"}  /> */}
+                  </Link>
                </Grid>
                <Grid item xs={12} sm={8}>
                    <Fragment>
