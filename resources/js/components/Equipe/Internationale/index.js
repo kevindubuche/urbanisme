@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
@@ -13,6 +13,8 @@ import useStyles from '../../Style/GeneralJSX';
 
 import data from './Internationale.json';
 import {useSelector} from 'react-redux';
+
+import UnProf from './UnProf';
 export default function Fondation() {
   const store = useSelector(store => store);
   const TEXT = store.langue.item == '1' ?data.francais : data.creole;
@@ -30,44 +32,59 @@ const image = <AccountCircleIcon style={{height:'200px',width:'200px' , padding:
     <div className={classes.root} >
       <Divider />
       <div >
-        <ExpansionPanelSummary
         
-        >
-          <div className={classes.column}>
-            <Typography className={classes.title} style={{marginLeft:'-25px'}}>{TEXT.title}</Typography>
-          </div>
-        
-        </ExpansionPanelSummary>
   
           <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} className={classes.body}> 
-              
-              {TEXT.body1}
-          </Grid>
-           <Grid item xs={12} sm={6} className={classes.body}> 
-              
-              {TEXT.body2}
-          </Grid>
-
-          <ExpansionPanelSummary >
-          <div className={classes.column} style={{paddingTop:40}}>
-            <Typography className={classes.title} style={{marginLeft:'-15px'}}>{TEXT.title2}</Typography>
-          </div>
-           
-        
-        </ExpansionPanelSummary>
+              <Grid item xs={12} sm={6} className={classes.body}> 
+                <ExpansionPanelSummary>
+                  <div className={classes.column}>
+                    <Typography className={classes.title} style={{marginLeft:'-25px'}}>{TEXT.title}</Typography>
+                  </div>
+                </ExpansionPanelSummary>
+                    {TEXT.body1} 
+              </Grid>
+              <Grid item xs={12} sm={6} className={classes.body}> 
+                  <ExpansionPanelSummary >
+                      <div className={classes.column} >
+                        <Typography className={classes.title} style={{marginLeft:'-15px'}}>{TEXT.title2}</Typography>
+                      </div>
+                  </ExpansionPanelSummary>
+                  {TEXT.body2}
+              </Grid>
          </Grid>
-         <Grid container spacing={3}>
+
+        {/* LISTE DES PROFS */}
+          <Grid container spacing={1} style={{marginTop:40}}>
+          {TEXT.profs.map((prof, index)=>
+             
+          <Fragment key={index}>
+            <Grid item xs={12} sm={4}>
+               <UnProf 
+             nom={prof.nom}
+             titre={prof.titre}
+             email={prof.email}
+             phone={prof.phone}
+             diplomes={prof.diplomes}
+             biographie={prof.biographie}
+             cours={prof.cours}
+             expertise={prof.expertise}
+             />
+            </Grid>
+          </Fragment>
+           
+              )}
+          
+         </Grid>
+         {/* <Grid container spacing={3}>
          <Grid item xs={12} sm={6} className={classes.body}> 
               
-              {TEXT.body3}
           </Grid>
            <Grid item xs={12} sm={6} className={classes.body}> 
               
-              {TEXT.body4}
+              
           </Grid>
          
-         </Grid>
+         </Grid> */}
       </div>
     </div>
   );

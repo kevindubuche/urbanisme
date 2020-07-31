@@ -60,7 +60,7 @@ render(){
           onChange={this.handleChange}
         >
           <option value={1}>FR</option>
-          <option value={2}>CR</option>
+          <option value={2}>HT</option>
         </NativeSelect>
       </FormControl>
     

@@ -72,7 +72,7 @@ export default function SignInSide() {
                <Typography variant="body2" color="textSecondary" align="center">{TEXT.tilleContact}</Typography>
                 <Divider/>
                 <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:60}}><HomeIcon/>
-                 27, Rue Toussaint Louverture, Delmas 33 (local Laboratoire National du Bâtiment et des Travaux Publics)</Typography>
+                 27, Rue Toussaint Louverture, Delmas 33 (Local du Laboratoire National du Bâtiment et des Travaux Publics)</Typography>
           <Divider/>
                 <Typography variant="body2" color="textSecondary" align="left" style={{paddingBottom:60}}>
                   <PhoneIcon/>

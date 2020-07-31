@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 
-import partenaires from '../images/partenaires.png';
+import partenaires from '../../../images/Urbater_ImageGenerique_1.jpg';
 import {Link} from 'react-router-dom';
 
 import Paper from '@material-ui/core/Paper';

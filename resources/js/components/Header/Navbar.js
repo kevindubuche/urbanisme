@@ -77,18 +77,18 @@ import data from './Navbar.json';
                   <Link to="/programme/mobilite" className="nav-link dropdown-item" href="/">{TEXT.programme.Mobilite}</Link> */}
                 </div>
               </li>
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <a className="nav-link  dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {TEXT.recherche.Recherche}
                 </a>
-                <div className="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <Link to="/recherche/laRecherche" className="nav-link dropdown-item ">{TEXT.recherche.LaRecherche}</Link>
-                <div className="dropdown-divider"></div>
-                  <Link to="/recherche/urbalab" className="nav-link dropdown-item ">{TEXT.recherche.UrbaLab}</Link>
-                  <div className="dropdown-divider"></div>
-                  <Link to="/recherche/theses" className="nav-link dropdown-item" href="/">{TEXT.recherche.These}</Link>
-                   </div>
-              </li>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="collapse" data-target=".navbar-collapse.show"> */}
+                {/* <Link to="/recherche/laRecherche" className="nav-link dropdown-item ">{TEXT.recherche.LaRecherche}</Link>
+                <div className="dropdown-divider"></div> */}
+                  {/* <Link to="/recherche/urbalab" className="nav-link dropdown-item ">{TEXT.recherche.UrbaLab}</Link>
+                  <div className="dropdown-divider"></div> */}
+                  {/* <Link to="/recherche/theses" className="nav-link dropdown-item" href="/">{TEXT.recherche.These}</Link> */}
+                   {/* </div>
+              </li> */}
               <li className="nav-item">
                   <Link to="/publications" className="nav-link dropdown-item">
                   {TEXT.publications.Publications}</Link>
@@ -118,15 +118,15 @@ import data from './Navbar.json';
               {TEXT.espace.Espace}
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <Link to="/espaceEtudiant/info" className="nav-link dropdown-item ">{TEXT.espace.Info}</Link>
-                <div className="dropdown-divider"></div>
+                {/* <Link to="/espaceEtudiant/info" className="nav-link dropdown-item ">{TEXT.espace.Info}</Link>
+                <div className="dropdown-divider"></div> */}
                   <Link to="/espaceEtudiant/stage" className="nav-link dropdown-item ">{TEXT.espace.Stage}</Link>
                   <div className="dropdown-divider"></div>
                   <Link to="/espaceEtudiant/prix" className="nav-link dropdown-item ">{TEXT.espace.Prix}</Link>
                   <div className="dropdown-divider"></div>
-                  <Link to="/espaceEtudiant/collation" className="nav-link dropdown-item" href="/">{TEXT.espace.Collation}</Link>
-                  <div className="dropdown-divider"></div>
-                  <Link to="/espaceEtudiant/plateforme" className="nav-link dropdown-item" href="/">{TEXT.espace.Acces}</Link>
+                  {/* <Link to="/espaceEtudiant/collation" className="nav-link dropdown-item" href="/">{TEXT.espace.Collation}</Link>
+                  <div className="dropdown-divider"></div> */}
+                  {/* <Link to="/espaceEtudiant/plateforme" className="nav-link dropdown-item" href="/">{TEXT.espace.Acces}</Link> */}
                  </div>
               </li>
               

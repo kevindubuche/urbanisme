@@ -108,8 +108,9 @@ export default function ListAnnonces(props) {
       createData(
       <div key={index}>
       <Grid item xs={12} sm={3}>
-           
+          <Link to={"/annonce/"+annonce.id}>
            <img src={"/annonces_images/"+annonce.image} style={{height:'80%',width:'80%'}}  />
+           </Link>
            </Grid>
               <Grid item xs={12} sm={9}>
               <Fragment>

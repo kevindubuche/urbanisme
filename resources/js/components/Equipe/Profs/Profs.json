@@ -62,23 +62,7 @@
           "Architecture et numérique"
      ]
 },
-          {
-          "nom":"Christophe LONGCHAMP",
-          "titre":"Professeur agrégé",
-          "email":"christophe.longchamp@ueh.edu",
-          "phone":"509 45 45 88 88",
-          "diplomes":[
-           "Doctorat (Ph.D.) en Sciences de gestion 2011 , Mines ParisTech, Centre de Gestion Scientifique (France)",
-          "Mastère Spécialisé, Ingénierie et Gestion de l'Environnement 1997, Centre de Gestion Scientifique (France)"
-          ],
-          "biographie":"Après plus de dix années d'expériences en recherche, gestion, audit et conseil sur les thèmes de l'écoconception (consultant chez XXXX de 1998 à 2002, agent de recherche au XXXX de fin 2010 à début 2011), de la Responsabilité Sociale et Environnementale des entreprises (chercheur associé au CGS de Mines ParisTech en 2002-2004 sur la gestion de la RSE dans les entreprises, auditeur en RSE chez Vigeo de 2004 à 2006, consultant en CSR pour l’Agence Spatiale Européenne de 2008 à 2009, directeur au service Solutions pour un développement durable de PwC Montréal de 2009 à 2010) et des projets de prospective (directeur-adjoint de l’Unité prospective de l’INRA de 2007 à 2008), Christophe Abrassart est devenu fin 2011 professeur adjoint à l'UEH. Depuis juin 2018 il est professeur agrégé à l'école de XXXX et il co-dirige le Lab Ville Prospective (https://labvilleprospective.org), le DESS en écodesign stratégique (UdeM-Polytechnique) et la XXX sur l'Intelligence Artificielle Responsable (https://www.declarationmontreal-iaresponsable.com).",
-          "cours":["Résilience et Législation (MPR-XXXX-XXX)"],
-          "expertise":[
-               "Approche participative",
-               "Ecodesign",
-               "Design collaboratif"
-          ]
-     },
+       
      
  {
       "nom":"Joseph Garry LHERISSON",
@@ -99,27 +83,6 @@
            "Aire Métropolitaine de Port-au-Prince ",
            "Législation haïtienne de l’urbanisme et Outils associés.",
            "Equipements urbains dans le contexte d’Haïti, marchés publics en particulier."
-      ]
- },
-     {
-      "nom":"Christian UBERTINI",
-      "titre":"Architecte",
-      "email":"cubertini@bluewin.ch",
-      "phone":"+41 76 506 3369",
-      "diplomes":[
-       "Mastère en Patrimoine Archéologique Monumental 2001, Université Marc-Bloch, Strasbourg. ",
-      "Diplôme en Architecture 1997, Haute Ecole Spécialisée de Genève.",
-      "Dessinateur en bâtiment 1991, Ecole Professionnelle de Lausanne."
-      ],
-      "biographie":"Architecte avec une maitrise en Archéologie et Patrimoine, il est l’auteur de plusieurs études et publications sur l’architecture de l’Égypte antique. Membre de l’ICOMOS, il est actif dans le domaine de la conservation du patrimoine et à travers des évaluations de projet de mise en valeur de vestiges archéologiques. Depuis 2006, il travaille également dans le domaine de la coopération internationale où il gère plusieurs projets de reconstruction post-catastrophes à travers le monde. Établis en Haïti depuis 2009, il travaille comme architecte expert au sein de plusieurs agences internationales. Il a notamment appuyé l’État haïtien dans l’élaboration des référentiels techniques pour la normalisation des écoles en Haïti. ",
-       "cours":["Histoire de l’architecture moderne en Haïti et ailleurs (M1-HAMH2-236)",
-                 "Introduction à la notion du patrimoine et méthodologie de lecture (M1-MPBSV3-114)"],
-      "expertise":[
-           "Conception et gestion de projet",
-           "Infrastructures scolaires",
-           "Conservation du patrimoine bâti",
-           "Recherches architecturales",
-           "Enseignement"
       ]
  }
       
@@ -191,23 +154,7 @@
           "Architecture et numérique"
      ]
 },
-          {
-          "nom":"Christophe LONGCHAMP",
-          "titre":"Professeur agrégé",
-          "email":"christophe.longchamp@ueh.edu",
-          "phone":"509 45 45 88 88",
-          "diplomes":[
-           "Doctorat (Ph.D.) en Sciences de gestion 2011 , Mines ParisTech, Centre de Gestion Scientifique (France)",
-          "Mastère Spécialisé, Ingénierie et Gestion de l'Environnement 1997, Centre de Gestion Scientifique (France)"
-          ],
-          "biographie":"Après plus de dix années d'expériences en recherche, gestion, audit et conseil sur les thèmes de l'écoconception (consultant chez XXXX de 1998 à 2002, agent de recherche au XXXX de fin 2010 à début 2011), de la Responsabilité Sociale et Environnementale des entreprises (chercheur associé au CGS de Mines ParisTech en 2002-2004 sur la gestion de la RSE dans les entreprises, auditeur en RSE chez Vigeo de 2004 à 2006, consultant en CSR pour l’Agence Spatiale Européenne de 2008 à 2009, directeur au service Solutions pour un développement durable de PwC Montréal de 2009 à 2010) et des projets de prospective (directeur-adjoint de l’Unité prospective de l’INRA de 2007 à 2008), Christophe Abrassart est devenu fin 2011 professeur adjoint à l'UEH. Depuis juin 2018 il est professeur agrégé à l'école de XXXX et il co-dirige le Lab Ville Prospective (https://labvilleprospective.org), le DESS en écodesign stratégique (UdeM-Polytechnique) et la XXX sur l'Intelligence Artificielle Responsable (https://www.declarationmontreal-iaresponsable.com).",
-          "cours":["Résilience et Législation (MPR-XXXX-XXX)"],
-          "expertise":[
-               "Approche participative",
-               "Ecodesign",
-               "Design collaboratif"
-          ]
-     },
+       
      
  {
       "nom":"Joseph Garry LHERISSON",
@@ -229,29 +176,7 @@
            "Législation haïtienne de l’urbanisme et Outils associés.",
            "Equipements urbains dans le contexte d’Haïti, marchés publics en particulier."
       ]
- },
-     {
-      "nom":"Christian UBERTINI",
-      "titre":"Architecte",
-      "email":"cubertini@bluewin.ch",
-      "phone":"+41 76 506 3369",
-      "diplomes":[
-       "Mastère en Patrimoine Archéologique Monumental 2001, Université Marc-Bloch, Strasbourg. ",
-      "Diplôme en Architecture 1997, Haute Ecole Spécialisée de Genève.",
-      "Dessinateur en bâtiment 1991, Ecole Professionnelle de Lausanne."
-      ],
-      "biographie":"Architecte avec une maitrise en Archéologie et Patrimoine, il est l’auteur de plusieurs études et publications sur l’architecture de l’Égypte antique. Membre de l’ICOMOS, il est actif dans le domaine de la conservation du patrimoine et à travers des évaluations de projet de mise en valeur de vestiges archéologiques. Depuis 2006, il travaille également dans le domaine de la coopération internationale où il gère plusieurs projets de reconstruction post-catastrophes à travers le monde. Établis en Haïti depuis 2009, il travaille comme architecte expert au sein de plusieurs agences internationales. Il a notamment appuyé l’État haïtien dans l’élaboration des référentiels techniques pour la normalisation des écoles en Haïti. ",
-       "cours":["Histoire de l’architecture moderne en Haïti et ailleurs (M1-HAMH2-236)",
-                 "Introduction à la notion du patrimoine et méthodologie de lecture (M1-MPBSV3-114)"],
-      "expertise":[
-           "Conception et gestion de projet",
-           "Infrastructures scolaires",
-           "Conservation du patrimoine bâti",
-           "Recherches architecturales",
-           "Enseignement"
-      ]
- }
-      
+ } 
     
       
      ]

@@ -17,6 +17,7 @@ import LastPageIcon from '@material-ui/icons/LastPage';
 import {Link} from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import image from '../../../images/Urbater_ImageGenerique_4.jpg';
 
 var moment  = require('moment');
 
@@ -109,8 +110,10 @@ export default function ListPublications(props) {
       createData(
       <div key={index}>
       <Grid item xs={12} sm={3}>
-           
-           <img src={"/publications_images/"+publication.image} style={{height:'80%',width:'80%'}}  />
+          <Link to={"/publication/"+publication.id}>
+          <img src={image} style={{height:'80%',width:'80%'}}  />
+           {/* <img src={"/publications_images/"+publication.image} style={{height:'80%',width:'80%'}}  /> */}
+           </Link>
            </Grid>
               <Grid item xs={12} sm={9}>
               <Fragment>

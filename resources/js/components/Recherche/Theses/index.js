@@ -24,7 +24,6 @@ export default function Presentation() {
       
         width: '100%',
         height: '10%',
-        padding :'3%',
     }
 }
 
@@ -34,12 +33,12 @@ export default function Presentation() {
       <div >
         <ExpansionPanelSummary  >
           <div className={classes.column}>
-            <Typography className={classes.heading}>THESES</Typography>
+            <Typography variant="h5" className={classes.title} style={{marginLeft:"-25px"}}>THESES</Typography>
           </div>
         
         </ExpansionPanelSummary>
   
-        <Divider />
+        
           <Grid container spacing={3}>
             <Grid item xs={12} sm={3}>
             <UneThese />
@@ -54,7 +53,7 @@ export default function Presentation() {
             <UneThese />
             </Grid>
          </Grid>
-         <Divider />
+       
           <Grid container spacing={3}>
             <Grid item xs={12} sm={3}>
             <UneThese />

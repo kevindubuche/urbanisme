@@ -4,7 +4,7 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
-import presentation from '../images/direction.jpg';
+import presentation from '../../../images/Urbater_ImageGenerique_3.jpg';
 
 
 import Paper from '@material-ui/core/Paper';
