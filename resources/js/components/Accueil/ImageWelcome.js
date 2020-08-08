@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     bottom: 0,
     right: 0,
     left: 0,
-    backgroundColor: 'rgba(0,0,0,.3)',
+    // backgroundColor: 'rgba(0,0,0,.3)',
   },
   mainFeaturedPostContent: {
     position: 'relative',
@@ -54,11 +54,13 @@ export default function MainFeaturedPost(props) {
       <Grid container>
         <Grid item md={6}>
           <div className={classes.mainFeaturedPostContent}>
-            <Typography component="h1" variant="h1" color="inherit" gutterBottom style={{fontFamily:"Open Sans"}}>
-              {TEXT.title}
+            <Typography component="h1" variant="h1" color="inherit" gutterBottom 
+            style={{height:200}}
+            >
+              {/* {TEXT.title} */}
             </Typography>
-            <Typography variant="h4" color="inherit" paragraph style={{fontFamily:"Arial Regular"}}>
-              {TEXT.subtitle}
+            <Typography variant="h4" color="inherit" paragraph style={{fontFamily:"Arial Regular", color:'#c32025'}}>
+              {/* {TEXT.subtitle} */}
             </Typography>
             
           </div>

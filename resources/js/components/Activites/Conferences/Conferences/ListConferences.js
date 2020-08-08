@@ -128,8 +128,8 @@ export default function ListAnnonces(props) {
                        <Link to={"/conference/"+annonce.id}> 
                        <Typography
                         variant="body1"
-                         gutterBottom style={{ fontWeight:"bold",
-                         fontFamily:"Open Sans",
+                          style={{ fontWeight:"bold",
+                         fontFamily:"Arial Regular",
                          color:"black"}}>
                        {annonce.title}
                         </Typography>

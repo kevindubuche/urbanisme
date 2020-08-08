@@ -52,7 +52,7 @@ class UneAnnonce extends Component {
                               <br />
                                  {this.props.annonce.author}
                          </Typography>
-                         <Typography variant="h4" gutterBottom style={{fontFamily:"Open Sans"}}>
+                         <Typography variant="h4" gutterBottom style={{fontFamily:"Arial Regular"}}>
                           {this.props.annonce.title}
                           </Typography>
                              

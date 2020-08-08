@@ -127,6 +127,7 @@ import { sendEmail } from '../../actions/mailActions';
                 variant="contained"
                 // color="primary"
                 // className={classes.submit}
+                style={{textTransform: 'none'}}
               >
                 {this.props.boutton}
               </Button>

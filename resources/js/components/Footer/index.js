@@ -50,7 +50,7 @@ export default function Footer(props) {
         
         </Typography>
         <div style={{float:"left", paddingLeft:100, paddingTop:120}}>
-                <Link color="inherit" href="https://www.google.com/"> <FacebookIcon /></Link> 
+                <Link color="inherit" href="https://web.facebook.com/urbater"> <FacebookIcon /></Link> 
                 <Link color="inherit" href="https://www.google.com/">  <TwitterIcon/></Link> 
                 <Link color="inherit" href="https://www.google.com/">  <InstagramIcon/></Link> 
                 <br /><br />

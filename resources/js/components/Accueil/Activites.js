@@ -49,7 +49,7 @@ var moment  = require('moment');
                                         <Typography
                                          variant="body1"
                                           gutterBottom style={{ fontWeight:"bold",
-                                          fontFamily:"Open Sans",
+                                          fontFamily:"Arial Regular",
                                           color:"black"}}>
                                         {conference.title}
                                          </Typography>
@@ -96,7 +96,7 @@ var moment  = require('moment');
                                         <Typography
                                          variant="body1"
                                           gutterBottom style={{ fontWeight:"bold",
-                                          fontFamily:"Open Sans",
+                                          fontFamily:"Arial Regular",
                                           color:"black"}}>
                                         {konbit.title}
                                          </Typography>

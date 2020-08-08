@@ -20,6 +20,7 @@ import Typography from '@material-ui/core/Typography';
 
 import {useSelector} from 'react-redux';
 
+var moment  = require('moment');
 
 const useStyles1 = makeStyles((theme) => ({
   root: {
@@ -118,8 +119,9 @@ export default function ListAnnonces(props) {
               <Grid item xs={12} sm={9}>
               
                  <Link to={annonce.link}>
-                 <Typography variant="subtitle2" gutterBottom >
+                 <Typography variant="subtitle2" gutterBottom style={{ fontWeight:"bold", color:"black"}} >
                  {annonce.title} 
+                 
                    </Typography>
                  </Link>
                   
@@ -127,7 +129,10 @@ export default function ListAnnonces(props) {
                  {annonce.resume}
               </Typography>
               <Typography variant="caption" display="block" gutterBottom >
-                      {annonce.created_at}<br />
+                      {/* {annonce.created_at} */}
+                      {moment(new Date(annonce.created_at)).locale("fr").format('LL') }
+                 
+                      <br />
                   </Typography>
               
           </Grid>

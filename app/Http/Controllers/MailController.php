@@ -31,6 +31,7 @@ class MailController extends Controller
         $message->to('kevin.dubuche@student.ueh.edu.ht')
           ->subject('MESSAGE D\'UN VISITEUR DU SITE WEB URBATeR')
           // here comes what you want
+          ->setFrom(['kevindubuche@gmail.com' => 'John Doe'])
           ->setBody($request->message); // assuming text/plain
       });
         if (empty($sendmail)) {
