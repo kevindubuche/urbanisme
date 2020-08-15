@@ -44,7 +44,7 @@ export default function Header(props) {
                                 <div>
                               
                                   <div style={{marginLeft:25}}>
-                                    <div style={{fontSize:25, color:'gray'}}>URBATeR,</div>
+                                    <div style={{fontSize:25, color:'gray'}}>URBATeR</div>
                                     <div style={{fontSize:20, color:'gray'}}>Maîtrise en Urbanisme Résilient</div>
                                     <div style={{fontSize:20, color:'gray'}}>et Aménagement des Territoires à Risques</div>
                                   </div>

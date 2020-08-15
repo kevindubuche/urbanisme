@@ -65,20 +65,22 @@
      },
      {
           "nom":"Kristel MAZY",
-          "titre":"",
-          "email":"",
-          "phone":"",
+          "titre":"Chargée de Cours",
+          "email":"Kristel.Mazy@umons.ac.be",
+          "phone":"+32 479 545 925",
           "diplomes":[
-           "",
-          "",
-          ""
+           "Doctorat (PhD) en Art de Bâtir et Urbanisme, 2014, Université Libre de Bruxelles (Belgique) – Université de Lille (France)",
+          "Master Complémentaire en Urbanisme et Aménagement du Territoire, 2008, Université Libre de Bruxelles, Belgique",
+          "Licence en Architecture, 2007, ISAI Victor Horta, 2007, Bruxelles, Belgique"
           ],
-          "biographie":"",
-           "cours":["",
-                     ""],
+          "biographie":"En 2014, Kristel Mazy soutient une thèse interrogeant la capacité du projet urbain à reconnecter les villes, leur voie d’eau et leur port (Prix Spécial de Thèse sur la Ville, décerné par l’APERAU et le PUCA en France). Après sa thèse, elle rejoint la cellule Planification de la Ville de Bruxelles.\nEn 2016, elle devient chargée de cours à la Faculté d’Architecture et d’Urbanisme de l’Université de Mons. Titulaire de cours axés sur l’articulation entre l’analyse des mutations territoriales, les processus de projet, les outils d’urbanisme et les systèmes d’acteurs, elle co-anime aussi l’atelier « Architectures - Territoires - Stratégies - Paysages\". Depuis 2018, elle co-coordonne le Master de Spécialisation en Management territorial et Développement Urbain (ULB-UMons), à Charleroi\nSes thématiques de recherche portent sur l’évolution des stratégies, des outils d’urbanisme et des systèmes d’acteurs, dans des contextes convoités tels que les interfaces ville-port ou les friches urbaines.",
+           "cours":["Tokay de James Saint Cyr pour le cours « Travail de Fin d’Etudes »"
+                     ],
           "expertise":[
-               "",
-               ""
+               "Analyse des dynamiques urbaines",
+               "Systèmes d’acteurs",
+               "Stratégies et outils pour le développement territorial",
+               "Territoires d’études : ville-port, friches"
           ]
      },
      {
@@ -137,38 +139,40 @@
      },
      {
           "nom":"Fabrice SOBCZAK",
-          "titre":"",
-          "email":"",
-          "phone":"",
+          "titre":"Architecte | Assistant sous-mandat | Doctorant",
+          "email":"fabrice.sobczak@umons.ac.be",
+          "phone":"+32 (0) 65 37 41 24",
           "diplomes":[
-           "",
-          "",
-          ""
+           "2008, Executive Programme in Real Estate",
+          "Solvay Brussels School of Economics & Management (Belgique) 1987, Grade d’Architecte",
+          "Institut Supérieur d’Architecture Intercommunal – Site de Mons (Belgique)"
           ],
-          "biographie":"",
-           "cours":["",
-                     ""],
+          "biographie":"Son implication dans la conception de nombreux projets d’architecture et d’urbanisme tant dans le secteur public que privé lui a permis d’acquérir une expérience professionnelle développée dans le cadre de projets en ville et en périphérie des villes, sur des sites en relation étroite avec un patrimoine existant tout en conciliant démarche durable, rôle social, urbanisme et architecture contemporaine.\nDepuis 2009, il se consacre à une carrière pédagogique au sein de la Faculté d’Architecture et d’Urbanisme de l’UMONS dans le cadre du cours de composition architecturale au sein de la filière Résilience – Laboratoire de Mixité. Il représente également le personnel scientifique au sein du Conseil de Faculté de la FA+U et coordonne le groupe de travail GT CLIMAT au sein de la FA+U.",
+           "cours":["Projet d’Architecture et d’Urbanisme – Résilience – Laboratoire de Mixité IV-II (A - PRVT- 834)",
+                     "Projet d’Architecture et d’Urbanisme – Résilience – Laboratoire de Mixité V-II (A - PRVT- 835)"],
           "expertise":[
-               "",
-               ""
+               "Aménagement urbain",
+               "Conception architecturale"
           ]
      },
      {
           "nom":"Thomas WAROUX",
-          "titre":"",
-          "email":"",
-          "phone":"",
+          "titre":"Docteur, Architecte, Assistant pédagogique",
+          "email":"thomas.waroux@umons.ac.be",
+          "phone":"+32(0)65/55.48.10",
           "diplomes":[
-           "",
-          "",
-          ""
+           "Doctorat (Ph.D.) en Art de Bâtir et Urbanisme: 2018, UMONS (Belgique",
+          "Doctorat (Ph.D.) en Sciences de l’Information et de la Communication: 2018, UPHF (France)",
+          "Master en Architecture et Urbanisme: 2012, UMONS (Belgique)"
           ],
-          "biographie":"",
-           "cours":["",
-                     ""],
+          "biographie":"Architecte de formation, Thomas Waroux est assistant à la Faculté d’Architecture et d’Urbanisme de l’UMONS. Il y enseigne les concepts de mobilité urbaine et de techniques de représentation dont les systèmes d’information géographique (SIG). Il est également maitre assistant à la haute école Condorcet dans le Master en ingénierie et action sociales (MIAS) et enseignant dans le Master de spécialisation en management territorial et développement urbain (MTDU) en collaboration avec l’ULB. En continuité avec sa thèse de doctorat, intitulée “Représenter la vulnérabilité transfrontalière : un modèle pour la mobilité”, ses recherches portent sur la compréhenssion et la représentation des systèmes urbains complexes tels que les systèmes de mobilité, les territoires frontaliers, l’évolution des territoires.",
+           "cours":["SIG Systèmes d’Information Géographique (MPR-XXXX-XXX)"],
           "expertise":[
-               "",
-               ""
+               "Techniques de représentation",
+               "Systèmes d’Information Géographique",
+               "Systémique urbaine",
+               "Mobilité urbaine",
+               "Frontières et discontinuité urbaines"
           ]
      }
   
@@ -240,20 +244,22 @@
      },
      {
           "nom":"Kristel MAZY",
-          "titre":"",
-          "email":"",
-          "phone":"",
+          "titre":"Chargée de Cours",
+          "email":"Kristel.Mazy@umons.ac.be",
+          "phone":"+32 479 545 925",
           "diplomes":[
-           "",
-          "",
-          ""
+           "Doctorat (PhD) en Art de Bâtir et Urbanisme, 2014, Université Libre de Bruxelles (Belgique) – Université de Lille (France)",
+          "Master Complémentaire en Urbanisme et Aménagement du Territoire, 2008, Université Libre de Bruxelles, Belgique",
+          "Licence en Architecture, 2007, ISAI Victor Horta, 2007, Bruxelles, Belgique"
           ],
-          "biographie":"",
-           "cours":["",
-                     ""],
+          "biographie":"En 2014, Kristel Mazy soutient une thèse interrogeant la capacité du projet urbain à reconnecter les villes, leur voie d’eau et leur port (Prix Spécial de Thèse sur la Ville, décerné par l’APERAU et le PUCA en France). Après sa thèse, elle rejoint la cellule Planification de la Ville de Bruxelles.\nEn 2016, elle devient chargée de cours à la Faculté d’Architecture et d’Urbanisme de l’Université de Mons. Titulaire de cours axés sur l’articulation entre l’analyse des mutations territoriales, les processus de projet, les outils d’urbanisme et les systèmes d’acteurs, elle co-anime aussi l’atelier « Architectures - Territoires - Stratégies - Paysages\". Depuis 2018, elle co-coordonne le Master de Spécialisation en Management territorial et Développement Urbain (ULB-UMons), à Charleroi\nSes thématiques de recherche portent sur l’évolution des stratégies, des outils d’urbanisme et des systèmes d’acteurs, dans des contextes convoités tels que les interfaces ville-port ou les friches urbaines.",
+           "cours":["Tokay de James Saint Cyr pour le cours « Travail de Fin d’Etudes »"
+                     ],
           "expertise":[
-               "",
-               ""
+               "Analyse des dynamiques urbaines",
+               "Systèmes d’acteurs",
+               "Stratégies et outils pour le développement territorial",
+               "Territoires d’études : ville-port, friches"
           ]
      },
      {
@@ -312,40 +318,43 @@
      },
      {
           "nom":"Fabrice SOBCZAK",
-          "titre":"",
-          "email":"",
-          "phone":"",
+          "titre":"Architecte | Assistant sous-mandat | Doctorant",
+          "email":"fabrice.sobczak@umons.ac.be",
+          "phone":"+32 (0) 65 37 41 24",
           "diplomes":[
-           "",
-          "",
-          ""
+           "2008, Executive Programme in Real Estate",
+          "Solvay Brussels School of Economics & Management (Belgique) 1987, Grade d’Architecte",
+          "Institut Supérieur d’Architecture Intercommunal – Site de Mons (Belgique)"
           ],
-          "biographie":"",
-           "cours":["",
-                     ""],
+          "biographie":"Son implication dans la conception de nombreux projets d’architecture et d’urbanisme tant dans le secteur public que privé lui a permis d’acquérir une expérience professionnelle développée dans le cadre de projets en ville et en périphérie des villes, sur des sites en relation étroite avec un patrimoine existant tout en conciliant démarche durable, rôle social, urbanisme et architecture contemporaine.\nDepuis 2009, il se consacre à une carrière pédagogique au sein de la Faculté d’Architecture et d’Urbanisme de l’UMONS dans le cadre du cours de composition architecturale au sein de la filière Résilience – Laboratoire de Mixité. Il représente également le personnel scientifique au sein du Conseil de Faculté de la FA+U et coordonne le groupe de travail GT CLIMAT au sein de la FA+U.",
+           "cours":["Projet d’Architecture et d’Urbanisme – Résilience – Laboratoire de Mixité IV-II (A - PRVT- 834)",
+                     "Projet d’Architecture et d’Urbanisme – Résilience – Laboratoire de Mixité V-II (A - PRVT- 835)"],
           "expertise":[
-               "",
-               ""
+               "Aménagement urbain",
+               "Conception architecturale"
           ]
      },
      {
           "nom":"Thomas WAROUX",
-          "titre":"",
-          "email":"",
-          "phone":"",
+          "titre":"Docteur, Architecte, Assistant pédagogique",
+          "email":"thomas.waroux@umons.ac.be",
+          "phone":"+32(0)65/55.48.10",
           "diplomes":[
-           "",
-          "",
-          ""
+           "Doctorat (Ph.D.) en Art de Bâtir et Urbanisme: 2018, UMONS (Belgique",
+          "Doctorat (Ph.D.) en Sciences de l’Information et de la Communication: 2018, UPHF (France)",
+          "Master en Architecture et Urbanisme: 2012, UMONS (Belgique)"
           ],
-          "biographie":"",
-           "cours":["",
-                     ""],
+          "biographie":"Architecte de formation, Thomas Waroux est assistant à la Faculté d’Architecture et d’Urbanisme de l’UMONS. Il y enseigne les concepts de mobilité urbaine et de techniques de représentation dont les systèmes d’information géographique (SIG). Il est également maitre assistant à la haute école Condorcet dans le Master en ingénierie et action sociales (MIAS) et enseignant dans le Master de spécialisation en management territorial et développement urbain (MTDU) en collaboration avec l’ULB. En continuité avec sa thèse de doctorat, intitulée “Représenter la vulnérabilité transfrontalière : un modèle pour la mobilité”, ses recherches portent sur la compréhenssion et la représentation des systèmes urbains complexes tels que les systèmes de mobilité, les territoires frontaliers, l’évolution des territoires.",
+           "cours":["SIG Systèmes d’Information Géographique (MPR-XXXX-XXX)"],
           "expertise":[
-               "",
-               ""
+               "Techniques de représentation",
+               "Systèmes d’Information Géographique",
+               "Systémique urbaine",
+               "Mobilité urbaine",
+               "Frontières et discontinuité urbaines"
           ]
      }
+  
 
 
 
