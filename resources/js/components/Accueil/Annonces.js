@@ -44,7 +44,7 @@ var moment  = require('moment');
                                         <Typography
                                          variant="body1"
                                           gutterBottom style={{ fontWeight:"bold",
-                                          fontFamily:"Arial Regular Sans-Serif",
+                                          fontFamily:"Arial Regular",
                                           color:"black"}}>
                                         {annonce.title}
                                          </Typography>
