@@ -70,7 +70,7 @@ export default function Table() {
     // ],
   });
   useEffect(()=>{
-    axios.get('http://localhost:8000/api/lexique')
+    axios.get('/api/lexique')
       .then(res =>{
         console.log(res.data.data);
          setState({
@@ -85,7 +85,7 @@ export default function Table() {
   return (
     <MaterialTable
     icons={tableIcons}
-      title="Editable Example"
+      title="Lexique"
       columns={state.columns}
       data={state.data}
       editable={{

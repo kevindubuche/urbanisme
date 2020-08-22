@@ -29,20 +29,23 @@
      },
      {
           "nom":"Pierre CORNUT",
-          "titre":"",
-          "email":"",
+          "titre":"Chargé de Cours à la Faculté d’Architecture et d’Urbanisme de l’Université de Mons",
+          "email":"Pierre.cornut@umons.ac.be",
           "phone":"",
           "diplomes":[
-           "",
-          "",
-          ""
+           "Docteur en Sciences, 2000, Université Libre de Bruxelles ULB (Belgique)",
+          "Certificat d’Aptitude à l’Enseignement Supérieur (CAPAES), 2006, ULB & Haute Ecole Lucia de Brouckère",
+          "Agrégation à l’enseignement secondaire supérieur (AESS) en Géographie, 1995, ULB",
+          "Licence en Sciences géographiques, 1994, ULB",
+          "Candidature en Sciences géographiques, 1992, ULB"
           ],
-          "biographie":"",
+          "biographie":"Pierre Cornut est Licencié en Sciences Géographiques et Docteur en Sciences. Aspirant-FNRS de 1995 à 1999, il a réalisé sa thèse à l’ULB et la School of Geography de l’Université d’Oxford sur le thème de la géopolitique de l'eau en Belgique et en Europe. Il a ensuite travaillé sur les thématiques du développement territorial et de la ville à l'Institut de Gestion de l'Environnement et d'Aménagement du Territoire (IGEAT) de l’Université Libre de Bruxelles.\nDe 2006 à 2015, il a rejoint l’équipe de la Direction Administration et Valorisation de la Recherche (AVRE) de l'UMONS, dont il a pris la direction de 2012 à 2015.\nChargé de cours à la Faculté d’architecture et d’urbanisme depuis lors, il enseigne l'urbanisme, la sociologie urbaine, l'aménagement du territoire et la représentation cartographique.\nSes thématiques de recherche portent sur l’urbanisme, les politiques urbaines et les inégalités environnementales.",
            "cours":["",
                      ""],
           "expertise":[
-               "",
-               ""
+               "urbanisme",
+               "politiques urbaines",
+               "inégalités environnementales"
           ]
      },
      {
@@ -208,20 +211,23 @@
      },
      {
           "nom":"Pierre CORNUT",
-          "titre":"",
-          "email":"",
+          "titre":"Chargé de Cours à la Faculté d’Architecture et d’Urbanisme de l’Université de Mons",
+          "email":"Pierre.cornut@umons.ac.be",
           "phone":"",
           "diplomes":[
-           "",
-          "",
-          ""
+           "Docteur en Sciences, 2000, Université Libre de Bruxelles ULB (Belgique)",
+          "Certificat d’Aptitude à l’Enseignement Supérieur (CAPAES), 2006, ULB & Haute Ecole Lucia de Brouckère",
+          "Agrégation à l’enseignement secondaire supérieur (AESS) en Géographie, 1995, ULB",
+          "Licence en Sciences géographiques, 1994, ULB",
+          "Candidature en Sciences géographiques, 1992, ULB"
           ],
-          "biographie":"",
+          "biographie":"Pierre Cornut est Licencié en Sciences Géographiques et Docteur en Sciences. Aspirant-FNRS de 1995 à 1999, il a réalisé sa thèse à l’ULB et la School of Geography de l’Université d’Oxford sur le thème de la géopolitique de l'eau en Belgique et en Europe. Il a ensuite travaillé sur les thématiques du développement territorial et de la ville à l'Institut de Gestion de l'Environnement et d'Aménagement du Territoire (IGEAT) de l’Université Libre de Bruxelles.\nDe 2006 à 2015, il a rejoint l’équipe de la Direction Administration et Valorisation de la Recherche (AVRE) de l'UMONS, dont il a pris la direction de 2012 à 2015.\nChargé de cours à la Faculté d’architecture et d’urbanisme depuis lors, il enseigne l'urbanisme, la sociologie urbaine, l'aménagement du territoire et la représentation cartographique.\nSes thématiques de recherche portent sur l’urbanisme, les politiques urbaines et les inégalités environnementales.",
            "cours":["",
                      ""],
           "expertise":[
-               "",
-               ""
+               "urbanisme",
+               "politiques urbaines",
+               "inégalités environnementales"
           ]
      },
      {

@@ -10,7 +10,7 @@ export default  class Lexique extends Component {
         }
     }
     componentDidMount(){
-            axios.get('http://localhost:8000/api/lexique')
+            axios.get('/api/lexique')
               .then(res =>{
                 console.log(res.data.data);
                  this.setState({
