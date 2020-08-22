@@ -38,15 +38,15 @@ export default function Header(props) {
                       <Toolbar  > 
                             <div  style={{marginLeft:'35px'}}>
                             <Link to="/" > 
-                                  <img src={logo}  width="170" height="170" alt="logo" style={{float:"left"}}></img> 
+                                  <img src={logo}  width="190" height="190" alt="logo" style={{float:"left"}}></img> 
                                   </Link>  
                             </div>
                                 <div>
                               
-                                  <div>
-                                    <p style={{fontSize:30}}>URBATeR,</p>
-                                    <p style={{fontSize:25}}>Maîtrise en Urbanisme Résilient</p>
-                                    <p style={{fontSize:25}}>et Aménagement des Territoires à Risques</p>
+                                  <div style={{marginLeft:25}}>
+                                    <div style={{fontSize:25, color:'gray'}}>URBATeR</div>
+                                    <div style={{fontSize:20, color:'gray'}}>Maîtrise en Urbanisme Résilient</div>
+                                    <div style={{fontSize:20, color:'gray'}}>et Aménagement des Territoires à Risques</div>
                                   </div>
                                 </div>
                           

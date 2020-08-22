@@ -127,7 +127,7 @@ export default function ListAnnonces(props) {
                        <Typography
                         variant="body1"
                          gutterBottom style={{ fontWeight:"bold",
-                         fontFamily:"Open Sans",
+                         fontFamily:"Arial Regular",
                          color:"black"}}>
                        {annonce.title}
                         </Typography>

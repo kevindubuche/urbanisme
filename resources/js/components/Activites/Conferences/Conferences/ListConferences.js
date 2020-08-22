@@ -128,8 +128,8 @@ export default function ListAnnonces(props) {
                        <Link to={"/conference/"+annonce.id}> 
                        <Typography
                         variant="body1"
-                         gutterBottom style={{ fontWeight:"bold",
-                         fontFamily:"Open Sans",
+                          style={{ fontWeight:"bold",
+                         fontFamily:"Arial Regular",
                          color:"black"}}>
                        {annonce.title}
                         </Typography>
@@ -186,6 +186,7 @@ export default function ListAnnonces(props) {
         <TableFooter>
           <TableRow>
             <TablePagination
+            labelRowsPerPage=''
               rowsPerPageOptions={[5, 10, 25, { label: 'All', value: -1 }]}
               colSpan={3}
               count={rows.length}

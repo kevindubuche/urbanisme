@@ -51,7 +51,7 @@ class UnePublication extends Component {
                               <br />
                                  {this.props.publication.author}
                          </Typography>
-                         <Typography variant="h4" gutterBottom style={{fontFamily:"Open Sans"}}>
+                         <Typography variant="h4" gutterBottom style={{fontFamily:"Arial Regular"}}>
                           {this.props.publication.title}
                           </Typography>
                              

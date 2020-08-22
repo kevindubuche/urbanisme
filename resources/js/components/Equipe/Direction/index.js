@@ -51,13 +51,13 @@ export default function Direction() {
               {TEXT.directeur.nom}
           </Typography>
           
-          <Typography  variant="subtitle2" gutterBottom style={{fontWeight:"bold"}}>
+          <Typography  variant="subtitle2" gutterBottom >
               {TEXT.directeur.titre}
           </Typography>
-          <Typography  variant="subtitle2" gutterBottom style={{fontWeight:"bold"}}>
+          <Typography  variant="subtitle2" gutterBottom >
               {TEXT.directeur.email}
           </Typography>
-          <Typography  variant="subtitle2" gutterBottom style={{fontWeight:"bold"}}>
+          <Typography  variant="subtitle2" gutterBottom >
               {TEXT.directeur.phone}
           </Typography>
           
@@ -66,7 +66,7 @@ export default function Direction() {
 
                 {TEXT.directeur.diplomes.map((diplome, ind)=>
                 <div >
-          <Typography key={ind}  gutterBottom>
+          <Typography variant="subtitle2" key={ind}  gutterBottom>
               {diplome}
           </Typography>
           </div>

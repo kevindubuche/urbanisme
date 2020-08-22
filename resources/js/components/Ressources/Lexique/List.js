@@ -119,8 +119,8 @@ props.lexique.map(( mot, index) => rows.push(
       <Table className={classes.table} aria-label="custom pagination table">
        <TableHead>
           <TableRow>
-            <TableCell align="left" style={{fontWeight:"bold"}}>CREOLE</TableCell>
-            <TableCell align="left"style={{fontWeight:"bold"}}>FRANCAIS</TableCell>
+            <TableCell align="left" style={{fontWeight:"bold"}}>CRÉOLE</TableCell>
+            <TableCell align="left"style={{fontWeight:"bold"}}>FRANÇAIS</TableCell>
             <TableCell align="left" style={{fontWeight:"bold"}}>COMMENTAIRE</TableCell>
           </TableRow>
         </TableHead>

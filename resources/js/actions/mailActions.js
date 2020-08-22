@@ -15,10 +15,10 @@ export const sendEmail = postData => dispatch => {
             payload : response.data.message
         })
         console.log('message :' +response.data.message)
-        alert('MESSAGE ENVOYE AVEC SUCCESS !\nMERCI');
+        alert('Message envoyé avec succès !\nMerci');
         })
         .catch(error => {
-            alert('MESSAGE NON ENVOYE !\nESSAYEZ ULTERIEUREMENT\nMERCI');
+            alert('Message non envoyé  !\nEssayez ultérieurement\nMerci');
             if(error.response){
                 console.log(error.response.data);
                 console.log(error.response.status);

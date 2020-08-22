@@ -23,9 +23,9 @@ export default class Partenaires extends Component {
         return(
             <div style={{marginTop:80}}>
               <div style={{display:"flex",  justifyContent: "center", flexWrap:"wrap"}}>
-                <img src={ares} width={"170px"} height={"80px"} style={{marginRight:50}} />
+                <img src={ares} width={"200px"} height={"80px"} style={{marginRight:50}} />
                 <img src={bid} width={"150px"} height={"80px"} style={{marginRight:50}} />
-                <img src={bonfed} width={"170px"} height={"100px"} style={{marginRight:50}} />
+                <img src={bonfed} width={"200px"} height={"90px"} style={{marginRight:50}} />
                 <img src={ciat} width={"100px"} height={"100px"} style={{marginRight:50}} />
 
                 <img src={culture} width={"130px"} height={"130px"} style={{marginRight:50}} />

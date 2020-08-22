@@ -34,12 +34,12 @@ const useStyles = makeStyles((theme) => ({
       },
     },
     title: {
-     fontFamily:"Arial Regular",
+     fontFamily:"Arial Regular ",
       paddingBottom:20,
      
     },
     body: {
-     fontFamily:"Arial Regular",
+     fontFamily:"Arial Regular ",
      whiteSpace:"pre-wrap",
       textAlign:"justify",
     //  textAlign: "center"

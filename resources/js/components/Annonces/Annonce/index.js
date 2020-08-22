@@ -12,7 +12,12 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import useStyles from '../../Style/GeneralJSX';
 
+import data from './Annonce.json';
+import {useSelector} from 'react-redux';
 export default function Direction() {
+  const store = useSelector(store =>store);
+  const TEXT = store.langue.item == '1' ? data.francais : data.creole;
+
   const classes = useStyles();
   const style ={
     image: {
@@ -28,8 +33,8 @@ export default function Direction() {
       <div >
         <ExpansionPanelSummary  >
           <div className={classes.column}>
-            <Typography  variant="h5" className={classes.title} style={{marginLeft:"-25px"}}>ANNONCES</Typography>
-          </div>
+          <Typography variant="h5" className={classes.title} style={{marginLeft:"-25px"}}>{TEXT.title}</Typography>
+           </div>
         
         </ExpansionPanelSummary>
   

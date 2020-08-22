@@ -32,7 +32,7 @@ export default function Annonces() {
           
         >
           <div className={classes.column}>
-            <Typography className={classes.heading}>ANNONCES</Typography>
+            <Typography className={classes.heading}>LEXIQUE</Typography>
           </div>
         <NavAdmin />
         </ExpansionPanelSummary>

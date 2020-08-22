@@ -2,6 +2,24 @@
      "francais":{
           "title":"PROFESSEURS",
      "profs":[
+          {
+               "nom":"Karine BOUCHEREAU",
+               "titre":"",
+               "email":"",
+               "phone":"",
+               "diplomes":[
+                "",
+               "",
+               ""
+               ],
+               "biographie":"",
+                "cours":["",
+                          ""],
+               "expertise":[
+                    "",
+                    ""
+               ]
+          },
            {
       "nom":"Jean Odile ETIENNE",
       "titre":"Enseignant-Chercheur",
@@ -44,6 +62,29 @@
            "Mouvements de sols"
       ]
  },
+ 
+
+ {
+     "nom":"Guerline JEAN",
+     "titre":"Titre Economiste Géographe Urbaniste",
+     "email":"guerline.jean@ueh.edu.ht",
+     "phone":"509 48996693",
+     "diplomes":[
+      "2008-2009 Master 2 professionnel Gestion Locale Etude et conduite de Projet Université de Toulouse 2 Jean-Jaurès (UT2), France Bac+5, 120 crédits",
+     "2005-2006 Master 2 Recherche, Mention Géographie et Aménagement, spécialité Amérique Latine dans le domaine des Sciences Humaines et Sociales, Géographie, à finalité Recherche, Université de Toulouse 2 Jean-Jaurès (UT2), France Bac+5, 120 crédit",
+     "2000-2005 Licence en Economie: Gestion des entreprises, Management, administration économique et gestion d'entreprises Université de la Havane, bac+5, Cuba",
+     "1999-2000 Propédeutique en espagnol, langue étrangère - Université Agraire de la Havane, Cuba."
+     ],
+     "biographie":"Doctorante en Art de bâtir et urbanisme, détentrice d'un Master 2 à finalités recherche en géographie et aménagement du territoire, d'un Master 2 professionnel en sociologie, spécialité gestion locale : étude et conduite de projets, spécialisée en urbanisme; détentrice d'une licence en économie, administration économique et gestion d'entreprises; possède une très bonne connaissance des politiques urbaines et des dispositifs; outils et instruments en matière d'urbanisme réglementaire et opérationnel, de planification urbaine, d'équipements, d'environnement et de la mobilité.",
+      "cours":["2019 à date chargée de cours Ingénierie urbaine et réseaux, Master 1 Urbanisme (UrbATer)"],
+     "expertise":[
+          "Enseignement",
+          "aménagement du territoire et de l'urbai",
+          "Montage",
+          "Gestion et évaluation de projets",
+          "Passation de marchés et en gestion opérationnelle"
+     ]
+},
 
  {
      "nom":"Isabelle Alice JOLICOEUR",
@@ -84,7 +125,76 @@
            "Législation haïtienne de l’urbanisme et Outils associés.",
            "Equipements urbains dans le contexte d’Haïti, marchés publics en particulier."
       ]
- }
+ },
+ {
+     "nom":"Rhodner ORISMA",
+     "titre":"",
+     "email":"",
+     "phone":"",
+     "diplomes":[
+      "",
+     "",
+     ""
+     ],
+     "biographie":"",
+      "cours":["",
+                ""],
+     "expertise":[
+          "",
+          ""
+     ]
+},
+{
+     "nom":"Christine STEPHENSON",
+     "titre":"",
+     "email":"",
+     "phone":"",
+     "diplomes":[
+      "",
+     "",
+     ""
+     ],
+     "biographie":"",
+      "cours":["",
+                ""],
+     "expertise":[
+          "",
+          ""
+     ]
+},
+ {
+     "nom":"James Rudolph SAINT-CYR",
+     "titre":"Enseignant-chercheur/ Responsable Administratif du Master URBATeR FD",
+     "email":"Jamesr.saintcyr@gmail.com",
+     "phone":"+509 36 98 93 56",
+     "diplomes":[
+      "Doctorat en Sciences du Langage et de la communication, Février 2014",
+     "Doctorat, PHD, Université de Rouen, France Ecole Doctorale: Histoire, Mémoire, Patrimoine, Langage, 2005",
+     "MASTER - MASTER’S DEGREE, Mention très bien, spécialité Sciences du Langage, Université de Rouen, France, 2003",
+     "Licence de Français Langue Etrangère, Mention Bien, mention bien spécialité Sciences du Langage, Université de Rouen, France, Licence"
+     ],
+     "biographie":"",
+      "cours":[""],
+     "expertise":[""]
+},
+{
+     "nom":"Jean-Marie THÉODAT",
+     "titre":"",
+     "email":"",
+     "phone":"",
+     "diplomes":[
+      "",
+     "",
+     ""
+     ],
+     "biographie":"",
+      "cours":["",
+                ""],
+     "expertise":[
+          "",
+          ""
+     ]
+}
       
      ]
      
@@ -94,6 +204,24 @@
      "creole":{
           "title":"PWOFESE",
      "profs":[
+          {
+               "nom":"Karine BOUCHEREAU",
+               "titre":"",
+               "email":"",
+               "phone":"",
+               "diplomes":[
+                "",
+               "",
+               ""
+               ],
+               "biographie":"",
+                "cours":["",
+                          ""],
+               "expertise":[
+                    "",
+                    ""
+               ]
+          },
               {
       "nom":"Jean Odile ETIENNE",
       "titre":"Enseignant-Chercheur",
@@ -136,6 +264,27 @@
            "Mouvements de sols"
       ]
  },
+ {
+     "nom":"Guerline JEAN",
+     "titre":"Titre Economiste Géographe Urbaniste",
+     "email":"guerline.jean@ueh.edu.ht",
+     "phone":"509 48996693",
+     "diplomes":[
+      "2008-2009 Master 2 professionnel Gestion Locale Etude et conduite de Projet Université de Toulouse 2 Jean-Jaurès (UT2), France Bac+5, 120 crédits",
+     "2005-2006 Master 2 Recherche, Mention Géographie et Aménagement, spécialité Amérique Latine dans le domaine des Sciences Humaines et Sociales, Géographie, à finalité Recherche, Université de Toulouse 2 Jean-Jaurès (UT2), France Bac+5, 120 crédit",
+     "2000-2005 Licence en Economie: Gestion des entreprises, Management, administration économique et gestion d'entreprises Université de la Havane, bac+5, Cuba",
+     "1999-2000 Propédeutique en espagnol, langue étrangère - Université Agraire de la Havane, Cuba."
+     ],
+     "biographie":"Doctorante en Art de bâtir et urbanisme, détentrice d'un Master 2 à finalités recherche en géographie et aménagement du territoire, d'un Master 2 professionnel en sociologie, spécialité gestion locale : étude et conduite de projets, spécialisée en urbanisme; détentrice d'une licence en économie, administration économique et gestion d'entreprises; possède une très bonne connaissance des politiques urbaines et des dispositifs; outils et instruments en matière d'urbanisme réglementaire et opérationnel, de planification urbaine, d'équipements, d'environnement et de la mobilité.",
+      "cours":["2019 à date chargée de cours Ingénierie urbaine et réseaux, Master 1 Urbanisme (UrbATer)"],
+     "expertise":[
+          "Enseignement",
+          "aménagement du territoire et de l'urbai",
+          "Montage",
+          "Gestion et évaluation de projets",
+          "Passation de marchés et en gestion opérationnelle"
+     ]
+},
 
  {
      "nom":"Isabelle Alice JOLICOEUR",
@@ -176,7 +325,77 @@
            "Législation haïtienne de l’urbanisme et Outils associés.",
            "Equipements urbains dans le contexte d’Haïti, marchés publics en particulier."
       ]
- } 
+ } ,
+ {
+     "nom":"Rhodner ORISMA",
+     "titre":"",
+     "email":"",
+     "phone":"",
+     "diplomes":[
+      "",
+     "",
+     ""
+     ],
+     "biographie":"",
+      "cours":["",
+                ""],
+     "expertise":[
+          "",
+          ""
+     ]
+},
+{
+     "nom":"Christine STEPHENSON",
+     "titre":"",
+     "email":"",
+     "phone":"",
+     "diplomes":[
+      "",
+     "",
+     ""
+     ],
+     "biographie":"",
+      "cours":["",
+                ""],
+     "expertise":[
+          "",
+          ""
+     ]
+},
+ {
+     "nom":"James Rudolph SAINT-CYR",
+     "titre":"Enseignant-chercheur/ Responsable Administratif du Master URBATeR FD",
+     "email":"Jamesr.saintcyr@gmail.com",
+     "phone":"+509 36 98 93 56",
+     "diplomes":[
+      "Doctorat en Sciences du Langage et de la communication, Février 2014",
+     "Doctorat, PHD, Université de Rouen, France Ecole Doctorale: Histoire, Mémoire, Patrimoine, Langage, 2005",
+     "MASTER - MASTER’S DEGREE, Mention très bien, spécialité Sciences du Langage, Université de Rouen, France, 2003",
+     "Licence de Français Langue Etrangère, Mention Bien, mention bien spécialité Sciences du Langage, Université de Rouen, France, Licence"
+     ],
+     "biographie":"",
+      "cours":[""],
+     "expertise":[""]
+},
+{
+     "nom":"Jean-Marie THÉODAT",
+     "titre":"",
+     "email":"",
+     "phone":"",
+     "diplomes":[
+      "",
+     "",
+     ""
+     ],
+     "biographie":"",
+      "cours":["",
+                ""],
+     "expertise":[
+          "",
+          ""
+     ]
+}
+    
     
       
      ]
