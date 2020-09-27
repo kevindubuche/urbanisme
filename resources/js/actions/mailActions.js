@@ -25,7 +25,7 @@ export const sendEmail = postData => dispatch => {
                 console.log(error.response.header);
             }
             if(error.response.status==401){
-                console.log('ou pa gen authorisasion mon frere');
+                console.log('Pas l\'authorisasion');
             }
             
         })

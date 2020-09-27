@@ -22,8 +22,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://google.com/">
-        www.urbater.org
+      <Link color="inherit" href="https://www.urbater.com/">
+        www.urbater.com
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -162,12 +162,12 @@ const {classes} = this.props;
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
-                  Mot de passe oublie?
+                 
                 </Link>
               </Grid>
               <Grid item>
                 <Link href="#" variant="body2">
-                  {"Pas de compte? S'inscrire"}
+                  {""}
                 </Link>
               </Grid>
             </Grid>
