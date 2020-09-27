@@ -21,7 +21,7 @@ import { sendEmail } from '../../actions/mailActions';
    }
    componentDidMount(){
     this.setState({
-        name : '',
+        nom : '',
         email:'',
         message : '',
     })
