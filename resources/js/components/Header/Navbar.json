@@ -45,7 +45,8 @@
          "activites":{
                "Activites":"Activités",
                "Konbit":"Konbit",
-               "Conferences":"Conférences"
+               "Conferences":"Conférences",
+               "DocArchiMo": "DocArchiMo Haïti"
          },
          "espace":{
                "Espace":"Espace Étudiant",
@@ -105,7 +106,8 @@
         "activites":{
                "Activites":"Aktivite",
                "Konbit":"Konbit",
-               "Conferences":"Konferans"
+               "Conferences":"Konferans",
+               "DocArchiMo": "DocArchiMo Haïti"
         },
         "espace":{
                "Espace":"Espas Etidyan",
