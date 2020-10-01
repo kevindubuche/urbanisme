@@ -148,7 +148,7 @@ const {classes} = this.props;
               label="Se souvenir de moi"
             />
             
-           <p>{this.props.authResponse!=null && this.props.authResponse !="" ? this.props.authResponse :null }</p>
+           <p >{this.props.authResponse!=null && this.props.authResponse !="" ? this.props.authResponse :null }</p>
              
             <Button
               type="submit"
